@@ -8,7 +8,7 @@ import java.nio.Buffer;
 public class tarea6 {
     public static void main(String[] args) throws IOException {
 
-        File fichero = new File ("/home/manana/Escritorio/PSP/1.MULTITAREA JAVA/fichero.txt");
+        File fichero = new File ("/home/manana/Escritorio/SEGUNDO/2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/fichero.txt");
         if(fichero.createNewFile()){
             System.out.println("fichero.txt se ha creado");
         }else System.out.println("fichero.txt ya existe");
