@@ -20,7 +20,8 @@ public class tarea6 {
             
             //BUFFER READER / INPUT
             BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            //
+            
+            
 
         }
         catch (IOException e) 
