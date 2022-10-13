@@ -27,8 +27,10 @@ public class DatosActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-               Intent intentVolver = new Intent();
+               Intent intentVolver = new Intent(DatosActivity.this, MainActivity.class);
+               startActivity(intentVolver);
             }
         };
+        botonVolver.setOnClickListener(eventBotonVolver);
     }
 }
