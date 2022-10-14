@@ -12,15 +12,17 @@ public class tarea6 {
         if(fichero.createNewFile()){
             System.out.println("fichero.txt se ha creado");
         }else System.out.println("fichero.txt ya existe");
-        
         try 
         {
-            Process p = Runtime.getRuntime().exec("ls -l > fichero.txt");
+            Process p = Runtime.getRuntime().exec("ls -l");
 
             
             //BUFFER READER / INPUT
-            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
             
+            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String linea;
+            while((linea=br.readLine())!=null){
+            }
             
 
         }
