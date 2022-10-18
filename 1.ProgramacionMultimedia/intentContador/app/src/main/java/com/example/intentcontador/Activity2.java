@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class Activity2 extends AppCompatActivity {
 
     private Button exitBtn;
-    private Button btnContador;
+    private Button btnContador2;
     int contador;
     TextView resultado;
 
@@ -26,26 +26,18 @@ public class Activity2 extends AppCompatActivity {
         exitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-               /* Intent i = new Intent(Activity2.this,MainActivity.class);
-                startActivity(i);
-                */
                setResult(contador);
                finish();
-
-
             }
         });
 
-        btnContador=(Button) findViewById(R.id.btn_contador);
-        btnContador.setOnClickListener(new View.OnClickListener() {
+        btnContador2=(Button) findViewById(R.id.btn_contador);
+        btnContador2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                  contador++;
                  resultado.setText("Has pulsado "+contador+" veces");
-                //Toast.makeText(Activity2.this, "pulsado", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }

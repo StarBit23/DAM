@@ -14,10 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     final int COD_ACTI2=1;
     TextView resultado;
-
     private Button openBtn;
-
-
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -42,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == COD_ACTI2){
             resultado.setText("Has pulsado "+resultCode+" veces");
-
         }
     }
 }

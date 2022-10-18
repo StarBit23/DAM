@@ -1,40 +1,39 @@
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.Buffer;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class tarea6 {
     public static void main(String[] args) throws IOException {
+        
 
-        File fichero = new File ("/home/manana/Escritorio/SEGUNDO/2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/fichero.txt");
-        if(fichero.createNewFile()){
-            System.out.println("fichero.txt se ha creado");
-        }else System.out.println("fichero.txt ya existe");
-        try 
-        {
-            Process p = Runtime.getRuntime().exec("ls -l");
-
-            
-            //BUFFER READER / INPUT
-            
-            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            String linea;
-            while((linea=br.readLine())!=null){
+        try {
+            File fichero = new File("/home/manana/fichero.txt");
+            if (fichero.createNewFile()) {
+                System.out.println("fichero.txt se ha creado");
+            } else {
+                System.out.println("el fichero ya existe");
             }
             
+            Process p = Runtime.getRuntime().exec("ls -l");
+            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            FileWriter fw = new FileWriter(fichero);
+            String linea;
+        
+            while((linea=br.readLine()) != null){
+                System.out.println(linea);         
+                fw.write(linea);
+           }
+           fw.close();
 
-        }
-        catch (IOException e) 
-        {
+
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
         
     }
-
-    
-    
-
-    
 }
