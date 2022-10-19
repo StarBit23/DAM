@@ -4,6 +4,8 @@
 const fecha = ['06', 'Octubre', '2021'];
 
 //Desestructura los números en posiciones impares
+const[one,, three, ,five] = listado
+console.log()
 //Desestructura el primer número, el segundo y el resto en otra variable
 const listado = [1, 65, 85, 5, 26, 18];
 

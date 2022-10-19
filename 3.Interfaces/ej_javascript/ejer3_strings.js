@@ -116,6 +116,15 @@ const telefono = 'El siguiente teléfono hace spam +34654789543. Mi código es +
 //Usa una expresión regular para comprobar que la cadena tiene números.
 //Usa una expresión regular para comprobar que la cadena termina en punto.
 //Usa una expresión regular para comprobar que la cadena comienza por una mayúscula.
+const tfno2 = "e" + telefono;
+if(tfno2.match("^[A-Z]"){
+    console.log("El  texto empieza por mayuscula")
+}else (console.log("El texto no empieza por mayuscula"));
+
 //Usa una expresión regular para comprobar si la cadena contiene un teléfono con código internacional.
+const tfno3 = telefono.match("[+][1-9][1,3][1-9]{9}")
+console.log(tfno3[0]);
+
 //Reemplaza cualquier ocurrencia de un + seguido de números por la cadena SECRETO
+
 
