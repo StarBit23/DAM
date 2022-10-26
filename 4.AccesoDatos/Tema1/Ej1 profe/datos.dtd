@@ -1,0 +1,12 @@
+<!ELEMENT persona (nombre, apellidos, direccion, numero, email)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT direccion (cp,ciudad,tipo_via,via,numero,portal,puerta)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT tipo_via (#PCDATA)>
+<!ELEMENT via (#PCDATA)>
+<!ELEMENT portal (#PCDATA)>
+<!ELEMENT puerta (#PCDATA)>

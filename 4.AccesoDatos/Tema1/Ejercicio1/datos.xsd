@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    targetNamespace="http://lmsgi.iesvirgendelcarmen.com"
+    xmlns="http://lmsgi.iesvirgendelcarmen.com"
+    elementFormDefault="qualified">
+
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="apellidos" type="xs:string" />
+                <xs:element name="direccion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cp" type="xs:int"/> 
+                            <xs:element name="ciudad" type="xs:string"/> 
+                            <xs:element name="tipo_via">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Calle" />
+                                        <xs:enumeration value="Plaza" />
+                                        <xs:enumeration value="Paseo" />
+                                        <xs:enumeration value="Carretera" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="via" type="xs:string"/>
+                            <xs:element name="numero" type="xs:int"/>
+                            <xs:element name="portal" type="xs:string"/>
+                            <xs:element name="puerta" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="numero" type="xs:int" />
+                <xs:element name="email" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>    
+    </xs:element>
+
+</xs:schema>

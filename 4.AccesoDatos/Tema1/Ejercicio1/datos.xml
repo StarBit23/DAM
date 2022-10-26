@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona SYSTEM "datos.dtd">
+<persona>
+    <nombre>Pepe</nombre>
+    <apellidos>García Fernández</apellidos>
+    <direccion>
+        <cp>23008</cp>
+        <ciudad>Jaén</ciudad>
+        <tipo_via>Paseo</tipo_via>
+        <via>Estación</via>
+        <numero>44</numero>
+        <portal>5</portal>
+        <puerta>5</puerta>
+    </direccion>
+    <numero>555123456</numero>
+    <email>pepe@sincorreo.com</email>
+</persona>
