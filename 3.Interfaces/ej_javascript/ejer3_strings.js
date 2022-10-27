@@ -113,18 +113,50 @@ console.log("-------------------------------------------------");
 
 
 const telefono = 'El siguiente teléfono hace spam +34654789543. Mi código es +3116';
+console.log("-------------------------------------------------");
+let splitText = telefono.split(" ");
 //Usa una expresión regular para comprobar que la cadena tiene números.
+let reg = "^[0-9]+$";
+for (let j = 0; j < splitText.length; j++) {
+    for (let i = 0; i < splitText[j].length; i++) {
+        if (splitText[j].charAt(i).match(reg)) {
+            console.log("el caracter " + splitText[j].charAt(i) + " en la posicion " + i + " del string " + splitText[j] + " es un numero")
+        }
+    }
+}
+console.log("-------------------------------------------------------------------\n");
+
 //Usa una expresión regular para comprobar que la cadena termina en punto.
+reg = "[.]$";
+
+console.log(telefono);
+
+if (telefono.match(reg)) {
+    console.log("Acaba en .");
+} else {
+    console.log("Acaba en .");
+}
+console.log("-------------------------------------------------------------------\n");
+
 //Usa una expresión regular para comprobar que la cadena comienza por una mayúscula.
 const tfno2 = "e" + telefono;
-if(tfno2.match("^[A-Z]"){
-    console.log("El  texto empieza por mayuscula")
-}else (console.log("El texto no empieza por mayuscula"));
+if (tfno2.match("^[A-Z]")) {
+    console.log("El texto empieza con mayuscula");
+} else {
+    console.log("El texto no empieza con mayuscula");
+}
+
+console.log("-------------------------------------------------------------------\n");
 
 //Usa una expresión regular para comprobar si la cadena contiene un teléfono con código internacional.
-const tfno3 = telefono.match("[+][1-9][1,3][1-9]{9}")
-console.log(tfno3[0]);
+const tfno = telefono.match("[+][1-9]{1,3}[1-9]{9}")
+if(telefono.match("[+][1-9]{10-12}")){
+    console.log(tfno[0]);
+}
+
+console.log("-------------------------------------------------------------------\n");
 
 //Reemplaza cualquier ocurrencia de un + seguido de números por la cadena SECRETO
+console.log(telefono.replaceAll(tfno[0], "SECRETO"))
 
-
+console.log("-------------------------------------------------------------------\n");
