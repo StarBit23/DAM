@@ -1,55 +1,45 @@
-import java.util.Scanner;
+import com.sun.tools.javac.Main;
 
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * javac Calcular.java
+ * jar -cf calcular.jar .\Calcular.class
+ * javac PruebaCalcular.java
+ * java PruebaCalcular
+ **/
 public class Calcular {
     public static void main(String[] args) {
-        System.out.println("Elige una opcion");
-        System.out.println("1. Suma");
-        System.out.println("2. Resta");
-        System.out.println("3. Multiplicacion");
-        System.out.println("4. Division");
         Scanner sc = new Scanner(System.in);
-        int operacion = sc.nextInt();
-        switch (operacion) {
-            case 1:
-                System.out.println("Valor 1");
-                int valorSuma1 = sc.nextInt();
-                System.out.println("Valor 2");
-                int valorSuma2 = sc.nextInt();
-                int resultadoSuma = valorSuma1 + valorSuma2;
-                System.out.println("El resultado vale "+ resultadoSuma);
-            break;
-        
-            case 2:
-                System.out.println("Valor 1");
-                int valorResta1 = sc.nextInt();
-                System.out.println("Valor 2");
-                int valorResta2 = sc.nextInt();
-                int resultadoResta = valorResta1 - valorResta2;
-                System.out.println("El resultado vale "+ resultadoResta);
-            break;
+        String oper = sc.nextLine();
+        sc.close();
+        Pattern exp = Pattern.compile("(\\d+)([+]|[-]|[*]|[:])(\\d+)");
+        Matcher mat = exp.matcher(oper);
+        if (mat.find()) {
+            System.out.println("La operacion introducida es:  " + mat.group(1) + mat.group(2) + mat.group(3));
+        }
+        int x = Integer.parseInt(mat.group(1));
+        int y = Integer.parseInt(mat.group(3));
 
-            case 3:
-                System.out.println("Valor 1");
-                int valorMult1 = sc.nextInt();
-                System.out.println("Valor 2");
-                int valorMult2 = sc.nextInt();
-                int resultadoMult = valorMult1 * valorMult2;
-                System.out.println("El resultado vale "+ resultadoMult);
-            break;
-
-            case 4:
-                System.out.println("Valor 1");
-                int valorDiv1 = sc.nextInt();
-                System.out.println("Valor 2");
-                int valorDiv2 = sc.nextInt();
-                int resultadoDiv = valorDiv1 / valorDiv2;
-                System.out.println("El resultado vale "+ resultadoDiv);
-            break;
-
-            default:
-            System.out.println("Opción inexistente. Error de cojones");
-            break;
+        switch (mat.group(2)) {
+            case "+":
+                System.out.println(x + y);
+                break;
+            case "*":
+                System.out.println(x * y);
+                break;
+            case "-":
+                System.out.println(x - y);
+                break;
+            case ":":
+                if (y == 0) {
+                    System.out.println("No se puede dividir entre 0");
+                } else {
+                    System.out.println(x / y);
+                }
+                break;
         }
     }
 }
-
