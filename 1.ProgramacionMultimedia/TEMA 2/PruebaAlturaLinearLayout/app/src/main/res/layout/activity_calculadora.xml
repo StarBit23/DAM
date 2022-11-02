@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF5722"
+    android:background="#404040"
     android:orientation="vertical"
     android:padding="5dp"
     tools:context=".ActivityCalculadora">
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="6"
-        android:background="#506371"
+        android:background="@color/negroFondo"
         android:orientation="horizontal"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#FFC003"
+            android:background="@color/negroFondo"
 
             android:orientation="horizontal">
 
@@ -116,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#D39E01"
+            android:background="@color/negroFondo"
             android:orientation="horizontal">
 
             <Button
@@ -125,11 +125,13 @@
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:text="7"
-                app:backgroundTint="@null"
                 android:background="@drawable/btn_principal"
+                android:text="7"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                app:cornerRadius="50dp" />
+                app:backgroundTint="@null"
+                app:cornerRadius="50dp"
+                app:iconTint="#AA1414" />
 
             <Button
                 android:id="@+id/button6"
@@ -172,7 +174,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#AF8401"
+            android:background="@color/negroFondo"
             android:orientation="horizontal">
 
             <Button
@@ -227,7 +229,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#A37A00"
+            android:background="@color/negroFondo"
             android:orientation="horizontal">
 
             <Button
@@ -282,7 +284,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#806000"
+            android:background="@color/negroFondo"
             android:orientation="horizontal">
 
             <Button

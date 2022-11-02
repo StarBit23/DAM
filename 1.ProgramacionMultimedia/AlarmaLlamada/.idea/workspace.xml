@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3611115f-7902-435e-9d71-53937377f37c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../3.Interfaces/ej_javascript/ejer3_strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.Interfaces/ej_javascript/ejer3_strings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.Interfaces/ej_javascript/ejer4_destructuring.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.Interfaces/ej_javascript/ejer4_destructuring.js" afterDir="false" />
-    </list>
+    <list default="true" id="3611115f-7902-435e-9d71-53937377f37c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +35,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GIfq4ttMEYkHHpfbl7j8rMgHgH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MiApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TEMA 2/PruebaAlturaLinearLayout" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
