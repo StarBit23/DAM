@@ -12,22 +12,22 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Clientes
 {
     @XmlElement(name = "cliente")
-    private List<Cliente> clientes = null;
+    private List<Biblioteca> clientes = null;
  
-    public List<Cliente> getClientes() {
+    public List<Biblioteca> getClientes() {
         return clientes;
     }
  
-    public void setClientes(List<Cliente> clientes) {
+    public void setClientes(List<Biblioteca> clientes) {
         this.clientes = clientes;
     }
     
-    public void addCliente(Cliente cliente){
+    public void addCliente(Biblioteca cliente){
         this.clientes.add(cliente);
     }
 
     public Clientes() {
-        this.clientes = new ArrayList<Cliente>();
+        this.clientes = new ArrayList<Biblioteca>();
     }
 }
 

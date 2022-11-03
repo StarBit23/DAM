@@ -27,7 +27,7 @@ public class ClienteUnmarshalling {
 
             System.out.println("Hay "+clientes.getClientes().size()+" clientes, que son:");
 
-            for (Cliente cli : clientes.getClientes()){
+            for (Biblioteca cli : clientes.getClientes()){
                 System.out.println(
                     "\t id: "+cli.getDni()
                     + " nombre:"+cli.getNombre()
