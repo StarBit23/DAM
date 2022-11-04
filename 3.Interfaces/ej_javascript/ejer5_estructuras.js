@@ -37,7 +37,7 @@ console.log("-------------------------------");
 //Crea un array de cadenas. Imprime el array completo con for-of
 let arrayCadenas = ["pepe","ana","lorenzo","mario","gustavo"]; 
 for (const i of arrayCadenas) {
-    console.log(arrayCadenas[i]);
+    console.log(i);
 }
 console.log("-------------------------------");
 
@@ -49,4 +49,16 @@ Prueba con el valor bandera = undefined.
 Prueba con bandera = false
 Prueba con bandera = true
 */
+console.log("bandera=null");
+let bandera = null;
+console.log(bandera ? num=1 : num=0);
+console.log("-------------------------------");
 
+console.log("bandera=undefined");
+bandera = undefined;
+console.log(bandera ? num=1 : num=0);
+console.log("-------------------------------");
+
+console.log("bandera=true");
+bandera = true;
+console.log(bandera ? num=1 : num=0);
