@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 //hilo1
@@ -15,7 +16,7 @@ class hilo1 implements Runnable {
 
         for (int i = 0; i < 5; i++) {
             int pausa = 10 + r.nextInt(500 - 10);
-            System.out.printf("Hilo: %s , hace una pausa de %d milisegundos hilo 1\n", this.nombre, pausa);
+            System.out.printf("Hilo: %s , hace una pausa de %d milisegundos. Clase hilo 1\n", this.nombre, pausa);
             try {
                 Thread.sleep(pausa);
             } catch (InterruptedException e) {
@@ -41,7 +42,7 @@ class hilo2 implements Runnable {
 
         for (int i = 0; i < 5; i++) {
             int pausa = 10 + r.nextInt(500 - 10);
-            System.out.printf("Hilo: %s , hace una pausa de %d milisegundos, hilo 2\n", this.nombre, pausa);
+            System.out.printf("Hilo: %s , hace una pausa de %d milisegundos. Clase hilo 2\n", this.nombre, pausa);
             try {
                 Thread.sleep(pausa);
             } catch (InterruptedException e) {
@@ -53,9 +54,9 @@ class hilo2 implements Runnable {
 }
 
 public class Actividad3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int c1 = 0;
-        Thread[] hilos = new Thread[4];
+        ArrayList<Thread> listaHilos = new ArrayList<Thread>();
 
         String n1 , n2;
 
@@ -66,24 +67,19 @@ public class Actividad3 {
                 n1="H"+c1;
                 Thread h1 = new Thread(new hilo1(n1));
                 h1.start();
-
-                try {
-                    h1.join();
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+                listaHilos.add(h1);
+                
             }else {
                 c1++;
                 n2 = "H"+c1;
                 Thread h2 = new Thread(new hilo2(n2));
                 h2.start();
-
-                try {
-                    h2.join();
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+                listaHilos.add(h2);
             }
+        }
+        for (int i=0; i<4; i++) {
+            Thread getHilo = listaHilos.get(i);
+            getHilo.join();
         }
         System.out.println("Hilo principal terminado.");
     }

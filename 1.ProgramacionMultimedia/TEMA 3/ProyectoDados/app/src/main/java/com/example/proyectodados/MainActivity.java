@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private int suma;
     Animation rotate;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

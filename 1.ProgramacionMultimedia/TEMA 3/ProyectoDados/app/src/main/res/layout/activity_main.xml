@@ -69,7 +69,4 @@
         app:srcCompat="@drawable/dado3" />
 
 
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
