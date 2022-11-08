@@ -18,12 +18,12 @@ public class ClienteUnmarshalling {
      */
     public static void main(String[] args) {
         try {
-            Clientes clientes=new Clientes();
+            Usuarios clientes=new Usuarios();
 
             JAXBContext jaxbContext = JAXBContext.newInstance(clientes.getClass());
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             
-            clientes = (Clientes) jaxbUnmarshaller.unmarshal(new File("clientes.xml"));
+            clientes = (Usuarios) jaxbUnmarshaller.unmarshal(new File("clientes.xml"));
 
             System.out.println("Hay "+clientes.getClientes().size()+" clientes, que son:");
 

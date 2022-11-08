@@ -24,7 +24,7 @@ public class ClienteMarshalling {
             //        "juan@sincorreo.es", "+1555654321",
             //        new Direccion(23008, "Paseo", "de la Estación", "44", "", "", ""));
             
-            Clientes clientes = new Clientes();
+            Usuarios clientes = new Usuarios();
             clientes.addCliente(c1);
             
             JAXBContext jaxbContext = JAXBContext.newInstance(clientes.getClass());
