@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bibliotecas>
+    <biblioteca>
+        <usuario>
+            <id>1</id>
+            <nombre>Pepe</nombre>
+            <email>pepeillo@gmail.com</email>
+            <dni>52648596R</dni>
+            <tipoUsuario>ADMINISTRADOR</tipoUsuario>
+        </usuario>
+        <libro>
+            <isbn>9568632594756</isbn>
+            <nombreLibro>El Quijote</nombreLibro>
+            <autor>Miguel de Cervantes</autor>
+            <genero>Aventura, Comedia</genero>
+        </libro>
+        <prestamo>
+            <idPrestamo>501</idPrestamo>
+            <fechaPrestamo>19-marzo</fechaPrestamo>
+        </prestamo>
+        <resenna>
+            <nota>7</nota>
+            <opinion>Mu' chulo</opinion>
+        </resenna>
+    </biblioteca>
+    <biblioteca>
+        <usuario>
+            <id>2</id>
+            <nombre>Lola</nombre>
+            <email>lolalolita@gmail.com</email>
+            <dni>63284755R</dni>
+            <tipoUsuario>ADMINISTRADOR</tipoUsuario>
+        </usuario>
+        <libro>
+            <isbn>6435928173164</isbn>
+            <nombreLibro>En tu puerta me cagué</nombreLibro>
+            <autor>Pepe Pérez</autor>
+            <genero>Romance, Drama</genero>
+        </libro>
+        <prestamo>
+            <idPrestamo>502</idPrestamo>
+            <fechaPrestamo>1-febrero</fechaPrestamo>
+        </prestamo>
+        <resenna>
+            <nota>10</nota>
+            <opinion>Una de las historias más emotivas que he leido</opinion>
+        </resenna>
+    </biblioteca>
+</bibliotecas>

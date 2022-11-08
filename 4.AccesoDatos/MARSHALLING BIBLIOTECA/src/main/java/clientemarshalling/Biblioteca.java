@@ -15,15 +15,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType (XmlAccessType.FIELD)
 public class Biblioteca
 {
-    
-    @XmlAttribute
+    @XmlElement
     private Usuario usuario;
     @XmlElement
-    private String libros;
+    private Libro libro;
     @XmlElement
-    private String prestamos;
+    private Prestamo prestamo;
     @XmlElement
-    private String reseñas;
+    private Resenna resenna;
 
     public Usuario getUsuario() {
         return usuario;
@@ -33,60 +32,38 @@ public class Biblioteca
         this.usuario = usuario;
     }
 
-    public String libros() {
-        return libros;
+    public Libro getLibro() {
+        return libro;
     }
 
-    public void setLibros(String libros) {
-        this.libros = libros;
+    public void setLibro(Libro libro) {
+        this.libro = libro;
     }
 
-    public String getPrestamos() {
-        return prestamos;
+    public Prestamo getPrestamo() {
+        return prestamo;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setPrestamo(Prestamo prestamo) {
+        this.prestamo = prestamo;
     }
 
-    public String getEmail() {
-        return email;
+    public Resenna getResenna() {
+        return resenna;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setResenna(Resenna resenna) {
+        this.resenna = resenna;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public Biblioteca(Usuario usuario, Libro libro, Prestamo prestamo, Resenna resenna) {
+        this.usuario = usuario;
+        this.libro = libro;
+        this.prestamo = prestamo;
+        this.resenna = resenna;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public Biblioteca() {
     }
-
-    public Direccion getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(Direccion direccion) {
-        this.direccion = direccion;
-    }
-
-    public Cliente(Integer dni, String nombre, String apellidos, String email, String telefono, Direccion direccion) {
-        this.dni = dni;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.email = email;
-        this.telefono = telefono;
-        this.direccion = direccion;
-    }
-
-    public Cliente() {
-    }
-
-    
-    
-    
 }
 
