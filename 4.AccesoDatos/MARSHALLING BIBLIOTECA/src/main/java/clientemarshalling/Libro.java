@@ -57,4 +57,14 @@ public class Libro {
 
     public Libro() {
     }
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "isbn='" + isbn + '\'' +
+                ", nombreLibro='" + nombreLibro + '\'' +
+                ", autor='" + autor + '\'' +
+                ", genero='" + genero + '\'' +
+                '}';
+    }
 }

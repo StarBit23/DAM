@@ -18,23 +18,33 @@ public class BibliotecaUnmarshalling {
      */
     public static void main(String[] args) {
         try {
-            Bibliotecas bibliotecas=new Bibliotecas();
+            Biblioteca biblio=new Biblioteca();
 
-            JAXBContext jaxbContext = JAXBContext.newInstance(bibliotecas.getClass());
+            JAXBContext jaxbContext = JAXBContext.newInstance(biblio.getClass());
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             
-            bibliotecas = (Bibliotecas) jaxbUnmarshaller.unmarshal(new File("bibliotecas.xml"));
+            biblio = (Biblioteca) jaxbUnmarshaller.unmarshal(new File("biblioteca.xml"));
 
-            System.out.println("Hay "+bibliotecas.getListaBibliotecas().size()+" bibliotecas, que son:");
-
-            for (Biblioteca biblioteca : bibliotecas.getListaBibliotecas()){
-                System.out.println(
-                    "\t usuario: "+biblioteca.getUsuario()
-                    + " libro:"+biblioteca.getLibro()
-                    + " prestamo:"+biblioteca.getPrestamo()
-                    + " reseña: "+biblioteca.getResenna());
-
+            System.out.println("Hay "+biblio.getUsuarios().getSize()+" usuarios, que son:");
+            for (Usuario usuario : biblio.getUsuarios().getListaUsuarios()){
+                System.out.println(usuario.toString());
             }
+            System.out.println("\n");
+            System.out.println("Hay "+biblio.getLibros().getSize()+" libros, que son:");
+            for (Libro libro : biblio.getLibros().getListaLibros()){
+                System.out.println(libro.toString());
+            }
+            System.out.println("\n");
+            System.out.println("Hay "+biblio.getPrestamos().getSize()+" prestamoss, que son:");
+            for (Prestamo prestamo : biblio.getPrestamos().getListaPrestamos()){
+                System.out.println(prestamo.toString());
+            }
+            System.out.println("\n");
+            System.out.println("Hay "+biblio.getResennas().getSize()+" reseñas, que son:");
+            for (Resenna resenna : biblio.getResennas().getListaResennas()){
+                System.out.println(resenna.toString());
+            }
+
         } catch (JAXBException ex) {
             Logger.getLogger(BibliotecaMarshalling.class.getName()).log(Level.SEVERE, null, ex);
         }

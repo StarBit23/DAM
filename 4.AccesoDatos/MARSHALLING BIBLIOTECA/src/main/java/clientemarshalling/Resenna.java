@@ -37,4 +37,12 @@ public class Resenna {
 
     public Resenna() {
     }
+
+    @Override
+    public String toString() {
+        return "Resenna{" +
+                "nota=" + nota +
+                ", opinion='" + opinion + '\'' +
+                '}';
+    }
 }

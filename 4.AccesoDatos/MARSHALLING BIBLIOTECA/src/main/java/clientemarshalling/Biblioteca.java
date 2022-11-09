@@ -16,54 +16,64 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Biblioteca
 {
     @XmlElement
-    private Usuario usuario;
+    private Usuarios usuarios;
     @XmlElement
-    private Libro libro;
+    private Libros libros;
     @XmlElement
-    private Prestamo prestamo;
+    private Prestamos prestamos;
     @XmlElement
-    private Resenna resenna;
+    private Resennas resennas;
 
-    public Usuario getUsuario() {
-        return usuario;
+    public Usuarios getUsuarios() {
+        return usuarios;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setUsuarios(Usuarios usuarios) {
+        this.usuarios = usuarios;
     }
 
-    public Libro getLibro() {
-        return libro;
+    public Libros getLibros() {
+        return libros;
     }
 
-    public void setLibro(Libro libro) {
-        this.libro = libro;
+    public void setLibros(Libros libros) {
+        this.libros = libros;
     }
 
-    public Prestamo getPrestamo() {
-        return prestamo;
+    public Prestamos getPrestamos() {
+        return prestamos;
     }
 
-    public void setPrestamo(Prestamo prestamo) {
-        this.prestamo = prestamo;
+    public void setPrestamos(Prestamos prestamos) {
+        this.prestamos = prestamos;
     }
 
-    public Resenna getResenna() {
-        return resenna;
+    public Resennas getResennas() {
+        return resennas;
     }
 
-    public void setResenna(Resenna resenna) {
-        this.resenna = resenna;
+    public void setResennas(Resennas resennas) {
+        this.resennas = resennas;
     }
 
-    public Biblioteca(Usuario usuario, Libro libro, Prestamo prestamo, Resenna resenna) {
-        this.usuario = usuario;
-        this.libro = libro;
-        this.prestamo = prestamo;
-        this.resenna = resenna;
+    public Biblioteca(Usuarios usuarios, Libros libros, Prestamos prestamos, Resennas resennas) {
+        this.usuarios = usuarios;
+        this.libros = libros;
+        this.prestamos = prestamos;
+        this.resennas = resennas;
     }
 
     public Biblioteca() {
+    }
+
+    @Override
+    public String toString() {
+        return "Biblioteca{" +
+                "usuarios=" + usuarios +
+                ", libros=" + libros +
+                ", prestamos=" + prestamos +
+                ", resennas=" + resennas +
+                '}';
     }
 }
 

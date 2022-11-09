@@ -38,4 +38,12 @@ public class Prestamo {
 
     public Prestamo() {
     }
+
+    @Override
+    public String toString() {
+        return "Prestamo{" +
+                "idPrestamo='" + idPrestamo + '\'' +
+                ", fechaPrestamo='" + fechaPrestamo + '\'' +
+                '}';
+    }
 }

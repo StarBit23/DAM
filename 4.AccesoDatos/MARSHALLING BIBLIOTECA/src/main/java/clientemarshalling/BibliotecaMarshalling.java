@@ -18,29 +18,37 @@ public class BibliotecaMarshalling {
      */
     public static void main(String[] args) {
         try {
-            Biblioteca b1 = new Biblioteca(new Usuario("1","Pepe","pepeillo@gmail.com","52648596R",TipoUsuario.ADMINISTRADOR),
-                    new Libro("9568632594756","El Quijote","Miguel de Cervantes","Aventura, Comedia"), new Prestamo("501","19-marzo"),
-                    new Resenna(7,"Mu' chulo"));
+            Usuarios usuarios = new Usuarios();
+            usuarios.addUsuario(new Usuario("1","Pepe","pepeillo@gmail.com","52648596R",TipoUsuario.ADMINISTRADOR));
+            usuarios.addUsuario(new Usuario("2","Lola","lolalolita@gmail.com","63284755R",TipoUsuario.PROFESOR));
 
-            Biblioteca b2 = new Biblioteca(new Usuario("2","Lola","lolalolita@gmail.com","63284755R",TipoUsuario.ADMINISTRADOR),
-                    new Libro("6435928173164","En tu puerta me cagué","Pepe Pérez","Romance, Drama"), new Prestamo("502","1-febrero"),
-                    new Resenna(10,"Una de las historias más emotivas que he leido"));;
-            
-            Bibliotecas bibliotecas = new Bibliotecas();
-            bibliotecas.addBiblioteca(b1);
-            bibliotecas.addBiblioteca(b2);
-            
-            JAXBContext jaxbContext = JAXBContext.newInstance(bibliotecas.getClass());
+            Libros libros = new Libros();
+            libros.addLibro(new Libro("9568632594756","El Quijote","Miguel de Cervantes","Aventura, Comedia"));
+            libros.addLibro(new Libro("6435928173164","En tu puerta me cagué","Pepe Pérez","Romance, Drama"));
+
+            Prestamos prestamos = new Prestamos();
+            prestamos.addPrestamo(new Prestamo("501","19-marzo"));
+            prestamos.addPrestamo(new Prestamo("502","1-febrero"));
+
+            Resennas resennas = new Resennas();
+            resennas.addResenna( new Resenna(7,"Mu' chulo"));
+            resennas.addResenna(new Resenna(10,"Una de las historias más emotivas que he leido"));
+
+            Biblioteca biblio = new Biblioteca(usuarios,libros,prestamos,resennas);
+
+            //MARSHALLER XML
+            JAXBContext jaxbContext = JAXBContext.newInstance(biblio.getClass());
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
             
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            
-            //Marshal the employees list in file
-            jaxbMarshaller.marshal(bibliotecas, new File("bibliotecas.xml"));
+
+            jaxbMarshaller.marshal(biblio, new File("biblioteca.xml"));
         } catch (JAXBException ex) {
             Logger.getLogger(BibliotecaMarshalling.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
+        //MARSHALLER JSON
+
     }
     
 }
