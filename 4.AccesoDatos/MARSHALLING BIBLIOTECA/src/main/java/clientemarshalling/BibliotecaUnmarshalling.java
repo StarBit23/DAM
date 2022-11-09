@@ -17,6 +17,7 @@ public class BibliotecaUnmarshalling {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Gson gson = new Gson;
         try {
             Biblioteca biblio=new Biblioteca();
 

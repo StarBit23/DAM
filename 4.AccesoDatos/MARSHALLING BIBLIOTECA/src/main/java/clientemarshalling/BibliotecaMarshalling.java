@@ -46,7 +46,6 @@ public class BibliotecaMarshalling {
         } catch (JAXBException ex) {
             Logger.getLogger(BibliotecaMarshalling.class.getName()).log(Level.SEVERE, null, ex);
         }
-
         //MARSHALLER JSON
 
     }
