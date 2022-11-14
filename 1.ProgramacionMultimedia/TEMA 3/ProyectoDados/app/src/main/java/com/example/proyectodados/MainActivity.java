@@ -8,11 +8,15 @@ import android.os.Handler;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView txtResultado;
+    EditText txtAdivinar;
+    String adivinar;
+    TextView txtGanaste;
     ImageView imgDado1;
     ImageView imgDado2;
     ImageView imgDado3;
@@ -29,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         View viewMain = new View(this);
+        txtGanaste = findViewById(R.id.txtGanaste);
+        txtAdivinar = findViewById(R.id.txtAdivinar);
         txtResultado = findViewById(R.id.txt_resultado);
-        txtResultado.setVisibility(View.INVISIBLE);
         imgDado1 = (ImageView)findViewById(R.id.img_dado1);
         imgDado2 = (ImageView)findViewById(R.id.img_dado2);
         imgDado3 = (ImageView)findViewById(R.id.img_dado3);
         imgCubilete = findViewById(R.id.img_vaso);
         imgCubilete.setOnClickListener(v -> tirarDados(viewMain));
         rotate = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotation);
-
     }
 
     @SuppressLint("SuspiciousIndentation")
@@ -46,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         int milisegundos = 1000;
         int i;
 
+        txtGanaste.setVisibility(View.INVISIBLE);
         txtResultado.setVisibility(View.INVISIBLE);
         for (i=1; i<4; i++)
             programarCuandoTirar(milisegundos*i, v);
@@ -137,6 +142,10 @@ public class MainActivity extends AppCompatActivity {
     private void mostrarResultado() {
         txtResultado.setText(String.valueOf(suma));
         txtResultado.setVisibility(View.VISIBLE);
+        adivinar = txtAdivinar.getText().toString();
+        if (Integer.parseInt(adivinar)==suma){
+            txtGanaste.setVisibility(View.VISIBLE);
+        }
         imgCubilete.setEnabled(true);
     }
 
