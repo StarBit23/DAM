@@ -25,3 +25,14 @@ Para levantar la base de datos:
 ```bash
 docker-compose -f stack.yaml up -d
 ```
+
+## END POINTS
+
+End point | verbo HTTP | explicacion
+----------|------------|------------
+/api/admin/usuario| GET | Lista de todos los usuarios
+/api/admin/usuario{id}| GET | Devuelve solo el usuario con ese ID
+/api/usuario/username/{username} | GET | Nusca usuarios con ese username
+/api/admin/usuario | POST | Da de alta un nuevo usuario
+/api/admin/usuario{id} | DELETE | Borra el usuario con ese ID
+/api/admin/usuario/

@@ -1,9 +1,11 @@
+package com.jorge.modelo;
 public class Incidencias {
     private int id;
     private String estado;
     private String fecha;
     private String aula;
     private String equipamiento;
+    private Persona Persona;
 
     public int getId() {
         return this.id;
@@ -45,5 +47,13 @@ public class Incidencias {
         this.equipamiento = equipamiento;
     }
 
-    
+    public Persona getPersona() {
+        return this.Persona;
+    }
+
+    public void setPersona(Persona Persona) {
+        this.Persona = Persona;
+    }
+
+
 }
