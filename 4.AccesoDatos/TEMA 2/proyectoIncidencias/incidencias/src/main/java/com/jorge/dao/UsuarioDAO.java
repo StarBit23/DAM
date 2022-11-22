@@ -1,5 +1,7 @@
 package com.jorge.dao;
 
+import java.util.List;
+
 import com.jorge.modelo.Usuario;
 
 public interface UsuarioDAO {
@@ -12,6 +14,7 @@ public interface UsuarioDAO {
     public boolean update(int id, Usuario n);
     public boolean delete(Usuario u);
     public boolean delete(int id);
+    public List<Usuario> findAll();
 
 }
 

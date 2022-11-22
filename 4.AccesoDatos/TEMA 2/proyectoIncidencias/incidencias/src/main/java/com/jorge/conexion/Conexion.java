@@ -5,7 +5,10 @@
  */
 package com.jorge.conexion;
 
+import java.lang.System.Logger;
 import java.sql.Connection;
+import java.sql.Driver;
+import java.sql.DriverManager;
 // import java.sql.DriverManager;
 // import java.sql.SQLException;
 // import java.util.logging.Level;
@@ -27,19 +30,33 @@ public class Conexion {
     DataSource ds;
 
     public Conexion() {
-        // Vía DataSource con Contexto inyectado
-        try {
-            if (ctx == null)
-                ctx = new InitialContext();
-            if (ds == null)
-                ds = (DataSource) ((Context) ctx.lookup("java:comp/env")).lookup("jdbc/gestionReservas");
-            conn = ds.getConnection();
-        } catch (Exception ex) {
-            System.out.println("## Conexion ERROR ## " + ex.getLocalizedMessage());
-            ctx = null;
-            ds = null;
-            conn = null;
+        // Via JDBC
+        if(conn==null){
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                this.conn = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:33306/incidencias?"+
+                    "useUnicode=yes&useJDBCCompliantTimezoneShift=true&"+
+                    "user=root&password=example"
+                    );
+            } catch (SQLException | ClassNotFoundException e) {
+                Logger.getLogger(e.getLocalizedMessage());
+            }
         }
+
+        // Vía DataSource con Contexto inyectado
+        // try {
+        //     if (ctx == null)
+        //         ctx = new InitialContext();
+        //     if (ds == null)
+        //         ds = (DataSource) ((Context) ctx.lookup("java:comp/env")).lookup("jdbc/incidencia");
+        //     conn = ds.getConnection();
+        // } catch (Exception ex) {
+        //     System.out.println("## Conexion ERROR ## " + ex.getLocalizedMessage());
+        //     ctx = null;
+        //     ds = null;
+        //     conn = null;
+        // }
     }
 
     public Connection getConnection() {

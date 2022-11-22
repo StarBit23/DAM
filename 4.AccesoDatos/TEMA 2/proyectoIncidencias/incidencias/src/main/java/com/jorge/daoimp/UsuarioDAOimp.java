@@ -174,5 +174,29 @@ public class UsuarioDAOimp implements UsuarioDAO{
         }
         return resultado;
     }
+
+    @Override
+    public List<Usuario> findAll() {
+        List<Usuario> listaUsuarios;
+        try {
+            String sql = "SELECT * FROM usuario";
+            Conexion con = new Conexion();
+            Connection conexion = con.getConnection();
+            PreparedStatement ps = conexion.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                listaUsuarios.add(new Usuario(
+                    rs.getString("username"),
+                    rs.getString("email"),
+                    rs.getString("password"),
+                    rs.getInt("id"),
+                    TipoUsuario.valueOf(rs.getString("tipo")))
+                )
+            } 
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        return null;
+    }
     
 }
