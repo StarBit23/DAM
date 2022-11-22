@@ -39,10 +39,10 @@ async function leerPeliculas(){
         peli.appendChild(enlace)
         peli.appendChild(separador);
 
-        portada.setAttribute("src",`https://image.tmdb.org/t/p/w200/${pelicula.background_image}`)
+        portada.setAttribute("src",`https://api.rawg.io/api/games/${pelicula.background_image}`)
         titulo.innerHTML = "Titulo: "+pelicula.name
         enlace.innerHTML = "Más detalles"
-        enlace.setAttribute("href",`https://www.themoviedb.org/movie/${pelicula.id}`)
+        enlace.setAttribute("href",`https://api.rawg.io/api/games/${pelicula.id}`)
         enlace.setAttribute("target","blank_")
 
         document.getElementById("peliculas").appendChild(peli)
