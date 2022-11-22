@@ -11,42 +11,41 @@ Muestra solo los campos original_title, popularity, homepage
 https://gitlab.iesvirgendelcarmen.com/luis/ejercicios_javascript.git
 - Usa el repositorio anterior como referencia.
 */
-const nombrePeli = "peter"
-const apikey = "aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0";
-const url_top_rated ="api.giphy.com/v1/gifs/trending?api_key="+apikey
 
+var input = document.getElementById("barraBuscar");
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        console.log("pulsado");
+        document.getElementById("cajaGifs").innerHTML = "";
+        leerDatos();
+    }
+});
 
-function getPeliculas() {
-    return fetch(url_top_rated)
-    .then((response)=>response.json())
-    .then((peliculas)=>{
-        return peliculas.results;
-    });
-}
-
-function getDatosPelicula(id) {
-    const url_details = `https://api.giphy.com/v1/gifs/${id}?api_key=aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0`;
-    return fetch(url_details)
-    .then(response=>response.json())
-    .then(pelicula=>pelicula);
-}
-
-
-getPeliculas()
-.then((arrayPeliculas)=>{
-    arrayPeliculas.forEach(pelicula => {
-        getDatosPelicula(pelicula.id)
-        .then((pelicula)=>{
-            console.log(pelicula);
-            const peli = document.createElement('div');
-            const portada = document.createElement('img');
-            const titulo = document.createElement('p');
-            titulo.innerHTML = pelicula.original_title;
-            peli.appendChild(titulo);
-            peli.appendChild(portada);
-            portada.setAttribute('src', `https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`);
-            document.getElementById("peliculas").appendChild(peli);            
-        }).catch(err=>{});
-        ;
-    });
+document.getElementById("btnBuscar").addEventListener("click",()=>{
+    document.getElementById("cajaGifs").innerHTML = "";
+    leerDatos()
 })
+
+async function getGifs(buscar){
+    const response = await fetch(`https://api.giphy.com/v1/stickers/search?api_key=aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0&q=${buscar}&limit=25&offset=0&rating=g&lang=es`);
+    const lista = await response.json();
+    return lista.data;
+}
+
+async function leerDatos (){
+    const buscar = document.getElementById("barraBuscar").value;
+    const lista = await getGifs(buscar);
+    lista.forEach(gif => {
+        console.log(gif)
+        const linkImagen = gif.images.downsized_medium.url;
+        const contenedor = document.createElement("div");
+        const enlace = document.createElement("a");
+        const imagen = document.createElement("img");
+        contenedor.appendChild(enlace);
+        contenedor.appendChild(imagen);
+        enlace.setAttribute("href",gif.embed_url);
+        imagen.setAttribute("src",linkImagen)
+        document.getElementById("cajaGifs").appendChild(contenedor)
+    })
+}
