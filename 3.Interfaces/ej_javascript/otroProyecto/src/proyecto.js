@@ -28,7 +28,7 @@ document.getElementById("btnBuscar").addEventListener("click",()=>{
 })
 
 async function getGifs(buscar){
-    const response = await fetch(`https://api.giphy.com/v1/stickers/search?api_key=aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0&q=${buscar}&limit=10&offset=0&rating=g&lang=es`);
+    const response = await fetch(`https://api.giphy.com/v1/stickers/search?api_key=aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0&q=${buscar}&limit=25&offset=1&lang=es`);
     const lista = await response.json();
     return lista.data;
 }
@@ -38,14 +38,16 @@ async function leerDatos (){
     const lista = await getGifs(buscar);
     lista.forEach(gif => {
         console.log(gif)
-        const linkImagen = gif.images.downsized_medium.url;
-        const contenedor = document.createElement("div");
+        const div = document.createElement("div");
         const enlace = document.createElement("a");
         const imagen = document.createElement("img");
-        contenedor.appendChild(enlace);
-        contenedor.appendChild(imagen);
+
+        div.appendChild(enlace);
+        div.appendChild(imagen);
+
         enlace.setAttribute("href",gif.embed_url);
-        imagen.setAttribute("src",linkImagen)
-        document.getElementById("cajaGifs").appendChild(contenedor)
+        imagen.setAttribute("src",gif.images.downsized_medium.url)
+        
+        document.getElementById("cajaGifs").appendChild(div)
     })
 }
