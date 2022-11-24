@@ -4,22 +4,11 @@ CREATE TABLE `usuario` (
     `password` VARCHAR(50),
     `email` VARCHAR(50))
 
-CREATE TABLE `horario` (
-    `id` INT NOT  NULL AUTOINCREMENT PRIMARY KEY,
-    `inicio` TIME,
-    `fin` TIME,
-    `instalacion` INT,
-    FOREIGN KEY (`instalacion`) REFERENCES `instalacion`(`id`))
+CREATE TABLE `estancia` (
+    `id` INT NOT  NULL AUTOINCREMENT PRIMARY KEY)
 
-CREATE TABLE `instalacion` (
-    `id` INT NOT  NULL AUTOINCREMENT PRIMARY KEY,
-    `nombre` VARCHAR(25),
-    `descripcion` VARCHAR(120))
+CREATE TABLE `incidencia` (
+    `id` INT NOT  NULL AUTOINCREMENT PRIMARY KEY)
 
-CREATE TABLE `reservas` (
-    `id` INT NOT  NULL AUTOINCREMENT PRIMARY KEY,
-    `fecha` DATE,
-    `usuario` INT NOT NULL,
-    `horario` INT NOT NULL,
-    FOREIGN KEY `usuario` REFERENCES `usuario`(`id`),
-    FOREIGN KEY `horario` REFERENCES `horario`(`id`))
+CREATE TABLE `inventario` (
+    `id` INT NOT  NULL AUTOINCREMENT PRIMARY KEY)
