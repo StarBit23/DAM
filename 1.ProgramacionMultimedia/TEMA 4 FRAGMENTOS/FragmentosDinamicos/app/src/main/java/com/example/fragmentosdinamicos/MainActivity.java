@@ -4,16 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    private FragmentTransaction transactorFragmentos;
-    private Button btnRojo, btnAmarillo;
-    private FragmentoPrincipal fragPrincipal;
-    private PrimerFragmento fragPrimero;
-    private SegundoFragmento fragSegundo;
+public class MainActivity extends AppCompatActivity implements CambiarColor{
+    View fragmentoInferior;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -21,24 +18,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fragPrimero = new PrimerFragmento();
-        fragSegundo = new SegundoFragmento();
-        fragPrincipal = new FragmentoPrincipal();
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.fragmentSuperior , new FragmentoArriba())
+                .add(R.id.fragmentInferior , new FragmentoPrincipal())
+                .commit();
 
-        btnRojo = findViewById(R.id.btn_rojo);
-        btnAmarillo = findViewById(R.id.btn_amarillo);
-        transactorFragmentos = getSupportFragmentManager().beginTransaction();
+        fragmentoInferior = findViewById(R.id.fragmentInferior);
+    }
 
-        btnRojo.setOnClickListener(v -> {
-            transactorFragmentos = getSupportFragmentManager().beginTransaction();
-            transactorFragmentos.replace(R.id.fragmentContainerView, fragPrimero);
-            transactorFragmentos.addToBackStack(null).commit();
-        });
-
-        btnAmarillo.setOnClickListener(v -> {
-            transactorFragmentos = getSupportFragmentManager().beginTransaction();
-            transactorFragmentos.replace(R.id.fragmentContainerView, fragSegundo);
-            transactorFragmentos.addToBackStack(null).commit();
-        });
+    @Override
+    public void cambiarColor(int color) {
+        fragmentoInferior.setBackgroundColor(color);
     }
 }

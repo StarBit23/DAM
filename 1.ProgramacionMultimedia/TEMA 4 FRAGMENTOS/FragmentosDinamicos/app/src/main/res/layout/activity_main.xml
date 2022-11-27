@@ -7,33 +7,25 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/fragmentSuperior"
         android:layout_width="match_parent"
-        android:layout_height="171dp"
-        android:background="#919191"
-        android:orientation="horizontal">
+        android:layout_height="105dp">
 
-        <Button
-            android:id="@+id/btn_rojo"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentSuperior"
+            android:name="com.example.fragmentosdinamicos.FragmentoArriba"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="rojo" />
-
-        <Button
-            android:id="@+id/btn_amarillo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="amarillo" />
-    </LinearLayout>
+            tools:layout="@layout/fragment_fragmento_arriba" />
+    </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
+            android:id="@+id/fragmentInferior"
             android:name="com.example.fragmentosdinamicos.FragmentoPrincipal"
             android:layout_width="match_parent"
             android:layout_height="128dp"
