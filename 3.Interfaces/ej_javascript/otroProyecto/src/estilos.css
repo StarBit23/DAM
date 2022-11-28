@@ -11,9 +11,9 @@
 #btnBuscar{
     height: 25px;
     width: 100px;
-
-    
 }
+
+
 #cajaGifs{
 display: grid;
 grid-template-columns: repeat(5,1fr);

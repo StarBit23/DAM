@@ -15,5 +15,7 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
                 .add(R.id.fragmentContainerView, PuebloFragment.newInstance(1))
                 .commit();
+
+
     }
 }
