@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivityLogin">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,17 +14,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="386dp"
-        android:layout_height="317dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069"
-        app:srcCompat="@drawable/Game" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -73,7 +62,7 @@
                 app:layout_constraintVertical_bias="0.56" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/buttoAcceder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C30087"
@@ -85,7 +74,7 @@
                 app:layout_constraintVertical_bias="0.783" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonRegistrarse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C20086"

@@ -1,11 +1,12 @@
 const buscar = document.getElementById("barraBuscar");
 const atras = document.getElementById("btnAtras");
 const siguiente = document.getElementById("btnSiguiente");
+
 let gifsXpagina = 10;
 let numPag = 0;
 let pagina = 1;
 atras.disabled=true;
-//atras.disabled=true;
+
 //implementar ENTER
 var input = document.getElementById("barraBuscar");
 input.addEventListener("keypress", function (event) {
