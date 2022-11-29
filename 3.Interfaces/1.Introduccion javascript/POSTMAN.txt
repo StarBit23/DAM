@@ -1,0 +1,7 @@
+GET	Leer informacion
+POST	Subir informacion. Crear objeto
+PUT	Actualizar un objeto entero
+PATCH	Actualizar un objeto parcialmente
+DELETE	Borrar informacion
+
+7a3aeeef15d119a71db3e5a34f7196539e309c8ac5dff681fd265bd59258b092
