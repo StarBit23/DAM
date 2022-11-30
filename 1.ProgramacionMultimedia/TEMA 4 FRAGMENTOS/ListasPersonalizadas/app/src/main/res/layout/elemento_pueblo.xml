@@ -24,9 +24,11 @@
                 android:id="@+id/imageViewPueblo"
                 android:layout_width="76dp"
                 android:layout_height="78dp"
-                app:srcCompat="@drawable/ic_baseline_flutter_dash_24"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="13dp" />
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_flutter_dash_24" />
 
             <TextView
                 android:id="@+id/textViewNombre"
