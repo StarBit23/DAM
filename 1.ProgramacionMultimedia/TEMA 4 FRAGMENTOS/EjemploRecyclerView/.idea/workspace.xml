@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12c91e8a-22a2-4d8a-9c41-bdfe899eadf0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/EXAMENHECHOTEMA1/Calcular.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/EXAMENHECHOTEMA1/Calcular.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/EXAMENHECHOTEMA1/ExamenOperacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/EXAMENHECHOTEMA1/PruebaCalcular.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/EXAMENHECHOTEMA1/factura.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem/ejem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem/ejem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem1/ejem1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem1/ejem1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem2/Ejem2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem2/ejem2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem3/ejem3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem3/ejem3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem4/ejem4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem4/ejem4.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem5/ejem5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem5/ejem5.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem6/ejem6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem6/ejem6.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem7 (Tarea2)/ejem7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/Ejem7 (Tarea2)/ejem7.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio8/ejercicio8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio8/ejercicio8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/out/production/untitled/ejercicio9/Alumno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/out/production/untitled/ejercicio9/metodo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/src/ejercicio9/Alumno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/src/ejercicio9/metodo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/INTRODUCCION C/ejercicio9/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/REPASO PSP/Propuesta1_PingGrep_con.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/REPASO PSP/Propuesta1_PingGrep_sin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/REPASO PSP/Propuesta2_FiltraLineas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/REPASO PSP/Propuesta3_md5sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio8/ejercicio8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio8/ejercicio8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/out/production/untitled/ejercicio9/Alumno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/out/production/untitled/ejercicio9/metodo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/src/ejercicio9/Alumno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/src/ejercicio9/metodo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/ejercicio9/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/fichero.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/prueba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/tarea5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/tarea6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/tareaSantiJar/ConvertirMayusculas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/tareaSantiJar/ConvertirMayusculas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/tareaSantiJar/ConvertirMayusculasPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/tareaSantiJar/ConvertirMayusculasPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/1.MULTITAREA JAVA/tareaSantiJar/convertir.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/2.HILOS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/Interbloqueo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/Tema2.pptx-4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio1/Actividad1Hilos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio2/Actividad2Hilos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio3/Actividad3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/ejercicio4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/ejercicio4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/ejercicio4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/out/production/ejercicio4/Actividad4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/out/production/ejercicio4/Actividad4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/out/production/ejercicio4/Hilo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/out/production/ejercicio4/NumeroSecreto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio4/src/Actividad4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/ejercicio5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/out/production/ejercicio5/Cuenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/out/production/ejercicio5/Hilo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/out/production/ejercicio5/Transferencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/out/production/ejercicio5/TransferenciaConBloqueo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/out/production/ejercicio5/procediminetos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/src/TransferenciaConBloqueo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5/src/procediminetos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/ejercicio5_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/out/production/ejercicio5_1/Cuenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/out/production/ejercicio5_1/Hilo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/out/production/ejercicio5_1/Transferencia.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/out/production/ejercicio5_1/TransferenciaConBloqueo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/out/production/ejercicio5_1/procediminetos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/src/TransferenciaConBloqueo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/ejercicio5_1/src/procediminetos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.ProgramacionServiciosProcesos/2.HILOS/hiloRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.Interfaces/1.Introduccion javascript/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.Interfaces/1.Introduccion javascript/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.Interfaces/1.Introduccion javascript/build/HolaMundo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.Interfaces/1.Introduccion javascript/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.Interfaces/1.Introduccion javascript/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../3.Interfaces/1.Introduccion javascript/src/HolaMundo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/GIT CHEAT SHEET.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/MARSHALLING BIBLIOTECA/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/clientes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/src/main/java/clientemarshalling/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/src/main/java/clientemarshalling/ClienteMarshalling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/src/main/java/clientemarshalling/ClienteUnmarshalling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/src/main/java/clientemarshalling/Clientes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/src/main/java/clientemarshalling/Direccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/target/classes/clientemarshalling/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/target/classes/clientemarshalling/ClienteMarshalling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/target/classes/clientemarshalling/ClienteUnmarshalling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/target/classes/clientemarshalling/Clientes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/EJEMPLO MARSHALLING-UNMARSHALLING POJO/target/classes/clientemarshalling/Direccion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/biblioteca.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/biblioteca.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Biblioteca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/BibliotecaMarshalling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/BibliotecaUnmarshalling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Libros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Prestamo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Prestamos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Resenna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Resennas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/TipoUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/src/main/java/clientemarshalling/Usuarios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Biblioteca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/BibliotecaMarshalling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/BibliotecaUnmarshalling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Libro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Libros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Prestamo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Prestamos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Resenna.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Resennas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/TipoUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/MARSHALLING BIBLIOTECA/target/classes/clientemarshalling/Usuarios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/PRUEBA INICIAL/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/PRUEBA INICIAL/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/PRUEBA INICIAL/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/PRUEBA INICIAL/untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/PRUEBA INICIAL/untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/.~lock.01 repaso XML.odp#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/01 repaso XML.odp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/1.0 ficheros y XML en Java.odp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/datos-dtd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/datos-xsd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/datos.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/datos.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/factura-xsd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/factura.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/factura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ej1 profe/factura.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/FaHlbinWYAYHVH2.jpg_large" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/datos-xsd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/datos.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/datos.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/datos.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/factura.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/factura.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/Tema1/Ejercicio1/factura.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/FICHEROS/codprov.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/fichero.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/src/main/java/com/jom/app/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/src/main/java/com/jom/app/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/src/main/java/com/jom/app/escribirFicheroTxt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/src/test/java/com/jom/app/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/target/classes/com/jom/app/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/target/classes/com/jom/app/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/target/classes/com/jom/app/escribirFicheroTxt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 1/app1/target/test-classes/com/jom/app/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/Tema02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/crearTablas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/conexion/Conexion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/controlador/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/dao/UsuarioDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/daoimp/UsuarioDAOimp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/modelo/Incidencias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/modelo/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/modelo/TipoUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/java/com/jorge/modelo/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/src/main/webapp/stack/stack.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/conexion/Conexion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/controlador/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/dao/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/daoimp/UsuarioDAOimp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/modelo/Incidencias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/modelo/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/modelo/TipoUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/classes/com/jorge/modelo/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/incidencias.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/incidencias/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/incidencias/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/incidencias/stack/stack.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/TEMA 2/proyectoIncidencias/incidencias/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.AccesoDatos/codprov.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5.GestionEmpresarial/2.- UT01-IDENTIFICACION DE SISTEMAS ERP_CRM(presentacion).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5.GestionEmpresarial/ANEXO II - GESTION DE ALMACEN.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5.GestionEmpresarial/Ana-Trenza-Organigrama-Organigrama-Horizontal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5.GestionEmpresarial/PRACTICA4_UT01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5.GestionEmpresarial/UT01/2.- UT01-IDENTIFICACION DE SISTEMAS ERP_CRM(presentacion).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5.GestionEmpresarial/UT01/practica01/PRACTICA1_UT01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../5.GestionEmpresarial/UT01/practica01/jorge_ortega_morales_SGE01_Practica01.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FOL/1.1ACTIVIDAD 1, página 18 libro.odt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[d47cd1000412]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IHHFd7ZixL3lI8opGioS1OyKdU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MiProyecto" />
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ReciclerView.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+        <option name="PROFILING_MODE" value="NOT_SET" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12c91e8a-22a2-4d8a-9c41-bdfe899eadf0" name="Changes" comment="" />
+      <created>1669831485684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669831485684</updated>
+    </task>
+    <servers />
+  </component>
+</project>
