@@ -31,7 +31,7 @@ private EditText userEdit, passwordEdit;
                     Intent intentLogin = new Intent(MainActivityLogin.this, MainActivity.class);
                     startActivity(intentLogin);
                 }else {
-                    Toast.makeText(MainActivityLogin.this, "tonto del culo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityLogin.this, "Pon bien tu cuenta tonto", Toast.LENGTH_SHORT).show();
                 }
 
             });

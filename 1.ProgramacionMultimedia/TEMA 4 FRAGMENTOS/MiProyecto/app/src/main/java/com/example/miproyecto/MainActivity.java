@@ -1,29 +1,44 @@
 package com.example.miproyecto;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+import  androidx.appcompat.app.AppCompatActivity;
 
-import com.example.miproyecto.adaptadores.AdaptadorPueblos;
-import com.example.miproyecto.modelos.Pueblo;
+import com.example.miproyecto.modelo.Juego;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
     private ListView lista;
-    private List<Pueblo> listaPueblos;
+    private List<Juego> listaJuegos;
+    private FloatingActionButton btnSalir;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lista = findViewById(R.id.listview_Pueblos);
+        btnSalir = findViewById(R.id.buttonSalir);
+        btnSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentExit = new Intent(MainActivity.this, MainActivityLogin.class);
+                Toast.makeText(MainActivity.this, "Cerrando sesión", Toast.LENGTH_SHORT).show();
+                startActivity(intentExit);
+
+            }
+        });
+
+        /*//lista = findViewById(R.id.listview_Pueblos);
         listaPueblos = new ArrayList<Pueblo>();
 
         listaPueblos.add(new Pueblo(null, "Socuellamos","Pueblo de Ciudad Read", 12000));
@@ -31,15 +46,14 @@ public class MainActivity extends AppCompatActivity {
         listaPueblos.add(new Pueblo(null, "Tomelloso", "Pueblo de Ciudad Read\n tiene buenos quesos", 20000));
         listaPueblos.add(new Pueblo(null, "Almagro","Pueblo de Ciudad Real\n joer que buenas las berenjenas", 5000));
 
-        /*Necesitamos un Adapter que toma el contexto del Activity, el xml del diseño de cada elemento (CardView) y la lista de los Pueblos.  Ahora necesitamos un Adaptador personalizado y un diseño xml para un pueblo personalizado.*/
         ArrayAdapter<Pueblo> adapter = new AdaptadorPueblos(this, R.layout.elemento_pueblo, listaPueblos);
         lista.setAdapter(adapter);
 
-        /*Ahora gestionaremos los eventos click, sobre cada elemento de la lista*/
         lista.setOnItemClickListener(
                 (adaptador, vista, posicion, l)->{
                     Toast.makeText(MainActivity.this, "Pueblo seleccioinado " +  listaPueblos.get(posicion), Toast.LENGTH_SHORT).show();
                 }
-        );
+        );*/
+
     }
 }
