@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*//lista = findViewById(R.id.listview_Pueblos);
+        /*lista = findViewById(R.id.listview_Pueblos);
         listaPueblos = new ArrayList<Pueblo>();
 
         listaPueblos.add(new Pueblo(null, "Socuellamos","Pueblo de Ciudad Read", 12000));
