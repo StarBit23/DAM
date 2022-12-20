@@ -1,5 +1,6 @@
 package com.example.miproyectofinal.fragment;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -93,26 +94,16 @@ public class SecondFragment extends Fragment implements OnJuegoDialogInteraction
 
         listaJuegos = new ArrayList<>();
 
-        listaJuegos.add(new Juego("https://cdn-2.motorsport.com/images/mgl/24vA3r46/s8/max-verstappen-red-bull-racing-1.jpg", "Max Verstappen","Edad: 25", "Red Bull",1));
-        listaJuegos.add(new Juego("https://cdn-8.motorsport.com/images/mgl/0a9neZP0/s8/sergio-perez-red-bull-racing-1.jpg", "Sergio Perez","Edad: 32", "RedBull",2));
-        listaJuegos.add(new Juego("https://cdn-7.motorsport.com/images/mgl/0mb95oa2/s8/lewis-hamilton-mercedes-1.jpg", "Lewis Hamilton","Edad: 32", "Mercedes",3));
-        listaJuegos.add(new Juego("https://cdn-7.motorsport.com/images/mgl/6l9yjoj0/s8/george-russell-mercedes-1.jpg", "George Russel","Edad: 24", "Mercedes",4));
-        listaJuegos.add(new Juego("https://cdn-7.motorsport.com/images/mgl/63vAdQEY/s800/valtteri-bottas-alfa-romeo-1.jpg", "Valtteri Bottas","Edad: 33", "Alfa Romeo",5));
-        listaJuegos.add(new Juego("https://cdn-4.motorsport.com/images/mgl/YMdn9Xl2/s800/guanyu-zhou-alfa-romeo-1.jpg", "Guanyu Zhou","Edad: 23", "Alfa Romeo",6));
-        listaJuegos.add(new Juego("https://cdn-1.motorsport.com/images/amp/01W1vqDY/s1000/formula-1-2022-fernando-alonso-2.jpg", "Fernando Alonso","Edad: 41", "Aston Martin",7));
-        listaJuegos.add(new Juego("https://cdn-7.motorsport.com/images/mgl/0RrnLBB0/s800/lance-stroll-aston-martin-1.jpg", "Lance Stroll","Edad: 24", "Aston Martin",8));
-        listaJuegos.add(new Juego("https://cdn-2.motorsport.com/images/mgl/6VRnqmN6/s8/charles-leclerc-ferrari-1.jpg", "Charles Leclerc","Edad: 25", "Ferrari",9));
-        listaJuegos.add(new Juego("https://cdn-2.motorsport.com/images/mgl/YXRnk570/s8/carlos-sainz-jr-ferrari-1.jpg", "Carlos Sainz","Edad: 28", "Ferrari",10));
-        listaJuegos.add(new Juego("https://cdn-2.motorsport.com/images/mgl/6zQ7ev7Y/s8/esteban-ocon-alpine-1.jpg", "Esteban Ocon","Edad: 26", "Alpine", 11));
-        listaJuegos.add(new Juego("https://cdn-1.motorsport.com/images/amp/2QzL5EvY/s1000/formula-1-news-2022-pierre-gas-2.jpg", "Pierre Gasly","Edad: 26", "Alpine", 12));
-        listaJuegos.add(new Juego("https://cdn-3.motorsport.com/images/mgl/0L1nLWJ2/s800/lando-norris-mclaren-1.jpg", "Lando Norris ","Edad: 23", "McLaren", 13));
-        listaJuegos.add(new Juego("https://storage.googleapis.com/wtf1-com.appspot.com/1/Piastri-2022-McLaren-Mock-Up.jpg", "Oscar Piastri","Edad: 21", "McLaren", 14));
-        listaJuegos.add(new Juego("https://cdn-8.motorsport.com/images/mgl/24vOGKX6/s800/kevin-magnussen-haas-f1-team-1.jpg", "Kevin Magnussen","Edad: 30", "Haas" ,15));
-        listaJuegos.add(new Juego("https://cdn-1.motorsport.com/images/amp/68yP3k90/s6/nico-hulkenberg-aston-martin-1.jpg", "Nico Hulkenberg","Edad: 35", "Haas", 16));
-        listaJuegos.add(new Juego("https://cdn-5.motorsport.com/images/mgl/24vA3zN6/s800/yuki-tsunoda-alphatauri-1.jpg", "Yuki Tsunoda","Edad: 22", "Alpha Tauri", 17));
-        listaJuegos.add(new Juego("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nyck-de-vries-of-netherlands-mercedes-test-and-reserve-news-photo-1667580543.jpg", "Nyck de Vries","Edad: 27", "Alpha Tauri", 18));
-        listaJuegos.add(new Juego("https://cdn-1.motorsport.com/images/amp/2jXdJPk6/s6/alex-albon-williams-1.jpg", "Alexander Albon","Edad: 26", "Williams", 19));
-        listaJuegos.add(new Juego("https://cdn-1.motorsport.com/images/amp/6zQp8VjY/s1000/logan-sargeant-williams-academ.jpg", "Logan Sargeant","Edad: 21", "Williams",20));
+        listaJuegos.add(new Juego("https://i.3djuegos.com/juegos/5327/super_mario_bros/fotos/ficha/super_mario_bros-1698422.jpg", "Super Mario Bros","Plataforma: NES", "40,24 millones",1));
+        listaJuegos.add(new Juego("https://imagen.nextn.es/wp-content/uploads/2016/05/1605-02-Super-Mario-64.jpg?strip=all&lossy=1&ssl=1", "Super Mario 64","Plataforma: Nintendo 64", "11,91 millones",2));
+        listaJuegos.add(new Juego("https://static.wikia.nocookie.net/nintendo/images/4/46/Super-mario-sunshine.jpg/revision/latest?cb=20190610184927&path-prefix=es", "Super Mario Sunshine", "Plataforma: Gamecube", "6,28 millones",3));
+        listaJuegos.add(new Juego("https://i.blogs.es/e789c0/smg/1366_2000.jpg", "Super Mario Galaxy","Plataforma: Wii", "12,79 millones.",4));
+        listaJuegos.add(new Juego("https://www.nintenderos.com/wp-content/uploads/2010/03/art-box-super-mario-galaxy-2.jpg", "Super Mario Galaxy 2","Plataforma: Wii", "7,41 millones",5));
+        listaJuegos.add(new Juego("https://mario.wiki.gallery/images/7/7e/MP8Box.png", "Mario Party 8","Plataforma: Nintendo Wii", "8,85 millones",6));
+        listaJuegos.add(new Juego("https://assets-prd.ignimgs.com/2022/01/08/super-mario-3d-land-button-1641601333288.jpg", "Super Mario 3D Land","Plataforma: Nintendo 3DS", "12,50 millones",7));
+        listaJuegos.add(new Juego("https://uvejuegos.com/img/caratulas/53586/Mario-maker.jpg", "Super Mario Maker","Plataforma: Wii U", "4 millones",8));
+        listaJuegos.add(new Juego("https://art.gametdb.com/wiiu/coverHQ/US/ARPE01.jpg", "New Super Mario Bros U","Plataforma: Wii U", "5,80 millones",9));
+        listaJuegos.add(new Juego("https://i.3djuegos.com/juegos/14356/mario_kart_8_switch/fotos/ficha/mario_kart_8_switch-3611054.webp", "Mario Kart 8 Deluxe", "Plataforma: Switch", "49 millones",10));
 
         for(int i=0;i<6;i++){
             Contador.incrementarId();
@@ -220,6 +211,7 @@ public class SecondFragment extends Fragment implements OnJuegoDialogInteraction
             Toast.makeText (getActivity(), "Se ha producido algun error", Toast.LENGTH_SHORT).show();
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     public void actualizaAdaptador(){
         adaptador.notifyDataSetChanged();
     }

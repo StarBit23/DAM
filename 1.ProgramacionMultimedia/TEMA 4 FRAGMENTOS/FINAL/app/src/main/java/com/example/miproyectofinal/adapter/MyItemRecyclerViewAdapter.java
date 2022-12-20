@@ -31,10 +31,14 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         this.secondFragment = secondFragment;
     }
 
+
     /*
     Método que devuelve un objeto ViewCurso con la vista inflada del xml elemento_curso.
     De momento está vacío. Se llenará tantas veces como elementos tenga que pintar
      */
+
+
+
     @Override
     public ViewJuego onCreateViewHolder(ViewGroup parent, int viewType) {
         //return new ViewHolder(FragmentItemBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));

@@ -72,7 +72,7 @@ public class EditarJuegoDialogo extends AppCompatDialogFragment {
         if (contexto instanceof OnJuegoDialogInteractionListener){
             listener = (OnJuegoDialogInteractionListener) context;
         }else{
-            throw new IllegalArgumentException("Este contexto, no implementa la interfaz OnPilotoActionListener");
+            //throw new IllegalArgumentException("Este contexto no implementa la interfaz OnJuegoActionListener");
         }
     }
 
