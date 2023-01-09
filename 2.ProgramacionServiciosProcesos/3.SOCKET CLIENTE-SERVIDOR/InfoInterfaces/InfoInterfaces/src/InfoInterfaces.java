@@ -26,7 +26,7 @@ public class InfoInterfaces {
         System.out.println ("Otra forma de nombre interfaz: " + eth.getDisplayName());
         if (!eth.getName().equals("lo")){
             mac = eth.getHardwareAddress();
-            System.out.print("La mac Actual es  : ");
+            /*System.out.print("La mac Actual es  : ");
 			
 
             String sb="";
@@ -38,7 +38,7 @@ public class InfoInterfaces {
 
             
             //System.out.println(sb.toString());
-            System.out.println(sb);
+            System.out.println(sb);*/
             System.out.println("Parámetros ip: ");
             
             ips = eth.getInetAddresses();  //devolvemos las direcciones ipV4 de cada interfaz
@@ -47,11 +47,40 @@ public class InfoInterfaces {
 				InetAddress ip = ips.nextElement();
 				if (!ip.isLoopbackAddress())
 				//if (!eth.getName().equals("lo"))
-					if (ip instanceof Inet4Address)
+					if (ip instanceof Inet4Address){
 						System.out.printf("Dirección ip v4 es: %s%n", ip.getHostAddress());
+                        System.out.print("La mac Actual es  : ");
+
+
+                        String sb="";
+                        for(int i=0; i<mac.length;i++)
+                            if (i<mac.length -1)
+                                sb=sb+String.format("%02X%s", mac[i], "-");
+                            else
+                                sb=sb+String.format("%02X%s", mac[i], ":");
+
+
+                        //System.out.println(sb.toString());
+                        System.out.println(sb);
+                    }
+
 					else
-						if (ip instanceof Inet6Address)
+						if (ip instanceof Inet6Address){
 							System.out.printf("Dirección ip v6 es: %s%n", ip.getHostAddress());
+                            System.out.print("La mac Actual es  : ");
+
+
+                            String sb="";
+                            for(int i=0; i<mac.length;i++)
+                                if (i<mac.length -1)
+                                    sb=sb+String.format("%02X%s", mac[i], "-");
+                                else
+                                    sb=sb+String.format("%02X%s", mac[i], ":");
+
+
+                            //System.out.println(sb.toString());
+                            System.out.println(sb);
+                        }
 			}
 
         }
