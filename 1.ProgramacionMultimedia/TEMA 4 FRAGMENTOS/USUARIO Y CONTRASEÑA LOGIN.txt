@@ -1,2 +1,0 @@
-usuario: pepe
-contraseña: pepe
