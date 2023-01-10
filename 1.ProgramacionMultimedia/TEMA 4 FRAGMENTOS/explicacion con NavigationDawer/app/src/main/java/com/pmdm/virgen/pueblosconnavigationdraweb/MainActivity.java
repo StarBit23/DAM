@@ -1,12 +1,17 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -56,10 +61,44 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case R.id.action_exit:
+                Toast.makeText(this, "me piro😎", Toast.LENGTH_SHORT).show();
+                cerrarSesion();
+                return true;
+            case R.id.action_settings:
+                Toast.makeText(this, "opciones", Toast.LENGTH_SHORT).show();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    /*@Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getTitle().equals("Exit")){
+            Toast.makeText(this, "me piro😎", Toast.LENGTH_SHORT).show();
+            cerrarSesion();
+        }
+        return super.onOptionsItemSelected(item);
+    }*/
+
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void cerrarSesion(){
+        SharedPreferences sharedPreferences =
+                getSharedPreferences(getString(R.string.preferencias_fichero_login), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.commit();
+        finish();
     }
 }
