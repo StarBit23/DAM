@@ -15,19 +15,19 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.R;
-import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnPuebloInteractionDialogListener;
-import com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.PuebloFragment;
+import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
+import com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.JuegoFragment;
 
 
 public class NuevoPueblo extends AppCompatDialogFragment {
-    private EditText editNombre, editDescripcion, editNHabitantes;
+    private EditText editNombre, editDescripcion, editNVentas;
     private ImageView imgFoto;
     private Context contexto;
-    private OnPuebloInteractionDialogListener listener;
-  //  private PuebloFragment contextoFragmentPueblo;
+    private OnJuegoInteractionDialogListener listener;
+  //  private JuegoFragment contextoFragmentPueblo;
 
-    public NuevoPueblo(PuebloFragment p){
-        listener = (OnPuebloInteractionDialogListener) p;
+    public NuevoPueblo(JuegoFragment p){
+        listener = (OnJuegoInteractionDialogListener) p;
     }
 
   /*  @Override
@@ -36,9 +36,9 @@ public class NuevoPueblo extends AppCompatDialogFragment {
 
         contexto = context;
         try{
-            listener = (OnPuebloInteractionDialogListener) contexto;
+            listener = (OnJuegoInteractionDialogListener) contexto;
         }catch(ClassCastException e){
-            throw new ClassCastException(context.toString() + "Necesita implementar la interfaz OnPuebloInteractionListener");
+            throw new ClassCastException(context.toString() + "Necesita implementar la interfaz OnJuegoInteractionListener");
         }
     }
 */
@@ -50,7 +50,7 @@ public class NuevoPueblo extends AppCompatDialogFragment {
         View vista = inflater.inflate(R.layout.formulario_nuevo_pueblo, null);
         asociaCampos(vista);
         builder.setView(vista)
-                .setTitle("Nuevo Pueblo")
+                .setTitle("Nuevo Juego")
                 .setNegativeButton("Cancelar",
                         (dialogo, i )->{
                             Toast.makeText(contexto, "Se ha cancelado la inserción", Toast.LENGTH_SHORT).show();
@@ -64,10 +64,10 @@ public class NuevoPueblo extends AppCompatDialogFragment {
                             String nombre = editNombre.getText().toString();
                             String descripcion = editDescripcion.getText().toString();
                             String url = "";
-                            int nHabitantes=0;
+                            String nVentas="";
                             boolean error = false;
                             try{
-                                nHabitantes = Integer.parseInt(editNHabitantes.getText().toString());
+                                nVentas = editNVentas.getText().toString();
                             }catch (NumberFormatException e){  //Mas usss vale, que recordéis el tema de las excepciones.
                                 e.printStackTrace();
                                 error = true;
@@ -76,7 +76,7 @@ public class NuevoPueblo extends AppCompatDialogFragment {
                             if (nombre.isEmpty() || descripcion.isEmpty() || error)
                                 Toast.makeText(contexto, "Campos incorrectos", Toast.LENGTH_SHORT).show();
                             else
-                                listener.insertarPueblo(nombre, descripcion, nHabitantes);
+                                listener.insertarJuego(nombre, descripcion, nVentas);
                             dialogo.dismiss();
                         }
                 );
@@ -87,7 +87,7 @@ public class NuevoPueblo extends AppCompatDialogFragment {
     public void asociaCampos(View vista){
         editNombre = (EditText) vista.findViewById(R.id.edit_nombre);
         editDescripcion = (EditText) vista.findViewById(R.id.edit_descripcion);
-        editNHabitantes = (EditText) vista.findViewById(R.id.edit_n_habitantes);
+        editNVentas = (EditText) vista.findViewById(R.id.edit_n_ventas);
     }
 }
 

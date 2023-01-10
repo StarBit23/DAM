@@ -9,7 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="118dp"
+        android:background="#DC79F3">
 
 
         <ImageView
@@ -19,13 +20,13 @@
             android:layout_marginTop="28dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_camera_24" />
+            app:srcCompat="@drawable/ic_baseline_flutter_dash_24" />
 
         <TextView
             android:id="@+id/textViewNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre del puebloDB"
+            android:text="Nombre del juego"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageViewPueblo"
@@ -55,25 +56,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="1000 hab."
+            android:text="1000 ventas"
             app:layout_constraintBottom_toBottomOf="@+id/imageViewHabitantes"
             app:layout_constraintStart_toEndOf="@+id/imageViewHabitantes"
             app:layout_constraintTop_toTopOf="@+id/imageViewHabitantes" />
 
         <ImageView
             android:id="@+id/image_view_editar_pueblo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="31dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="76dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.181"
             app:srcCompat="@drawable/ic_baseline_edit_24" />
 
         <ImageView
             android:id="@+id/imageView_borrar_pueblo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="76dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_view_editar_pueblo"
             app:srcCompat="@drawable/ic_baseline_delete_forever_24" />

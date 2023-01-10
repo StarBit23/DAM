@@ -24,11 +24,11 @@
         android:minHeight="48dp" /> />
 
     <EditText
-        android:id="@+id/edit_n_habitantes"
+        android:id="@+id/edit_n_ventas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Número de habitantes"
+        android:hint="Número de ventas"
         android:inputType="textPersonName"
         android:minHeight="48dp" />
 

@@ -9,18 +9,18 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.R;
-import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnPuebloInteractionListener;
-import com.pmdm.virgen.pueblosconnavigationdraweb.modelos.Pueblo;
+import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionListener;
+import com.pmdm.virgen.pueblosconnavigationdraweb.modelos.Juego;
 
 
 import java.util.List;
 
 public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRecyclerViewAdapter.ViewPueblo> {
 
-    private final List<Pueblo> mValues;
-    private OnPuebloInteractionListener listenerPueblo;
+    private final List<Juego> mValues;
+    private OnJuegoInteractionListener listenerPueblo;
 
-    public MyPuebloRecyclerViewAdapter(List<Pueblo> items, OnPuebloInteractionListener listener) {
+    public MyPuebloRecyclerViewAdapter(List<Juego> items, OnJuegoInteractionListener listener) {
         mValues = items;
         listenerPueblo = listener;
     }
@@ -40,7 +40,7 @@ public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRe
         holder.mItem = mValues.get(position);
         holder.textViewNombre.setText(holder.mItem.getNombre());
         holder.textViewDescripcion.setText(holder.mItem.getDescripcion());
-        holder.textViewHabitantes.setText(String.valueOf(holder.mItem.getNumHabitantes()));
+        holder.textViewVentas.setText(String.valueOf(holder.mItem.getNumVentas()));
 
     }
 
@@ -56,11 +56,11 @@ public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRe
     public class ViewPueblo extends RecyclerView.ViewHolder {
         public final TextView textViewNombre;
         public final TextView textViewDescripcion;
-        public final TextView textViewHabitantes;
+        public final TextView textViewVentas;
         public final ImageView imageViewPueblo;
         public final ImageView imageViewEditarPueblo;
         public final ImageView imageViewBorrarPueblo;
-        public Pueblo mItem;  //es el objeto pueblo que representa el objeto
+        public Juego mItem;  //es el objeto pueblo que representa el objeto
         public View vista;  //será el constrain layout del layout_pueblos_item
 
 
@@ -75,20 +75,20 @@ public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRe
              */
             textViewNombre = vista.findViewById(R.id.textViewNombre);
             textViewDescripcion = vista.findViewById(R.id.textViewDescripcion);
-            textViewHabitantes = vista.findViewById(R.id.textViewHabitantes);
+            textViewVentas = vista.findViewById(R.id.textViewHabitantes);
             imageViewPueblo = vista.findViewById(R.id.imageViewPueblo);
             imageViewEditarPueblo = vista.findViewById(R.id.image_view_editar_pueblo);
             imageViewBorrarPueblo = vista.findViewById(R.id.imageView_borrar_pueblo);
 
             imageViewEditarPueblo.setOnClickListener(
                     (evento)->{
-                        listenerPueblo.onPuebloEditarClick(mItem);
+                        listenerPueblo.onJuegoEditarClick(mItem);
                     }
             );
 
             imageViewBorrarPueblo.setOnClickListener(
                     (evento)->{
-                        listenerPueblo.onPuebloBorrarClick(mItem);
+                        listenerPueblo.onJuegoBorrarClick(mItem);
                     }
             );
 

@@ -1,5 +1,4 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb.dialogos;
-
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -16,17 +15,17 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 import androidx.fragment.app.Fragment;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.R;
-import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnPuebloInteractionDialogListener;
-import com.pmdm.virgen.pueblosconnavigationdraweb.modelos.Pueblo;
-import com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.PuebloFragment;
+import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
+import com.pmdm.virgen.pueblosconnavigationdraweb.modelos.Juego;
+import com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.JuegoFragment;
 
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link EditarPuebloDialogo#newInstance} factory method to
+ * Use the {@link EditarJuegoDialogo#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class EditarPuebloDialogo extends AppCompatDialogFragment {
+public class EditarJuegoDialogo extends AppCompatDialogFragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,20 +33,20 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
     /**
      * Son los Argumentos que pasaremos desde el Activity.
      */
-    private static final String ARGUMENTO_ID_PUEBLO = Pueblo.ARGUMENTO_ID;
-    private static final String ARGUMENTO_NOMBRE_PUEBLO = Pueblo.ARGUMENTO_NOMBRE;
-    private static final String ARGUMENTO_DESCRIPCION_PUEBLO = Pueblo.ARGUMENTO_DESCRIPCION;
-    private static final String ARGUMENTO_N_HABITANTES = Pueblo.ARGUMENTO_NUM_HABITANTES;
-    private static final String ARGUMENTO_URL_FOTO = Pueblo.ARGUMENTO_URL_FOTO;
+    private static final String ARGUMENTO_ID_PUEBLO = Juego.ARGUMENTO_ID;
+    private static final String ARGUMENTO_NOMBRE_PUEBLO = Juego.ARGUMENTO_NOMBRE;
+    private static final String ARGUMENTO_DESCRIPCION_PUEBLO = Juego.ARGUMENTO_DESCRIPCION;
+    private static final String ARGUMENTO_N_VENTAS = Juego.ARGUMENTO_NUM_VENTAS;
+    private static final String ARGUMENTO_URL_FOTO = Juego.ARGUMENTO_URL_FOTO;
     private Context contexto;  //contexo del Activity.
 
     private EditText editNombre, editDescripcion, editNHabitantes;
     private ImageView imgViewFoto;
-    private OnPuebloInteractionDialogListener listener; //Referencia la interfaz de las acciones del Dialogo.
+    private OnJuegoInteractionDialogListener listener; //Referencia la interfaz de las acciones del Dialogo.
     //private long idPueblo;
 
-    public EditarPuebloDialogo(PuebloFragment p) {
-        listener = (OnPuebloInteractionDialogListener) p;
+    public EditarJuegoDialogo(JuegoFragment p) {
+        listener = (OnJuegoInteractionDialogListener) p;
         // Required empty public constructor
     }
 
@@ -57,14 +56,14 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
      *
      */
     // TODO: Rename and change types and number of parameters
-    public static EditarPuebloDialogo newInstance(PuebloFragment p, long id, String nombre, String descripcion, int nHabitantes, String urlFoto ) {
-        EditarPuebloDialogo dialogo = new EditarPuebloDialogo(p);
+    public static EditarJuegoDialogo newInstance(JuegoFragment p, long id, String nombre, String descripcion, String nVentas, String urlFoto ) {
+        EditarJuegoDialogo dialogo = new EditarJuegoDialogo(p);
         Bundle args = new Bundle();
         // Pasamos los datos del pueblo, a los argumentos del Dialog para que sean recuperados.
         args.putLong(ARGUMENTO_ID_PUEBLO, id);  //pasamos el id del pueblo
         args.putString(ARGUMENTO_NOMBRE_PUEBLO, nombre);
         args.putString(ARGUMENTO_DESCRIPCION_PUEBLO, descripcion);
-        args.putInt(ARGUMENTO_N_HABITANTES, nHabitantes);
+        args.putString(ARGUMENTO_N_VENTAS, nVentas);
         //args.putString(ARGUMENTO_URL_FOTO, urlFoto);
 
         dialogo.setArguments(args);
@@ -82,8 +81,8 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         contexto = context;
-        if (contexto instanceof OnPuebloInteractionDialogListener)
-            listener = (OnPuebloInteractionDialogListener) context;
+        if (contexto instanceof OnJuegoInteractionDialogListener)
+            listener = (OnJuegoInteractionDialogListener) context;
         else
             throw new IllegalArgumentException("Este contexto, no implementa la interfaz OnPuebloActionListener");
 
@@ -101,10 +100,10 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(vista)
-                .setTitle("Datos del Pueblo")
+                .setTitle("Datos del Juego")
                 .setNegativeButton("Cancelar",
                         (dialogo, i) ->{
-                            EditarPuebloDialogo.this.dismiss();
+                            EditarJuegoDialogo.this.dismiss();
                         }
 
                         )
@@ -112,10 +111,10 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
                         (dialogo, i) ->{
                             String nombre = editNombre.getText().toString();
                             String descripcion = editDescripcion.getText().toString();
-                            int nHabitantes=0;
+                            String nVentas="";
                             boolean error = false;
                             try{
-                                nHabitantes = Integer.parseInt(editNHabitantes.getText().toString());
+                                nVentas = (editNHabitantes.getText().toString());
                             }catch (NumberFormatException e){
                                 e.printStackTrace();
                                 error = true;
@@ -123,9 +122,9 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
                             if (nombre.isEmpty() || descripcion.isEmpty() || error)
                                 Toast.makeText(contexto, "Los campos no pueden estar vacíos", Toast.LENGTH_SHORT).show();
                             else{
-                                long id = EditarPuebloDialogo.this.getArguments().getLong(ARGUMENTO_ID_PUEBLO);
-                                listener.editarPueblo(id, nombre, descripcion, nHabitantes);
-                                EditarPuebloDialogo.this.dismiss();
+                                long id = EditarJuegoDialogo.this.getArguments().getLong(ARGUMENTO_ID_PUEBLO);
+                                listener.editarJuego(id, nombre, descripcion, nVentas);
+                                EditarJuegoDialogo.this.dismiss();
                             }
 
                         });
@@ -137,7 +136,7 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
     private void inicializamosCampos(View vista) {
         editNombre = vista.findViewById(R.id.edit_nombre);
         editDescripcion = vista.findViewById(R.id.edit_descripcion);
-        editNHabitantes = vista.findViewById(R.id.edit_n_habitantes);
+        editNHabitantes = vista.findViewById(R.id.edit_n_ventas);
         imgViewFoto = vista.findViewById(R.id.imageViewPueblo);
 
         /*
@@ -145,7 +144,7 @@ public class EditarPuebloDialogo extends AppCompatDialogFragment {
          */
         editNombre.setText(this.getArguments().getString(ARGUMENTO_NOMBRE_PUEBLO));
         editDescripcion.setText(this.getArguments().getString(ARGUMENTO_DESCRIPCION_PUEBLO));
-        editNHabitantes.setText(String.valueOf(this.getArguments().getInt(ARGUMENTO_N_HABITANTES)));
+        editNHabitantes.setText(String.valueOf(this.getArguments().getInt(ARGUMENTO_N_VENTAS)));
     }
 
 

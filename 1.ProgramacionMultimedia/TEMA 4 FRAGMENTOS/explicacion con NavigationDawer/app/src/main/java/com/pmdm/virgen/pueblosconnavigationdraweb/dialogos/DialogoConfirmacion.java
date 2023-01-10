@@ -3,20 +3,20 @@ package com.pmdm.virgen.pueblosconnavigationdraweb.dialogos;
 import android.app.AlertDialog;
 import android.content.Context;
 
-import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnPuebloInteractionDialogListener;
-import com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.PuebloFragment;
+import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
+import com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.JuegoFragment;
 
 public class DialogoConfirmacion {
 
 
-    public static void newInstance(Context contexto, PuebloFragment frag, long id){
+    public static void newInstance(Context contexto, JuegoFragment frag, long id){
         AlertDialog.Builder builder = new AlertDialog.Builder(contexto);
-        builder.setTitle("Eliminación del Pueblo");
-        builder.setMessage("¿Desea eliminar ese pueblo?");
+        builder.setTitle("Eliminación del Juego");
+        builder.setMessage("¿Desea eliminar ese juego?");
         builder.setPositiveButton("Si",
                 (dialogo, i)->{
-                    OnPuebloInteractionDialogListener mListener = (OnPuebloInteractionDialogListener) frag;
-                    mListener.eliminarPueblo(id);
+                    OnJuegoInteractionDialogListener mListener = (OnJuegoInteractionDialogListener) frag;
+                    mListener.eliminarJuego(id);
                     dialogo.dismiss();
                 });
         builder.setNegativeButton("Cancelar",

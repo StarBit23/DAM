@@ -24,6 +24,6 @@
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_pueblos"
-        android:name="com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.PuebloFragment"
+        android:name="com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.JuegoFragment"
         android:label="PuebloFragment" />
 </navigation>
