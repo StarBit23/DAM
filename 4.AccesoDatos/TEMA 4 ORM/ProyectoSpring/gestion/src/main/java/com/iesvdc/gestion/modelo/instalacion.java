@@ -1,4 +1,10 @@
 package com.iesvdc.gestion.modelo;
-public class instalacion {
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class Instalacion {
     
 }

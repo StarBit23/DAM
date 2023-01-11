@@ -14,9 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
 import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
 import com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos.JuegoFragment;
+import com.pmdm.virgen.pueblosconnavigationdraweb.R;
 
 
 public class NuevoPueblo extends AppCompatDialogFragment {
