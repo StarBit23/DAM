@@ -3,7 +3,7 @@ import java.net.*;
 
 public class Cliente {
     private static final int MAXBYTES = 1000;
-    private static String  HOST = "192.168.17.162";
+    private static String  HOST = "192.168.17.247";
     private static int PORT = 3000;
     //private static int PORT2 = 300;
     private static String  MENSAJE = "Soy PepitoCliente, ¿como vas JoselitoServidor?";
