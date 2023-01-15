@@ -14,14 +14,14 @@
         android:theme="@style/Theme.PueblosConNavigationDraweb"
         tools:targetApi="31">
         <activity
-            android:name="com.pmdm.virgen.pueblosconnavigationdraweb.MainActivity"
+            android:name="com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.PueblosConNavigationDraweb.NoActionBar">
         </activity>
 
         <activity
-            android:name="com.pmdm.virgen.pueblosconnavigationdraweb.MainActivityLogin"
+            android:name="com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.MainActivityLogin"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.PueblosConNavigationDraweb.NoActionBar">
