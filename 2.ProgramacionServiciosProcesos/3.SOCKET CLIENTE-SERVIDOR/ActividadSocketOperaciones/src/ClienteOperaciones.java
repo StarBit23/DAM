@@ -14,7 +14,6 @@ public class ClienteOperaciones {
     private static String  operando2 = "";
     private static String condicion = "S";
     private static Boolean condicionFinal=false;
-    
 
     public static void main(String[] args) {
         do {
@@ -37,15 +36,16 @@ public class ClienteOperaciones {
                 socketCliente.send(pE);
                 System.out.println("operacion ENVIADO A SERVIDOR");
     
-    
                 //4
                 byte[] bufferLectura = new byte[MAXBYTES];
                 DatagramPacket pR = new DatagramPacket(bufferLectura, MAXBYTES);
                 socketCliente.receive(pR);
                 String lineaRecibida = new String (pR.getData(), 0, pR.getLength(),"UTF-8");
                 LocalTime ahora = LocalTime.now();
-                System.out.println(ahora+"||"+"res: "+lineaRecibida);
+                System.out.println(ahora+"||"+"res: "+lineaRecibida+"\n");
+
                 System.out.println("///////////////////////////////////////////");
+
                 System.out.println("QUIERES HACER MAS CUENTAS? S o N");
                 condicion = sc.nextLine();
                 switch (condicion) {
