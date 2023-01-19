@@ -9,33 +9,32 @@ public class ClienteChat {
     private static final int MAXBYTES = 1000;
     private static String  HOST = "localhost";
     private static int PORT = 3000;
-    private static String  operando1 = "";
-    private static String  operacion = "";
-    private static String  operando2 = "";
     private static String condicion = "S";
     private static Boolean condicionFinal=false;
+    private static String nombreCliente="";
     
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("NOMBRE CLIENTE");
+        nombreCliente = sc.nextLine();
         do {
             try {
-                Scanner sc = new Scanner(System.in);
-                System.out.println("DIME OPERANDO1");
-                operando1 = sc.nextLine();
-                System.out.println("DIME OPERACION");
-                operacion = sc.nextLine();
-                System.out.println("DIME OPERANDO2");
-                operando2 = sc.nextLine();
+                
+                String aMandar = "";
+                
+                montarEstructura(aMandar,nombreCliente);
+
                 //1
                 InetAddress ipServidor = InetAddress.getByName(HOST);
                 DatagramSocket socketCliente = new DatagramSocket();
-                String aMandar = operando1 + "," + operacion + "," + operando2;
-                //OPERANDO1
+                
+                //MENSAJE
                 byte[] bufferEscritura = new byte[MAXBYTES];
                 bufferEscritura = aMandar.getBytes();
                 DatagramPacket pE = new DatagramPacket(bufferEscritura, bufferEscritura.length,ipServidor,PORT);
                 socketCliente.send(pE);
-                System.out.println("operacion ENVIADO A SERVIDOR");
+                System.out.println("MENSAJE ENVIADO A SERVIDOR");
     
     
                 //4
@@ -46,7 +45,7 @@ public class ClienteChat {
                 LocalTime ahora = LocalTime.now();
                 System.out.println(ahora+"||"+"res: "+lineaRecibida);
                 System.out.println("///////////////////////////////////////////");
-                System.out.println("QUIERES HACER MAS CUENTAS? S o N");
+                System.out.println("MAS MENSAJES? S o N");
                 condicion = sc.nextLine();
                 switch (condicion) {
                     case "S":break;
@@ -61,6 +60,15 @@ public class ClienteChat {
             
         
         
+    }
+
+
+    private static String montarEstructura(String aMandar, String nombreCliente) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("DIME MENSAJE A MANDAR");
+        aMandar = sc.nextLine();
+        String saludo = "@"+aMandar+"#"+nombreCliente+"@";
+        return saludo;
     }
 
 
