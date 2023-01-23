@@ -1,8 +1,6 @@
 import java.io.IOException;
 import java.net.*;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class ClienteChat {
@@ -12,30 +10,27 @@ public class ClienteChat {
     private static String condicion = "S";
     private static Boolean condicionFinal=false;
     private static String nombreCliente="";
-    
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("NOMBRE CLIENTE");
-        nombreCliente = sc.nextLine();
         do {
             try {
-                
+                //ESTRUCTURA MENSAJEFINAL
                 String aMandar = "";
-                
-                montarEstructura(aMandar,nombreCliente);
+                System.out.println("ESCRIBE TU MENSAJE");
+                aMandar = sc.nextLine();
+                String mensajeFinal = montarEstructura(aMandar,nombreCliente);
 
                 //1
                 InetAddress ipServidor = InetAddress.getByName(HOST);
                 DatagramSocket socketCliente = new DatagramSocket();
                 
-                //MENSAJE
                 byte[] bufferEscritura = new byte[MAXBYTES];
-                bufferEscritura = aMandar.getBytes();
+                bufferEscritura = mensajeFinal.getBytes();
                 DatagramPacket pE = new DatagramPacket(bufferEscritura, bufferEscritura.length,ipServidor,PORT);
                 socketCliente.send(pE);
-                System.out.println("MENSAJE ENVIADO A SERVIDOR");
-    
+                System.out.println(mensajeFinal);
+                System.out.println("MENSAJE  ENVIADO A SERVIDOR");
     
                 //4
                 byte[] bufferLectura = new byte[MAXBYTES];
@@ -44,30 +39,33 @@ public class ClienteChat {
                 String lineaRecibida = new String (pR.getData(), 0, pR.getLength(),"UTF-8");
                 LocalTime ahora = LocalTime.now();
                 System.out.println(ahora+"||"+"res: "+lineaRecibida);
-                System.out.println("///////////////////////////////////////////");
-                System.out.println("MAS MENSAJES? S o N");
-                condicion = sc.nextLine();
-                switch (condicion) {
-                    case "S":break;
-                    case "N": condicionFinal=true; break;
-                    default:condicionFinal=true;break;
+
+                if (comprobarMensaje(lineaRecibida, condicion)==true) {
+                    condicionFinal=true;
                 }
+                
+                System.out.println("///////////////////////////////////////////");
+
+                
     
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         } while (condicionFinal==false);
-            
-        
         
     }
 
+    private static boolean comprobarMensaje(String lineaRecibida, String condicion) {
+            if (lineaRecibida.equals("@hola#.@") || (lineaRecibida.equalsIgnoreCase("@hola# @"))) {
+                return true;
+            } else {
+                return false;
+            }
+    }
 
     private static String montarEstructura(String aMandar, String nombreCliente) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("DIME MENSAJE A MANDAR");
-        aMandar = sc.nextLine();
-        String saludo = "@"+aMandar+"#"+nombreCliente+"@";
+        nombreCliente = "hola";
+        String saludo = "@"+nombreCliente+"#"+aMandar+"@";
         return saludo;
     }
 
