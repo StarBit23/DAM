@@ -16,7 +16,7 @@ import com.iesvdc.gestion.modelo.repositorio.RepoUsuario;
 
 @RestController
 @RequestMapping("/admin")
-public class Serviceusuario {
+public class ServiceUsuario {
     @Autowired
     RepoUsuario repoUsuario;
 
