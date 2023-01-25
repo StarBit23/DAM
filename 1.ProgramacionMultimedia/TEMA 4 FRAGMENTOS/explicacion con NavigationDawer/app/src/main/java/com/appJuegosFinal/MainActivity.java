@@ -8,10 +8,12 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
+import com.appJuegosFinal.modelos.Juego;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -22,10 +24,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.pmdm.virgen.pueblosconnavigationdraweb.R;
 import com.pmdm.virgen.pueblosconnavigationdraweb.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+import io.realm.Realm;
+import io.realm.RealmResults;
 
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    private RealmResults<Juego> listaJuego;
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private Fragment f = null;
+    Realm realm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,5 +109,10 @@ public class MainActivity extends AppCompatActivity {
         editor.clear();
         editor.commit();
         finish();
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return false;
     }
 }

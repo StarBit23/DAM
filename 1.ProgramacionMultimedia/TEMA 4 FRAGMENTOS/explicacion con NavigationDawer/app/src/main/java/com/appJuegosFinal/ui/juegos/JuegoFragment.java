@@ -27,8 +27,7 @@ import com.appJuegosFinal.varios.Contador;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.realm.RealmResults;
-import io.realm.gradle.Realm;
+import io.realm.*;
 
 
 public class JuegoFragment extends Fragment implements OnJuegoInteractionListener, OnJuegoInteractionDialogListener {
@@ -36,8 +35,9 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
     private Context contexto;
     private FloatingActionButton bFlotanteInsertar;
     private Realm realm;
+
     private RealmResults<Juego> listaJuegos;
-    private final RealmResults<Juego> mValues;
+    //private final RealmResults<Juego> mValues;
 
 
   //  private OnJuegoInteractionListener listener;
@@ -78,23 +78,24 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
 
 
     public void crearObjetosDinamicos(){
+        listaJuegos = realm.where(Juego.class).findAll();
         //listaJuegos = new ArrayList<>();
 
         //listaJuegosBBDD = realm.where(Juego.class).findAll();
 
-        listaJuegos.add(new Juego(0,null, "Super Mario Bros","Plataforma: NES", "40,24 millones"));
-        listaJuegos.add(new Juego(1,null, "Super Mario 64", "Plataforma: Nintendo 64", "11,91 millones"));
-        listaJuegos.add(new Juego(2,null, "Super Mario Sunshine", "Plataforma: Gamecube", "6,28 millones"));
-        listaJuegos.add(new Juego(3,null, "Super Mario Galaxy","Plataforma: Wii", "12,79 millones"));
-        listaJuegos.add(new Juego(4,null, "Super Mario Galaxy 2","Plataforma: Wii", "12,79 millones"));
-        listaJuegos.add(new Juego(5,null, "Mario Party 8","Plataforma: Wii", "8,85 millones"));
-        listaJuegos.add(new Juego(6,null, "Super Mario 3D Land","Plataforma: Nintendo 3DS", "12,50 millones"));
-        listaJuegos.add(new Juego(7,null, "Super Mario Maker","Plataforma: Wii U", "4 millones"));
-        listaJuegos.add(new Juego(8,null, "New Super Mario Bros U","Plataforma: Wii U", "5,80 millones"));
-        listaJuegos.add(new Juego(9,null, "Mario Kart 8 Deluxe","Plataforma: Switch", "49 millones"));
-
-        for (int i=0; i<10; i++ )
-            Contador.increId();
+//        listaJuegos.add(new Juego(0,null, "Super Mario Bros","Plataforma: NES", "40,24 millones"));
+//        listaJuegos.add(new Juego(1,null, "Super Mario 64", "Plataforma: Nintendo 64", "11,91 millones"));
+//        listaJuegos.add(new Juego(2,null, "Super Mario Sunshine", "Plataforma: Gamecube", "6,28 millones"));
+//        listaJuegos.add(new Juego(3,null, "Super Mario Galaxy","Plataforma: Wii", "12,79 millones"));
+//        listaJuegos.add(new Juego(4,null, "Super Mario Galaxy 2","Plataforma: Wii", "12,79 millones"));
+//        listaJuegos.add(new Juego(5,null, "Mario Party 8","Plataforma: Wii", "8,85 millones"));
+//        listaJuegos.add(new Juego(6,null, "Super Mario 3D Land","Plataforma: Nintendo 3DS", "12,50 millones"));
+//        listaJuegos.add(new Juego(7,null, "Super Mario Maker","Plataforma: Wii U", "4 millones"));
+//        listaJuegos.add(new Juego(8,null, "New Super Mario Bros U","Plataforma: Wii U", "5,80 millones"));
+//        listaJuegos.add(new Juego(9,null, "Mario Kart 8 Deluxe","Plataforma: Switch", "49 millones"));
+//
+//        for (int i=0; i<10; i++ )
+//            Contador.increId();
     }
 
 
@@ -186,32 +187,55 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
 
     }
 
+    //realm = Realm.getDefaultInstance();
     @Override
     public void insertarJuego(String nombre, String descripcion, String nVentas) {
-        Contador.increId();
-        listaJuegos.add(new Juego( Contador.dameId(),null,nombre, descripcion, nVentas));
+        realm.executeTransactionAsync(new Realm.Transaction() {
+            @Override
+            public void execute(Realm realm) {
+                Juego juego = new Juego(0, null, nombre, descripcion, nVentas);
+                realm.copyToRealm(juego);
+            }
+        }, new Realm.Transaction.OnSuccess() {
+            @Override
+            public void onSuccess() {
+                realm.close();
+            }
+        }, new Realm.Transaction.OnError() {
+            @Override
+            public void onError(Throwable error) {
+                realm.close();
+            }
+        });
+
+        //listaJuegos.add(new Juego( Contador.dameId(),null,nombre, descripcion, nVentas));
     }
 
     @Override
     public void editarJuego(long id, String nombre, String descripcion, String nVentas) {
-        int i=0;
-        Juego aux=null;
-        int tam = listaJuegos.size();
-        while (aux==null && i<tam){
-            if (listaJuegos.get(i).getId()==id)
-                aux = listaJuegos.get(i);
-            i++;
-        }
-        if (aux!=null){
-            aux.setNombre(nombre);
-            aux.setDescripcion(descripcion);
-            aux.setNumVentas(nVentas);
-            aux.setUrlFoto(null);  //ya modificaremos esto cuando toque.
-            Toast.makeText (contexto, "Se ha actualizado correctamente", Toast.LENGTH_SHORT).show();
-            //debo notificar el cambio desde el fragmento.
-            actualizaAdaptador();
-        }else
-            Toast.makeText (contexto, "Se ha producido algun error", Toast.LENGTH_SHORT).show();
+        realm.executeTransactionAsync(new Realm.Transaction() {
+            @Override
+            public void execute(Realm realm) {
+                Juego juego = new Juego();
+                juego.setId(id);
+                juego.setNombre(nombre);
+                juego.setDescripcion(descripcion);
+                juego.setNumVentas(nVentas);
+                juego.setUrlFoto(null);
+                realm.copyToRealmOrUpdate(juego);
+            }
+        }, new Realm.Transaction.OnSuccess() {
+            @Override
+            public void onSuccess() {
+                realm.close();
+            }
+        }, new Realm.Transaction.OnError() {
+            @Override
+            public void onError(Throwable error) {
+                realm.close();
+            }
+        });
+//
 
 
 

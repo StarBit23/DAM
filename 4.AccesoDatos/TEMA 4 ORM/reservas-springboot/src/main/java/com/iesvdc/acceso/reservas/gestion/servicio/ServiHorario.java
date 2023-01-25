@@ -44,6 +44,5 @@ public class ServiHorario {
     public Horario create(@RequestBody Horario horario){
         return repoHorario.save(horario);
     }
-
     
 }

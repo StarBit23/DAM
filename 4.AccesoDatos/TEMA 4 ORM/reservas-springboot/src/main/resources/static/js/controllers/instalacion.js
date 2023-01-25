@@ -12,7 +12,7 @@ async function getInstalacion () {
     }
 }
 
-async function renderSelectInstalacion() {
+async function renderSelectInstalacion(select) {
     let instalaciones = await getInstalacion();
     let html = "";
     try {
@@ -23,7 +23,7 @@ async function renderSelectInstalacion() {
     } catch {
         html = "<option>ERROR</option>";
     }   
-    let container = document.querySelector('#instalacion-delete-select');
+    let container = document.querySelector(select);
     container.innerHTML = html;
 }
 
@@ -34,8 +34,8 @@ async function deleteInstalacion(id) {
             () => renderInstalacion()
         );
     } catch {
-        let container = document.querySelector('#instalacion');
-        container.innerHTML = "<h2>Error al aliminar la instalación.</h2>";
+        let container = document.querySelector('#panel_error');
+        container.innerHTML = "<h2>Error al eliminar la instalación.</h2>";
     }
 }
 
@@ -51,7 +51,7 @@ async function createInstalacion() {
     } 
 } 
 
-async function renderInstalacion() {
+async function renderInstalacion(listado) {
     let instalaciones = await getInstalacion();
 
     let html = "";
@@ -78,7 +78,7 @@ async function renderInstalacion() {
         html = " <b>Error conectando al backend</b>";
     }
 
-    let container = document.querySelector('#instalacion');
+    let container = document.querySelector(listado);
     container.innerHTML = html;
 }
 

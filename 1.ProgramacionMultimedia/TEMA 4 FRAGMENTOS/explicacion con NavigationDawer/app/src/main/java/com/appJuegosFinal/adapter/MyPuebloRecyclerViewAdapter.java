@@ -15,14 +15,38 @@ import com.appJuegosFinal.modelos.Juego;
 
 import java.util.List;
 
+import io.realm.RealmChangeListener;
+import io.realm.RealmObject;
+import io.realm.RealmResults;
+
 public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRecyclerViewAdapter.ViewPueblo> {
 
-    private final List<Juego> mValues;
+    private final RealmResults<Juego> mValues;
     private OnJuegoInteractionListener listenerPueblo;
 
-    public MyPuebloRecyclerViewAdapter(List<Juego> items, OnJuegoInteractionListener listener) {
+    public MyPuebloRecyclerViewAdapter(RealmResults<Juego> items, OnJuegoInteractionListener listener) {
         mValues = items;
         listenerPueblo = listener;
+
+        this.listenerCambioDatos = new RealmChangeListener(){
+            @Override
+            public void onChange(Object o){
+                notifyDataSetChanged();
+            }
+        };
+
+        if (items != null){
+            addListenerCambioDatos(items);
+        }
+    }
+
+    private void addListenerCambioDatos(RealmResults<Juego> items) {
+        if (items instanceof RealmResults){
+            RealmResults realmResults = (RealmResults) items;
+            realmResults.addChangeListener(listenerCambioDatos);
+        }else {
+            throw new IllegalArgumentException("No es objeto RealmResults, tonto");
+        }
     }
 
     @Override

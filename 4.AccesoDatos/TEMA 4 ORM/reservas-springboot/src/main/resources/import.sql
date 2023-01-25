@@ -4,8 +4,8 @@ INSERT INTO usuario (id, username, password, email, activo) VALUES(5,	'admin',	'
 INSERT INTO usuario (id, username, password, email, activo) VALUES(7,	'obijuan',	'starwars',	'darkside@starwars.com', 1);
 INSERT INTO usuario (id, username, password, email, activo) VALUES(13,	'gerente',	'password1234',	'gerencia@vdc.com', 1);
 
-INSERT INTO usuario_rol (authority, user_username) VALUES ('ADMIN', 'obijuan');
-INSERT INTO usuario_rol (authority, user_username) VALUES ('USER', 'obijuan');
+# INSERT INTO usuario_rol (authority, user_username) VALUES ('ADMIN', 'obijuan');
+# INSERT INTO usuario_rol (authority, user_username) VALUES ('USER', 'obijuan');
 
 INSERT INTO instalacion (id, nombre) VALUES (7,	'tenis arriba');
 INSERT INTO instalacion (id, nombre) VALUES (8,	'tenis césped artificial');

@@ -2,8 +2,14 @@ package com.iesvdc.acceso.reservas.gestion.servicio;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.ResourceAccessException;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.iesvdc.acceso.reservas.gestion.modelo.Reserva;
 import com.iesvdc.acceso.reservas.gestion.repositorio.RepoHorario;
@@ -13,20 +19,10 @@ import com.iesvdc.acceso.reservas.gestion.repositorio.RepoUsuario;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*", methods= {
-        RequestMethod.GET,
-        RequestMethod.POST,
-        RequestMethod.PUT,
-        RequestMethod.DELETE,
-        RequestMethod.OPTIONS})
 @RequestMapping("admin")
 public class ServiReserva {
     @Autowired
     RepoReserva repoReserva;
-    @Autowired
-    RepoHorario repoHorario;
-    @Autowired
-    RepoUsuario repoUsuario;
 
     @GetMapping("reserva")
     List<Reserva> findAllReservas() {
@@ -35,10 +31,11 @@ public class ServiReserva {
 
     @GetMapping("reserva/{id}")
     Reserva findOne(@PathVariable(value = "id") Integer reserva){
-        return repoReserva.findById(reserva).orElseThrow(() -> new ResourceAccessException("No encontrado"));
+        Reserva r = repoReserva.findById(reserva).get();
+        return r;
     }
 
-    @PostMapping("reserva/{id}")
+    @PostMapping("reserva")
     Reserva save(@RequestBody Reserva reserva){
         return repoReserva.save(reserva);
     }

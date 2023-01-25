@@ -1,7 +1,7 @@
 package com.appJuegosFinal.modelos;
 
 
-import com.appJuegosFinal.MiApp;
+import com.appJuegosFinal.aplicacion.MiApp;
 
 import io.realm.RealmObject;
 

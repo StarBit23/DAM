@@ -18,7 +18,7 @@ public class Usuario {
     private Integer id;
     @Column(unique = true, length = 32, nullable = false)
     private String username; // longitud <= 32
-    @Column(length = 64, nullable = false)
+    @Column(length = 72, nullable = false)
     private String password; // longitud <= 64
     @Column(length = 64, nullable = false)
     private String email; // longitud <= 64

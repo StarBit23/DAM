@@ -1,6 +1,4 @@
-package com.appJuegosFinal;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+package com.appJuegosFinal.aplicacion;
 
 import android.app.Application;
 import android.content.Context;
