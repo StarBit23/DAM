@@ -22,6 +22,7 @@
 
   <script src="js/controllers/instalacion.js"></script>
   <script src="js/controllers/usuario.js"></script>
+  <script src="js/controllers/reserva.js"></script>
   <script src="js/controllers/controller.js"></script>
   <script src="js/index.js"></script>
 
@@ -99,33 +100,33 @@
             Sistema integral de gestión de reservas.
             Panel de administración.
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" id="ayuda_home" class="btn btn-primary">Ayuda</a>
         </div>
       </div>
     </div>
 
     <div id="panel_instalacion_listado" class="panel container">
       <h2>Listado de instalaciones</h2>
-    <div id="listado_instalaciones"></div>
+      <div id="listado_instalaciones"></div>
     </div>
 
     <div id="panel_instalacion_baja" class="panel container">
       <h2>Dar de baja una instalación</h2>
       <form class="row g-3">
         <div class="col-auto">
-          <label for="instalacion-delete-select">
+          <label for="select_instalacion_baja">
             Por favor marque la instalación a eliminar:
           </label>
         </div>
         <div class="col-auto">
-          <select class="form-select form-control" id="instalacion-delete-select">
+          <select class="form-select form-control" id="select_instalacion_baja">
             <option>Ejemplo</option>
             <option>Ejemplo</option>
             <option>Ejemplo</option>
           </select>
         </div>
         <div class="col-auto">
-          <div id="instalacion-delete-btn" class="btn btn-primary form-control">
+          <div id="btn_instalacion_baja" class="btn btn-primary form-control">
             Eliminar</div>
         </div>
       </form>
@@ -133,48 +134,139 @@
     </div>
 
     <div class="panel" id="panel_instalacion_actualiza">
-      <h2>Actualizar una instalacion</h2>
+      <h2>Actualizar una instalación</h2>
       <div>
-        <select class="" id="select_instalacion_actualiza">
-          <option value="">esto se borra</option>
+        <select class="form-select" id="select_instalacion_actualiza">
+          <option>Esto se borra</option>
         </select>
       </div>
-    </div>
-    <form class="row g-3">
-      <input type="number" id="input_instalacion_actualiza" disabled>
-      <input type="text" id="input_instalacion_actualiza" placeholder="Nuevo nombre">
-      <div class="btn btn-primary col-auto">Actualizar</div>
-    </form>
-
-    <div class="panel" id="panel_instalacion_actualiza">
-      <h2>Actualizar una instalación</h2>
+      <div>
+        <form class="row g-3">
+          <div class="col-auto">
+            <input type="number" id="id_instalacion_actualiza" disabled />
+          </div>
+          <div class="col-auto">
+            <input class="col-auto" type="text" id="input_instalacion_actualiza" placeholder="Nuevo nombre" />
+          </div>
+          <div class="col-auto">
+            <div id="btn_instalacion_actualiza" class="btn btn-primary col-auto">Actualizar!</div>
+          </div>
+        </form>
+      </div>
     </div>
 
     <div class="panel" id="panel_instalacion_alta">
       <h2>Alta de instalaciones:</h2>
       <form>
         <div class="form-group">
-          <label for="input_instalacion_nombre">Pon una instalacion</label>
-          <input type="text" class="form-control" id="input_instalacion_nombre" aria-describedby="emailHelp" placeholder="Nombre instalacion">
+          <label for="input_instalacion_nombre">Nombre de la instalación</label>
+          <input type="text" class="form-control" id="input_instalacion_nombre" aria-describedby="nombreAyuda"
+            placeholder="Instalación">
+          <small id="nombreAyuda" class="form-text text-muted">Nombre de la instalación. Debe ser
+            representativo.</small>
         </div>
-        <button id="btn_instalacion_alta" type="submit" class="btn btn-primary">Alta</button>
+        <div id="btn_instalacion_alta" class="btn btn-primary">Alta</div>
       </form>
     </div>
 
 
-
-
     <div id="panel_usuario_listado" class="panel container">
       <h2>Listado de usuarios</h2>
+      <div id="listado_usuarios"></div>
+
     </div>
     <div id="panel_usuario_baja" class="panel container">
       <h2>Baja de usuarios</h2>
+      <form class="row g-3">
+        <div class="col-auto">
+          <label for="select_usuario_baja">
+            Por favor marque el usuario a eliminar:
+          </label>
+        </div>
+        <div class="col-auto">
+          <select class="form-select form-control" id="select_usuario_baja">
+            <option>Ejemplo</option>
+            <option>Ejemplo</option>
+            <option>Ejemplo</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div id="btn_usuario_baja" class="btn btn-primary form-control">
+            Eliminar</div>
+        </div>
+      </form>
     </div>
+
     <div id="panel_usuario_actualiza" class="panel container">
       <h2>Actualización de usuarios</h2>
+      <div>
+        <select class="form-select" id="select_usuario_actualiza">
+          <option>Esto se borra</option>
+        </select>
+      </div>
+      <div>
+        <form class="row g-3">
+          <div class="col-auto">
+            <input type="number" id="id_usuario_actualiza" disabled />
+          </div>
+          <div class="col-auto">
+            <input class="col-auto" type="text" id="input_usuario_actualiza" placeholder="Nuevo nombre" />
+          </div>
+          <div class="col-auto">
+            <input class="col-auto" type="text" id="pass_usuario_actualiza" placeholder="Nueva contraseña" />
+          </div>
+          <div class="col-auto">
+            <input class="col-auto" type="text" id="email_usuario_actualiza" placeholder="Nuevo email" />
+          </div>
+          <div class="col-auto">
+            <select id="activo_usuario_actualiza">
+              <option value="">--Activo--</option>
+              <option value="true" aria-placeholder="activo">True</option>
+              <option value="false" aria-placeholder="activo">False</option>
+          </select>
+          </div>
+          <div class="col-auto">
+            <div id="btn_usuario_actualiza" class="btn btn-primary col-auto">Actualizar!</div>
+          </div>
+        </form>
+      </div>
     </div>
+    
+
     <div id="panel_usuario_alta" class="panel container">
       <h2>Alta de usuarios</h2>
+      <form>
+        <div class="form-group">
+          <label for="input_usuario_nombre">Nombre del usuario</label>
+          <input type="text" class="form-control" id="input_usuario_nombre" aria-describedby="nombreAyuda"
+            placeholder="Usuario">
+          <small id="nombreAyuda" class="form-text text-muted">Nombre del Usuario. Debe ser
+            representativo.</small>
+        </div>
+        <div class="form-group">
+          <label for="input_usuario_pass">Contraseña del usuario</label>
+          <input type="text" class="form-control" id="input_usuario_pass" aria-describedby="passAyuda"
+            placeholder="Password">
+          <small id="passAyuda" class="form-text text-muted">Contraseña del Usuario. Debe ser
+            segura.</small>
+        </div>
+        <div class="form-group">
+          <label for="input_usuario_email">Email del usuario</label>
+          <input type="text" class="form-control" id="input_usuario_email" aria-describedby="emailAyuda"
+            placeholder="Email">
+          <small id="emailAyuda" class="form-text text-muted">Email del Usuario.</small>
+        </div>
+        <div class="form-group">
+          <label for="input_usuario_activo">Activo?</label>
+            <select id="input_usuario_activo">
+              <option value="">--Elige una opción--</option>
+              <option value="true" aria-placeholder="activo">True</option>
+              <option value="false" aria-placeholder="activo">False</option>
+          </select>
+          <small id="activoAyuda" class="form-text text-muted">Estado del usuario</small>
+        </div>
+        <div id="btn_usuario_alta" class="btn btn-primary">Alta</div>
+      </form>
     </div>
 
     <div id="panel_horario_listado" class="panel container">
@@ -193,6 +285,9 @@
 
     <div id="panel_reserva_listado" class="panel container">
       <h2>Listado de reservas</h2>
+      <div id="listado_reserva">
+
+      </div>
     </div>
     <div id="panel_reserva_baja" class="panel container">
       <h2>Baja de reservas</h2>
@@ -202,13 +297,52 @@
     </div>
     <div id="panel_reserva_alta" class="panel container">
       <h2>Alta de reservas</h2>
+      <div>
+        <select id="usuario_reserva_alta" class="form-select">
+          <option>usuarios</option>
+        </select>
+        <select id="horario_reserva_alta" class="form-select">
+          <option>horarios</option>
+        </select>
+        <input id="fecha_reserva_alta" type="date" />
+        <div id="btn_reserva_alta" class="btn btn-primary">Alta</div>
+      </div>
     </div>
 
-  <div id="panel_error" class="panel">
-    <h2>Error</h2>
-  </div>
+    <div id="panel_error" class="panel">
+      <h2>Error</h2>
+    </div>
+
+
+    <!-- Modal Confirmar -->
+    <div class="modal hide" id="confirmar" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" id="confirmarTitulo">Título del mensaje</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div id="confirmarText" class="modal-body">
+            Texto del mensaje
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button id="confirmarBoton" type="button" class="btn btn-danger" data-dismiss="confirmar">Aceptar</button>
+            <button id="confirmarCancelarBoton" type="button" class="btn btn-primary"
+              data-dismiss="confirmar">Cancelar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   </div>
+
 </body>
 
 </html>

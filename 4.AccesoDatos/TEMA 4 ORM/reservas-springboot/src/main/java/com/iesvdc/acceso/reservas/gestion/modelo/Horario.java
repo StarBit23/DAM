@@ -23,7 +23,7 @@ public class Horario {
     private Integer id;
 
     @ManyToOne
-    @JsonManagedReference
+    //@JsonManagedReference
     private Instalacion instalacion;
 
     @Column(nullable = false)

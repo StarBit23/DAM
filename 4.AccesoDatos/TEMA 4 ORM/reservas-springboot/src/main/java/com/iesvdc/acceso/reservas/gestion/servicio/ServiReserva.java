@@ -35,7 +35,7 @@ public class ServiReserva {
         return r;
     }
 
-    @PostMapping("reserva")
+    @PostMapping(value="reserva",consumes = {"application/json"}) 
     Reserva save(@RequestBody Reserva reserva){
         return repoReserva.save(reserva);
     }

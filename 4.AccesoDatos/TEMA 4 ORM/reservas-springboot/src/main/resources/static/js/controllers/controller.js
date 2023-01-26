@@ -217,7 +217,11 @@ $.controller.doDelete = function(target, id, fn_exito) {
         },
         success: fn_exito,
         error: function (xhr, status) {
-            $.controller.errorManager(xhr.status);                
+            if (xhr.status == 200) {
+                fn_exito();
+            } else {
+                $.controller.errorManager(xhr.status);                
+            }
         }
     });
 };

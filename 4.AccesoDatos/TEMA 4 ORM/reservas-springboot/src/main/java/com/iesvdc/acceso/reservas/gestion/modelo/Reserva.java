@@ -26,7 +26,7 @@ public class Reserva {
     Integer id;
 
     @ManyToOne
-    @JsonManagedReference
+    //@JsonManagedReference
     Usuario usuario;
 
     @ManyToOne
