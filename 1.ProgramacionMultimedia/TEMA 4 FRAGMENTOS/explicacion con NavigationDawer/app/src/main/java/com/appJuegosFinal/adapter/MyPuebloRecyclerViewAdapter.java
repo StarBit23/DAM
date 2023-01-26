@@ -23,6 +23,7 @@ public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRe
 
     private final RealmResults<Juego> mValues;
     private OnJuegoInteractionListener listenerPueblo;
+    private RealmChangeListener listenerCambioDatos;
 
     public MyPuebloRecyclerViewAdapter(RealmResults<Juego> items, OnJuegoInteractionListener listener) {
         mValues = items;
@@ -45,7 +46,7 @@ public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRe
             RealmResults realmResults = (RealmResults) items;
             realmResults.addChangeListener(listenerCambioDatos);
         }else {
-            throw new IllegalArgumentException("No es objeto RealmResults, tonto");
+            throw new IllegalArgumentException("No es un objeto RealmResults, tonto");
         }
     }
 

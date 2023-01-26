@@ -243,22 +243,28 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
 
     @Override
     public void eliminarJuego(long id) {
-        int i=0;
-        boolean encontrado = false;
-        int tam = listaJuegos.size();
-        while (!encontrado && i<tam){
-            if (listaJuegos.get(i).getId()==id) {
-                listaJuegos.remove(i);
-                encontrado = true;
+        realm.executeTransactionAsync(new Realm.Transaction() {
+            @Override
+            public void execute(Realm realm) {
+                Juego juegoBorrar = realm
+                        .where(Juego.class)
+                        .equalTo(Juego.ARGUMENTO_ID, id)
+                        .findFirst();
+                if (juegoBorrar!=null){
+                    juegoBorrar.deleteFromRealm();
+                }
             }
-            i++;
-        }
-        if (encontrado){
-            Toast.makeText (contexto, "Se ha eliminado correctamente", Toast.LENGTH_SHORT).show();
-            //debo notificar el cambio desde el fragmento.
-            actualizaAdaptador();
-        }else
-            Toast.makeText (contexto, "Se ha producido algun error", Toast.LENGTH_SHORT).show();
+        }, new Realm.Transaction.OnSuccess() {
+            @Override
+            public void onSuccess() {
+                realm.close();
+            }
+        }, new Realm.Transaction.OnError() {
+            @Override
+            public void onError(Throwable error) {
+                realm.close();
+            }
+        });
 
     }
 }
