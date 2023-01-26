@@ -10,6 +10,22 @@ async function getusuario () {
     }
 }
 
+async function actualizarSelectUsuario(select) {
+    let usuarios = await getusuario();
+    let html = "";
+    try {
+        usuarios.forEach( usuario => {
+            let usuarioTexto = JSON.stringify(usuario)
+            html += `<option value= ${usuarioTexto} > ${usuario.username} </option>`;
+        });
+        
+    } catch {
+        html = "<option>ERROR</option>";
+    }   
+    let container = document.querySelector(select);
+    container.innerHTML = html;
+}
+
 async function renderSelectUsuario(select) {
     let usuarios = await getusuario();
     let html = "";

@@ -147,24 +147,16 @@ function cargaInicial() {
         });
 
         $('#menu_usuario_actualiza').click(()=>{
-            renderSelectUsuario('#select_usuario_actualiza');
+            actualizarSelectUsuario('#select_usuario_actualiza');
         });
 
         $('#select_usuario_actualiza').on('change', ()=>{
-            $('#id_usuario_actualiza').val(
-                $('#select_usuario_actualiza').val() );
-                
-            $('#input_usuario_actualiza').val(
-                $('#select_usuario_actualiza option:selected').text() );
-                
-            $('#pass_usuario_actualiza').val(
-                $('#select_usuario_actualiza option:selected').text() );
-
-            $('#email_usuario_actualiza').val(
-                $('#select_usuario_actualiza option:selected').text() );  
-
-            $('#activo_usuario_actualiza').val(
-                $('#select_usuario_actualiza option:selected').text() );  
+            let usuario = JSON.parse($('#select_usuario_actualiza').val());
+            $('#id_usuario_actualiza').val($(usuario.id).val() );
+            $('#input_usuario_actualiza').val($(usuario.username));
+            $('#pass_usuario_actualiza').val($(usuario.password));
+            $('#email_usuario_actualiza').val($(usuario.email));  
+            $('#activo_usuario_actualiza').val($(usuario.activo));
             });
 
         $('#btn_usuario_actualiza').click(()=>{
