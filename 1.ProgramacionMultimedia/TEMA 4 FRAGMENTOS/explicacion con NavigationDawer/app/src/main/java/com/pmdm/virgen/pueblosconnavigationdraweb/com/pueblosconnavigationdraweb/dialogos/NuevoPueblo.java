@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.ui.juegos.JuegoFragment;
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
+import com.pueblosconnavigationdraweb.R;
 
 
 public class NuevoPueblo extends AppCompatDialogFragment {

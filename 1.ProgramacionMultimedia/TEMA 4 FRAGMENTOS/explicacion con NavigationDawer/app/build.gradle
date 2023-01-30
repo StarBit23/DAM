@@ -8,6 +8,10 @@ apply plugin: "realm-android"
 android {
     compileSdk 32
 
+    dataBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.appJuegosFinal"
         minSdk 27
@@ -31,7 +35,8 @@ android {
     buildFeatures {
         viewBinding true
     }
-    }
+    namespace 'com.pueblosconnavigationdraweb'
+}
 
 
 dependencies {

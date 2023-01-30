@@ -16,8 +16,8 @@ import androidx.fragment.app.Fragment;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.modelos.Juego;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.ui.juegos.JuegoFragment;
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
+import com.pueblosconnavigationdraweb.R;
 
 
 /**

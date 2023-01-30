@@ -1,7 +1,0 @@
-{
-    "products" : [
-        { "id": 1, "name": "PC Sobremesa i9", "pvp": 700.0},
-        { "id": 2, "name": "Teclado Logitec", "pvp": 12.0},
-        { "id": 3, "name": "Impresora 3d", "pvp": 380.5}
-    ]
-}

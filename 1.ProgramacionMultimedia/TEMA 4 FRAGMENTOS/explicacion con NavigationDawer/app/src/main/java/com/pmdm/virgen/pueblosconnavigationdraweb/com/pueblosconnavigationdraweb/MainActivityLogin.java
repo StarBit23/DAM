@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
+import com.pueblosconnavigationdraweb.R;
 
 public class MainActivityLogin extends AppCompatActivity {
 private Button btnLogin;

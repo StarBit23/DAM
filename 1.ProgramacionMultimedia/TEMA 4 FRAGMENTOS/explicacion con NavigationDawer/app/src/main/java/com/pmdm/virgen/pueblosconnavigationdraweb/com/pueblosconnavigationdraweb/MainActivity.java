@@ -8,11 +8,11 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.modelos.Juego;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-import com.pmdm.virgen.pueblosconnavigationdraweb.databinding.ActivityMainBinding;
+import com.pueblosconnavigationdraweb.R;
+import com.pueblosconnavigationdraweb.databinding.ActivityMainBinding;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

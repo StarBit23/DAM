@@ -2,12 +2,12 @@ package com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdrawe
 
 import android.os.Bundle;
 
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
-import com.pmdm.virgen.pueblosconnavigationdraweb.databinding.ActivityScrollingBinding;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.modelos.Juego;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.pueblosconnavigationdraweb.R;
+import com.pueblosconnavigationdraweb.databinding.ActivityScrollingBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

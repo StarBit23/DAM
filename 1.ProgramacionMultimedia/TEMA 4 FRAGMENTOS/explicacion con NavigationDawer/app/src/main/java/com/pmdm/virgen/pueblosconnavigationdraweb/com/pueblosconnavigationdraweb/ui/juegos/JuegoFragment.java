@@ -18,16 +18,17 @@ import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.DetalleJuegoActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.MainActivity;
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.adapter.MyPuebloRecyclerViewAdapter;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.dialogos.DialogoConfirmacion;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.dialogos.EditarJuegoDialogo;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.listener.OnJuegoInteractionListener;
+import com.pueblosconnavigationdraweb.R;
 
 import java.util.List;
 
-import io.realm.*;
+import io.realm.Realm;
+import io.realm.RealmResults;
 
 
 public class JuegoFragment extends Fragment implements OnJuegoInteractionListener, OnJuegoInteractionDialogListener {

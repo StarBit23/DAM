@@ -10,7 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.pmdm.virgen.pueblosconnavigationdraweb.databinding.FragmentHomeBinding;
+import com.pueblosconnavigationdraweb.databinding.FragmentHomeBinding;
+
 
 public class HomeFragment extends Fragment {
 

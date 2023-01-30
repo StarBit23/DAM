@@ -10,7 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.listener.OnJuegoInteractionListener;
 import com.pmdm.virgen.pueblosconnavigationdraweb.com.pueblosconnavigationdraweb.modelos.Juego;
-import com.pmdm.virgen.pueblosconnavigationdraweb.R;
+import com.pmdm.virgen.pueblosconnavigationdraweb.*;
+import com.pueblosconnavigationdraweb.R;
 
 
 import io.realm.RealmChangeListener;
