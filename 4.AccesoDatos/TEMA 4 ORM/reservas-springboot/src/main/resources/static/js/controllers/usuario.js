@@ -15,8 +15,7 @@ async function actualizarSelectUsuario(select) {
     let html = "";
     try {
         usuarios.forEach( usuario => {
-            let usuarioTexto = JSON.stringify(usuario)
-            html += `<option value= ${usuarioTexto} > ${usuario.username} </option>`;
+            html += `<option value= ${usuario.id} > ${usuario.username} </option>`;
         });
         
     } catch {

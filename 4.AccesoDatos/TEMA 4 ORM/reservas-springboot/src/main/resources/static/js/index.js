@@ -151,7 +151,7 @@ function cargaInicial() {
         });
 
         $('#select_usuario_actualiza').on('change', ()=>{
-            let usuario = JSON.parse($('#select_usuario_actualiza').val());
+            let usuario = ($('#select_usuario_actualiza').val());
             $('#id_usuario_actualiza').val($(usuario.id).val() );
             $('#input_usuario_actualiza').val($(usuario.username));
             $('#pass_usuario_actualiza').val($(usuario.password));
