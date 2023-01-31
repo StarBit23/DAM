@@ -20,8 +20,8 @@ const listaHoteles = [
 ]
   
     
-  const HotelView = (props) => {
-      return props.list.map();
+  const HotelView = () => {
+      return <p>{listaHoteles[1]}</p>;
   }
 
 
@@ -29,8 +29,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
-      </header>
+        <HotelView></HotelView>
+     </header>
     </div>
   );
 }
