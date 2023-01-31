@@ -11,18 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-#pequeño {
-  height: 20px;
-  width: 80px;
-}
-
-#mediano {
-  height: 40px;
-  width: 160px;
-}
-
-#grande {
-  height: 80px;
-  width: 320px;
-}
