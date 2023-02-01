@@ -36,7 +36,6 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
     private Context contexto;
     private FloatingActionButton bFlotanteInsertar;
     private Realm realm;
-
     private RealmResults<Juego> listaJuegos;
     //private final RealmResults<Juego> mValues;
 
@@ -50,12 +49,13 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
      * fragment (e.g. upon screen orientation changes).
      */
     public JuegoFragment(){
-        crearObjetosDinamicos();
+        realm = Realm.getDefaultInstance();
+        listaJuegos = realm.where(Juego.class).findAll();
 
     }
 
-    public JuegoFragment(List<Juego> lista) {
-        listaJuegos = (RealmResults<Juego>) lista;
+    public JuegoFragment(RealmResults<Juego> lista) {
+        listaJuegos = lista;
     }
 
 
@@ -78,26 +78,7 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
 
 
 
-    public void crearObjetosDinamicos(){
-        listaJuegos = realm.where(Juego.class).findAll();
-        //listaJuegos = new ArrayList<>();
 
-        //listaJuegosBBDD = realm.where(Juego.class).findAll();
-
-//        listaJuegos.add(new Juego(0,null, "Super Mario Bros","Plataforma: NES", "40,24 millones"));
-//        listaJuegos.add(new Juego(1,null, "Super Mario 64", "Plataforma: Nintendo 64", "11,91 millones"));
-//        listaJuegos.add(new Juego(2,null, "Super Mario Sunshine", "Plataforma: Gamecube", "6,28 millones"));
-//        listaJuegos.add(new Juego(3,null, "Super Mario Galaxy","Plataforma: Wii", "12,79 millones"));
-//        listaJuegos.add(new Juego(4,null, "Super Mario Galaxy 2","Plataforma: Wii", "12,79 millones"));
-//        listaJuegos.add(new Juego(5,null, "Mario Party 8","Plataforma: Wii", "8,85 millones"));
-//        listaJuegos.add(new Juego(6,null, "Super Mario 3D Land","Plataforma: Nintendo 3DS", "12,50 millones"));
-//        listaJuegos.add(new Juego(7,null, "Super Mario Maker","Plataforma: Wii U", "4 millones"));
-//        listaJuegos.add(new Juego(8,null, "New Super Mario Bros U","Plataforma: Wii U", "5,80 millones"));
-//        listaJuegos.add(new Juego(9,null, "Mario Kart 8 Deluxe","Plataforma: Switch", "49 millones"));
-//
-//        for (int i=0; i<10; i++ )
-//            Contador.increId();
-    }
 
 
     /*
@@ -141,7 +122,7 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
         // Set the adapter
   //      if (view instanceof RecyclerView) {
             Context context = view.getContext();
-            RecyclerView recyclerView = view.findViewById(R.id.lista_pueblos);
+            RecyclerView recyclerView = view.findViewById(R.id.lista_juegos);
          //   RecyclerView recyclerView = (RecyclerView) view;
             miAdaptador = new MyPuebloRecyclerViewAdapter(listaJuegos, this);
             recyclerView.setAdapter(miAdaptador);

@@ -10,6 +10,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicacionJuegosFinal"
+        android:usesCleartextTraffic="true"
+        tools:ignore="Instantiable"
         tools:targetApi="31">
 
         <activity

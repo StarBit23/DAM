@@ -9,9 +9,9 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_pueblos"
+            android:id="@+id/nav_juegos"
             android:icon="@drawable/ic_menu_camera"
-            android:title="lista Pueblos" />
+            android:title="@string/menu_juego" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
