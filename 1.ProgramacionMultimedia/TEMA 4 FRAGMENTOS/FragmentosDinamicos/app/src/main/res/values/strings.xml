@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">FragmentosDinamicos</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Soy el Principal</string>
-    <string name="fragmento_1">Primer fragmento</string>
-    <string name="fragmento_2">Segundo fragmento</string>
-</resources>

@@ -1,3 +1,0 @@
-1. Bloqueamos los hilos con un interbloqueo
-2. Mirar el pid de nuestro programa TransferenciaConBloqueo (comando jps)
-3.Mostrar los hilos en ejecución y comprobar si están bloqueados (comando jstack pidPrograma)
