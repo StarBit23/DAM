@@ -23,7 +23,4 @@ public class Usuario {
     @Column(length = 64, nullable = false)
     private String email; // longitud <= 64
     private boolean activo; // bit
-    @Column
-    private Roles rol;
-
 }

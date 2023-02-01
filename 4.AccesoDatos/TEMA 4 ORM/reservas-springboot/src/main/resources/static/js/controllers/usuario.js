@@ -15,7 +15,8 @@ async function actualizarSelectUsuario(select) {
     let html = "";
     try {
         usuarios.forEach( usuario => {
-            html += `<option value= ${usuario.id} > ${usuario.username} </option>`;
+            let usuarioTexto = JSON.stringify(usuario)
+            html += `<option value= ${usuarioTexto} > ${usuario.username} </option>`;
         });
         
     } catch {
@@ -104,4 +105,3 @@ async function renderUsuario(listado) {
     let container = document.querySelector(listado);
     container.innerHTML = html;
 }
-

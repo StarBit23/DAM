@@ -20,8 +20,15 @@ const listaHoteles = [
 ]
   
     
-  const HotelView = () => {
-      return <p>{listaHoteles[1]}</p>;
+  const HotelView = ({hotel}) => {
+      return (
+        <div>
+          <h1>Nombre: {hotel.nombre}</h1>
+          <h1>Estrellas: {hotel.estrellas}</h1>
+          <h1>Ciudad: {hotel.ciudad}</h1>
+          <h1>Precio: {hotel.precio}</h1>
+        </div>
+      );
   }
 
 
@@ -29,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HotelView></HotelView>
+        <HotelView hotel={listaHoteles[1]}></HotelView>
      </header>
     </div>
   );
