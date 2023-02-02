@@ -3,6 +3,7 @@ package com.iesvdc.acceso.reservas.gestion.servicio;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,8 @@ public class ServiUsuario {
     @Autowired
     RepoUsuario repoUsuario;
 
+    
+
     @GetMapping("usuario")
     List<Usuario> findAll(){
         return repoUsuario.findAll();
@@ -32,6 +35,9 @@ public class ServiUsuario {
 
     @PostMapping("usuario")
     Usuario create(@RequestBody Usuario u){
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String passEncrypt = u.getPassword();
+        u.setPassword(passwordEncoder.encode(passEncrypt));
         return repoUsuario.save(u);
     }
 
@@ -39,4 +45,6 @@ public class ServiUsuario {
     void delete(@PathVariable (value = "id") Integer id){
         repoUsuario.deleteById(id);
     }
+
+    
 }

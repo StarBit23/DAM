@@ -154,7 +154,7 @@ function cargaInicial() {
         $('#id_usuario_actualiza').val($(usuario2.id));
         $('#input_usuario_actualiza').val($(usuario2.username));
         $('#pass_usuario_actualiza').val($(usuario2.password));
-        $('#email_usuario_actualiza').val($(usuario2.email));  
+        $('#email_usuario_actualiza').val($(usuario2.email)); 
         $('#activo_usuario_actualiza').val($(usuario2.activo));
         });
 

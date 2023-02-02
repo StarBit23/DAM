@@ -26,6 +26,8 @@ async function actualizarSelectUsuario(select) {
     container.innerHTML = html;
 }
 
+
+
 async function renderSelectUsuario(select) {
     let usuarios = await getusuario();
     let html = "";

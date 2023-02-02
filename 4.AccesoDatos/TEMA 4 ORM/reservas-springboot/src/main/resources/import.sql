@@ -1,11 +1,10 @@
 
-INSERT INTO usuario (id, username, password, email, activo) VALUES(2,	'pepillo',	'secreto',	'pepe@gmail.com', 1);
-INSERT INTO usuario (id, username, password, email, activo) VALUES(5,	'admin',	'{bcrypt}$2a$10$EqHc4VWKIe88IlJI9KMGIOhdyNIz9uCCkLnZEKFHXGFrENNUB5rge',	'admin@correo.com', 1);
-INSERT INTO usuario (id, username, password, email, activo) VALUES(7,	'obijuan',	'starwars',	'darkside@starwars.com', 1);
-INSERT INTO usuario (id, username, password, email, activo) VALUES(13,	'gerente',	'password1234',	'gerencia@vdc.com', 1);
-
-# INSERT INTO usuario_rol (authority, user_username) VALUES ('ADMIN', 'obijuan');
-# INSERT INTO usuario_rol (authority, user_username) VALUES ('USER', 'obijuan');
+INSERT INTO usuario (id, username, password, email, activo) VALUES(2,	'pepillo',	'$2a$10$p1S9ct5f3p/8g/Eq7hbAV.qDk9d72fvsOGWn3SaPonROAGM2qTd3i',	'pepe@gmail.com', 1);
+INSERT INTO usuario (id, username, password, email, activo) VALUES(5,	'admin',	'$2a$10$EqHc4VWKIe88IlJI9KMGIOhdyNIz9uCCkLnZEKFHXGFrENNUB5rge',	'admin@correo.com', 1);
+INSERT INTO usuario (id, username, password, email, activo) VALUES(7,	'obijuan',	'$2a$10$MXtfjjOrT/MjTkyCrjTKf.pdTOQ8keGQ8u4A5juaPtbHr0KGkDsOe',	'darkside@starwars.com', 1);
+INSERT INTO usuario (id, username, password, email, activo) VALUES(13,	'gerente',	'$2a$10$/W/AuD7LHKADsBA9pVxTxe82hlxMuonOKYK3m/r.qGPzns2Oz.Y22',	'gerencia@vdc.com', 1);
+INSERT INTO usuario_rol (authority, usuario_id) VALUES ('ROLE_ADMIN', 7);
+INSERT INTO usuario_rol (authority, usuario_id) VALUES ('ROLE_USER', 13);
 
 INSERT INTO instalacion (id, nombre) VALUES (7,	'tenis arriba');
 INSERT INTO instalacion (id, nombre) VALUES (8,	'tenis césped artificial');
