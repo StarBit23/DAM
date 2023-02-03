@@ -5,7 +5,7 @@ const HotelView = ({hotel}) => {
         <h2>Estrellas: {hotel.estrellas}</h2> 
         <h2>Ciudad: {hotel.ciudad}</h2>
         <h2>Precio: {hotel.precio}€</h2>
-        <img alt="imagen hotel" style={{"width":"430px", "height":"auto"}} src={hotel.img}/>
+        <img style={{"width":"430px", "height":"auto"}} src={hotel.img}/>
       </div>
     );
 };
