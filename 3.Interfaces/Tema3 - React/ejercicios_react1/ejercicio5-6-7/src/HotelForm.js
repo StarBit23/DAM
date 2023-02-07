@@ -24,7 +24,8 @@
         estrellas: numEstrellas,
         ciudad: document.getElementById("ciudad").value,
         precio: document.getElementById("precio").value,
-        img: document.getElementById("img").value
+        img: document.getElementById("img").value,
+        comentarios: [document.getElementById("comentarioUser").value, document.getElementById("comentarioDescripcion").value]
       }
       onAddHotel(hotel);
     }
@@ -43,6 +44,10 @@
   <span>Ciudad: </span><input id='ciudad' type={"text"} placeholder="ciudad"></input><br/>
   <span>Precio: </span><input id='precio' type={"number"} min={0} placeholder="precio"></input><br/>
   <span>URL imagen: </span><input id='img' type={"text"} placeholder="url imagen"></input><br/>
+
+  <span>Escribe un comentario: </span><br/>
+  <input id='comentarioUser' type={"text"} placeholder="nombre ususario"></input><br/>
+  <textarea id='comentarioDescripcion'  placeholder="descripción"></textarea>
 
    <button onClick={addHotel} style={{textAlign: "center"}}>AÑADIR</button>
    </>

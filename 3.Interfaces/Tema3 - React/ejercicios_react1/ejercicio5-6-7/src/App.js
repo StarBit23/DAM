@@ -2,7 +2,6 @@ import './App.css';
 import { useState } from 'react';
 import HotelList from './HotelList';
 import HotelForm from './HotelForm';
-import HotelComent from './HotelComent'
 import { useEffect } from 'react';
 
 function App() {
@@ -37,35 +36,7 @@ function App() {
     setHoteles([...hoteles, hotel]);
   }
 
-//JSON COMENTARIOS
-const [coments,setComents] = useState([]);
 
-  const getComents = async () => {
-    const response = await fetch('http://localhost:3000/listaComentarios');
-    const apiComentarios = await response.json();
-    setComents(apiComentarios);
-  }
-
-  useEffect(
-    () => {
-        getComents();
-    },
-    []
-);
-
-  const postComents = async (coment) => {
-    const response = await fetch('http://localhost:3000/listaComentarios', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(coment)
-    });
-    const data = response.json()
-  }
-
-  const onAddComent = (coment) => {
-    postComents(coment);
-    setComents([...coments, coment]);
-  }
 
 //HTML
   return (
@@ -75,7 +46,6 @@ const [coments,setComents] = useState([]);
         <h1> ------------------------------------------ </h1>
         <HotelForm onAddHotel={onAddHotel}/>
         <h1> ------------------------------------------ </h1>
-        <HotelComent onAddComent={onAddComent}></HotelComent>
         
 
      </header>
