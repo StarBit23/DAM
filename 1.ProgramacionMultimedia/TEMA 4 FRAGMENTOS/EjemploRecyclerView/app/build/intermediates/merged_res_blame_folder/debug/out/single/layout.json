@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.reciclerview.app-mergeDebugResources-29:/layout/elemento_juego.xml",
+        "source": "com.example.reciclerview.app-main-32:/layout/elemento_juego.xml"
+    },
+    {
+        "merged": "com.example.reciclerview.app-mergeDebugResources-29:/layout/activity_main.xml",
+        "source": "com.example.reciclerview.app-main-32:/layout/activity_main.xml"
+    }
+]

@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Ordenador de sobremesa i9 13a gen. 16Gb Ram",
+            "pvp": 700,
+            "category": "PC Sobremesa",
+            "description": "Ordenador de sobremesa i9 13a gen. 16Gb Ram",
+            "brand": "La patata"
+        },
+        {
+            "id": 2,
+            "name": "Portátil Asus i7. 8Gb RAM",
+            "pvp": 50,
+            "category": "Portátil",
+            "description": "Portátil",
+            "brand": "Asus"
+        },
+        {
+            "id": 3,
+            "name": "Ratón Logitech",
+            "pvp": 7,
+            "category": "Accesorios",
+            "description": "Ratón",
+            "brand": "Logitech"
+        }
+    ]
+}
