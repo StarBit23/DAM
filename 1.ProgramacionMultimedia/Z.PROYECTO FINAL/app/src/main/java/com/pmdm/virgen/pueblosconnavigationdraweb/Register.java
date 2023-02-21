@@ -27,16 +27,19 @@ public class Register extends AppCompatActivity {
         btnAceptar = findViewById(R.id.boton_aceptar_regis);
         btnCancelar = findViewById(R.id.boton_cancelar_regis);
 
-        String stringUser = txtUser.getText().toString();
-        String stringPass = txtPass.getText().toString();
+
 
         btnAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (txtUser!=null){
-                    Usuario usuarioPrueba = new Usuario(stringUser, stringPass);
+                    String stringUser = txtUser.getText().toString();
+                    String stringPass = txtPass.getText().toString();
+                    //Usuario usuarioPrueba = new Usuario(stringUser, stringPass);
 
-                    Intent intentVolver = new Intent();
+                    Intent intentVolver = new Intent(Register.this,LoginUsuario.class);
+                    intentVolver.putExtra("nombre",stringUser);
+                    intentVolver.putExtra("pass",stringPass);
                     startActivity(intentVolver);
                 }
 

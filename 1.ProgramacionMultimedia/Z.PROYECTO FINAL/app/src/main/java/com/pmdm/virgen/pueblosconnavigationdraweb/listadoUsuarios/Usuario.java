@@ -1,20 +1,13 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb.listadoUsuarios;
 
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 public class Usuario extends RealmObject {
     private String username;
     private String password;
-
-    public Usuario() {
-        this.username = username;
-        this.password = password;
-    }
-
-    public Usuario(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
+    @PrimaryKey
+    private int id;
 
     public String getUsername() {
         return username;
@@ -30,5 +23,12 @@ public class Usuario extends RealmObject {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id = id;
     }
 }
