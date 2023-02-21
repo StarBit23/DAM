@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1f47d35-5fde-46b4-8deb-5042ddba7422" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/java/com/example/listaspersonalizadas/adaptadores/AdaptadorPueblos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/java/com/example/listaspersonalizadas/modelos/Pueblo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/java/com/example/listaspersonalizadas/placeholder/PlaceholderContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/res/drawable/ic_baseline_edit_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/res/drawable/ic_baseline_flutter_dash_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/res/drawable/ic_baseline_people_alt_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/res/layout/elemento_pueblo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/ListasPersonalizadas/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/PruebaFragmentList/app/src/main/java/com/example/pruebafragmentlist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/PruebaFragmentList/app/src/main/java/com/example/pruebafragmentlist/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/PruebaFragmentList/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/PruebaFragmentList/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/PruebaFragmentList/app/src/main/res/layout/fragment_elemento_pueblo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/PruebaFragmentList/app/src/main/res/layout/fragment_elemento_pueblo.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IAg42JUnVDnb2WDoy0nG67o3lQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/manana/Desktop/SEGUNDO/DAM/2.ProgramacionServiciosProcesos/2.HILOS/ejercicio3"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1f47d35-5fde-46b4-8deb-5042ddba7422" name="Changes" comment="" />
+      <created>1669629606848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669629606848</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

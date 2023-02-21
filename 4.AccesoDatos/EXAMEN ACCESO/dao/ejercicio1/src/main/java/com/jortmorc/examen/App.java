@@ -1,9 +1,9 @@
 package com.jortmorc.examen;
 
-import com.jortmorc.examen.dao.EstanciaDao;
+import com.jortmorc.examen.dao.PaloDao;
 import com.jortmorc.examen.daoimp.Conexion;
-import com.jortmorc.examen.daoimp.EstanciaDaoImp;
-import com.jortmorc.examen.modelo.Estancia;
+import com.jortmorc.examen.daoimp.PaloDaoImp;
+import com.jortmorc.examen.modelo.Palo;
 
 public class App 
 {
@@ -12,10 +12,10 @@ public class App
         Conexion con = new Conexion();
         con.destroy();
 
-        System.out.println( "Comprobamos ESTANCIAS");
-        Estancia e = new Estancia(0,"aula 1.1","Aula de alumnos enanos");
-        EstanciaDao estanciaDao = new EstanciaDaoImp();
-        estanciaDao.create(e);
-        System.out.println("El número de estancias es: " + estanciaDao.count());
+        System.out.println( "Comprobamos BARAJAS");
+        Palo p = new Palo(0, "jorgito", "jorgito@gmail.com");
+        PaloDao paloDao = new PaloDaoImp();
+        paloDao.create(p);
+        System.out.println("El número de palos es " + paloDao.count());
     }
 }

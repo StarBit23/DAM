@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+dimen text_margin
+drawable ic_baseline_delete_forever_24
+drawable ic_baseline_edit_24
+drawable ic_baseline_flutter_dash_24
+drawable ic_baseline_people_alt_24
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id cardView
+id imageViewBorrarPueblo
+id imageViewEditarPueblo
+id imageViewHabitantes
+id imageViewPueblo
+id listview_pueblos
+id textViewDescripcion
+id textViewHabitantes
+id textViewNombre
+layout activity_main
+layout elemento_pueblo
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.ListasPersonalizadas
+xml backup_rules
+xml data_extraction_rules

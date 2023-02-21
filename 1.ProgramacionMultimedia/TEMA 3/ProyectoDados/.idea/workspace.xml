@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7621593-a1f2-444e-b181-b5c62f8a1bd7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/androidTest/java/com/appJuegosFinal/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/androidTest/java/com/pueblosconnavigationdraweb/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/MainActivityLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/MainActivityLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/Migraciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/Migraciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ScrollingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/DetalleJuegoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/adapter/MyPuebloRecyclerViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/adapter/MyPuebloRecyclerViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/aplicacion/MiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/aplicacion/MiApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/dialogos/DialogoConfirmacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/dialogos/DialogoConfirmacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/dialogos/EditarJuegoDialogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/dialogos/EditarJuegoDialogo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/dialogos/NuevoPueblo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/dialogos/NuevoPueblo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/listener/OnJuegoInteractionDialogListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/listener/OnJuegoInteractionDialogListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/listener/OnJuegoInteractionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/listener/OnJuegoInteractionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/modelos/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/modelos/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ui/gallery/GalleryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/ui/gallery/GalleryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ui/gallery/GalleryViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/ui/gallery/GalleryViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ui/home/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/ui/home/HomeViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ui/juegos/JuegoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/ui/juegos/JuegoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ui/slideshow/SlideshowFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/ui/slideshow/SlideshowFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/ui/slideshow/SlideshowViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/ui/slideshow/SlideshowViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/appJuegosFinal/varios/Contador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/java/com/pueblosconnavigationdraweb/varios/Contador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout-w1240dp/content_scrolling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout-w1240dp/content_scrolling.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout-w936dp/content_scrolling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout-w936dp/content_scrolling.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/activity_main_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/activity_main_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/activity_scrolling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/activity_scrolling.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/content_scrolling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/content_scrolling.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_gallery.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_lista_elementos_de_pueblo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_lista_elementos_de_pueblo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_slideshow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/layout/fragment_slideshow.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/menu/menu_scrolling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/menu/menu_scrolling.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/test/java/com/appJuegosFinal/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TEMA 4 FRAGMENTOS/explicacion con NavigationDawer/app/src/test/java/com/pueblosconnavigationdraweb/ExampleUnitTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[d47cd1000412]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2GzbI9lQb2qlIvI3sc7qrMZ4NEc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/manana/Desktop/SEGUNDO/DAM/1.ProgramacionMultimedia/TEMA 4 FRAGMENTOS/explicacion con NavigationDawer"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\manana\Desktop\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 3\ProyectoDados\app\src\main\res\drawable-v24" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="ProyectoDados.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7621593-a1f2-444e-b181-b5c62f8a1bd7" name="Changes" comment="" />
+      <created>1667394276618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667394276618</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -43,17 +43,6 @@
             android:textColorHint="#F4EEEE" />
 
         <EditText
-            android:id="@+id/email_regis"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Email del usuario"
-            android:inputType="textEmailAddress"
-            android:textColor="#F8F8F8"
-            android:textColorHint="#FAF6F6" />
-
-        <EditText
             android:id="@+id/contraseña_regis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

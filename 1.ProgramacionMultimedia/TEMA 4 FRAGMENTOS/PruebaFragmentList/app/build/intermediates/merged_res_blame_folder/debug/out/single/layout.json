@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.pruebafragmentlist.app-mergeDebugResources-29:/layout/fragment_elemento_pueblo.xml",
+        "source": "com.example.pruebafragmentlist.app-main-32:/layout/fragment_elemento_pueblo.xml"
+    },
+    {
+        "merged": "com.example.pruebafragmentlist.app-mergeDebugResources-29:/layout/activity_main.xml",
+        "source": "com.example.pruebafragmentlist.app-main-32:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.pruebafragmentlist.app-mergeDebugResources-29:/layout/fragment_lista_elementos_de_pueblo.xml",
+        "source": "com.example.pruebafragmentlist.app-main-32:/layout/fragment_lista_elementos_de_pueblo.xml"
+    }
+]

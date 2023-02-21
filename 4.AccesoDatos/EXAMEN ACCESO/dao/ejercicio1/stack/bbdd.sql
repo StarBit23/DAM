@@ -1,14 +1,18 @@
-CREATE DATABADE incidencias1 CHARACTER SET utf8 COLLATE utf8_
+CREATE DATABADE barajas1 CHARACTER SET utf8 COLLATE utf8_
 
-USE indicendias1
-
-SET GLOBAL time_zone = '+1:00'
+USE barajas1
 
 SET names 'utf8'
 
-
-CREATE TABLE `estancia` (
+CREATE TABLE `palo` (
     `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `nombre` varchar(25) UNIQUE NOT NULL,
-    `descripcion` varchar(100) UNIQUE NOT NULL
+    `email` varchar(25) UNIQUE NOT NULL
+) ENGINE='InnoDB'
+
+CREATE TABLE `carta` (
+    `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `nombre` varchar(25) UNIQUE NOT NULL,
+    `descripcion` varchar(100) UNIQUE NOT NULL,
+    `palo` varchar(20) NOT NULL
 ) ENGINE='InnoDB'
