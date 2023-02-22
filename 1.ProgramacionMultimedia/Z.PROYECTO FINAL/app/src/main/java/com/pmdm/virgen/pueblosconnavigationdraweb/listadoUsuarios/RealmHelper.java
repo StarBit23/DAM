@@ -1,5 +1,7 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb.listadoUsuarios;
 
+import static io.realm.Realm.getApplicationContext;
+
 import android.content.Context;
 import android.widget.Toast;
 
@@ -15,7 +17,7 @@ public class RealmHelper {
     }
 
     public void addUser(Usuario user) {
-        realm.executeTransaction(realm -> realm.copyToRealm(user));
+        realm.executeTransactionAsync(realm -> realm.copyToRealm(user));
     }
 
     public Usuario getUser(String username) {

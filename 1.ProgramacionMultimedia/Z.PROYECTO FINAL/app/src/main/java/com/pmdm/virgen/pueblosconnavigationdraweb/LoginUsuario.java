@@ -20,7 +20,7 @@ public class LoginUsuario extends AppCompatActivity {
 
     private Button entrarSinReg;
     private Button botonDeRegistro;
-    private RealmHelper realmHelper;
+    RealmHelper realmHelper = new RealmHelper(this);
     private EditText usernameEditText;
     private EditText passwordEditText;
     private Button loginButton;
@@ -34,11 +34,11 @@ public class LoginUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_login_usuario);
 
         //CREO USUARIO1 (pepe, pepe)
-        Usuario usuario1 = new Usuario();
-        usuario1.setId(-1);
-        usuario1.setUsername("pepe");
-        usuario1.setPassword("pepe");
-        realmHelper.addUser(usuario1);
+//        Usuario usuario1 = new Usuario();
+//        usuario1.setId(-1);
+//        usuario1.setUsername("pepe");
+//        usuario1.setPassword("pepe");
+//        realmHelper.addUser(usuario1);
 
 
 
@@ -70,7 +70,7 @@ public class LoginUsuario extends AppCompatActivity {
                 String passUser = getIntent().getExtras().getString("pass");
 
                     Usuario usuarioNuevo = new Usuario();
-                    usuarioNuevo.setId(01);
+                    //usuarioNuevo.setId(02);
                     usuarioNuevo.setUsername(nombreUser);
                     usuarioNuevo.setPassword(passUser);
                     realmHelper.addUser(usuarioNuevo);

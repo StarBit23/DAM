@@ -1,5 +1,7 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb.listadoUsuarios;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
@@ -7,7 +9,7 @@ public class Usuario extends RealmObject {
     private String username;
     private String password;
     @PrimaryKey
-    private int id;
+    private AtomicLong id;
 
     public String getUsername() {
         return username;
@@ -25,10 +27,10 @@ public class Usuario extends RealmObject {
         this.password = password;
     }
 
-    public int getId(){
+    public AtomicLong getId(){
         return id;
     }
-    public void setId(int id){
+    public void setId(AtomicLong id){
         this.id = id;
     }
 }
