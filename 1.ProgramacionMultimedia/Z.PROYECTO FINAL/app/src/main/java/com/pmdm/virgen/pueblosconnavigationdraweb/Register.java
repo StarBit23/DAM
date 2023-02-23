@@ -1,7 +1,5 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -13,8 +11,8 @@ import android.widget.TextView;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.listadoUsuarios.RealmHelper;
 import com.pmdm.virgen.pueblosconnavigationdraweb.listadoUsuarios.Usuario;
-import com.pmdm.virgen.pueblosconnavigationdraweb.modelos.Juego;
 
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;
 
 import io.realm.Realm;
@@ -44,7 +42,7 @@ public class Register extends AppCompatActivity {
 
         inicializarRealm(getApplicationContext());
         Realm realm = Realm.getDefaultInstance();
-        IdJuego = dameUltimoId(realm, Usuario.class);
+        IdJuego = dameUltimoId(realm);
 
 
         btnAceptar.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +55,7 @@ public class Register extends AppCompatActivity {
                     Intent intentVolver = new Intent(Register.this,LoginUsuario.class);
 
                     Usuario usuarioNuevo = new Usuario();
-                    usuarioNuevo.setId(IdJuego);
+                    usuarioNuevo.setId((IdJuego.intValue())+1);
                     usuarioNuevo.setUsername(stringUser);
                     usuarioNuevo.setPassword(stringPass);
                     realmHelper.addUser(usuarioNuevo);
@@ -77,10 +75,10 @@ public class Register extends AppCompatActivity {
         });
     }
 
-    private <T extends RealmObject > AtomicLong dameUltimoId(Realm realm, Class<T> clase) {
-        RealmResults resultados = realm.where(clase).findAll();
+    private <T extends RealmObject > AtomicLong dameUltimoId(Realm realm) {
+        RealmResults resultados = realm.where((Class<T>) Usuario.class).findAll();
         if (resultados.size()>0)
-            return  new AtomicLong(resultados.max("id").intValue());
+            return  new AtomicLong(Objects.requireNonNull(resultados.max("id")).intValue());
         else
             return  new AtomicLong();
     }

@@ -16,6 +16,7 @@ public class Juego extends RealmObject {
     public static final String ARGUMENTO_DESCRIPCION = "descripcion";
     public static final String ARGUMENTO_NUM_VENTAS = "numHabitantes";
     public static final String ARGUMENTO_URL_FOTO = "urlFoto";
+    public static final String ARGUMENTO_ID_USUARIO = "idUsuario";
 
     @PrimaryKey
     private long id;
@@ -24,6 +25,8 @@ public class Juego extends RealmObject {
     private String descripcion;
     private String numVentas;
 
+    private long idUsuario;
+
 
 
 
@@ -31,12 +34,13 @@ public class Juego extends RealmObject {
 
     }
 
-    public Juego(long id, String urlFoto, String nombre, String descripcion, String numVentas) {
+    public Juego(long id, String urlFoto, String nombre, String descripcion, String numVentas, long idUsuario) {
         this.id = MiApp.IdPueblo.incrementAndGet();
         this.urlFoto = urlFoto;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.numVentas = numVentas;
+        this.idUsuario = idUsuario;
     }
 
 
@@ -80,6 +84,14 @@ public class Juego extends RealmObject {
         this.numVentas = numVentas;
     }
 
+    public long getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(long id) {
+        this.id = idUsuario;
+    }
+
     @Override
     public String toString() {
         return "Juego{" +
@@ -87,7 +99,8 @@ public class Juego extends RealmObject {
                 ", urlFoto='" + urlFoto + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
-                ", numVentas=" + numVentas +
+                ", numVentas=" + numVentas + '\'' +
+                ", idUsuario=" + idUsuario +
                 '}';
     }
 }

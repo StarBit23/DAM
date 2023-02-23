@@ -29,7 +29,6 @@ public class NuevoJuego extends AppCompatDialogFragment {
     public NuevoJuego(JuegoFragment p){
         listener = (OnPuebloInteractionDialogListener) p;
     }
-
   /*  @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
@@ -65,6 +64,7 @@ public class NuevoJuego extends AppCompatDialogFragment {
                             String descripcion = editDescripcion.getText().toString();
                             String url = "";
                             String nHabitantes= "";
+                            long idUsuario=-1;
                             boolean error = false;
                             try{
                                 nHabitantes = editNHabitantes.getText().toString();
@@ -76,7 +76,7 @@ public class NuevoJuego extends AppCompatDialogFragment {
                             if (nombre.isEmpty() || descripcion.isEmpty() || error)
                                 Toast.makeText(contexto, "Campos incorrectos", Toast.LENGTH_SHORT).show();
                             else
-                                listener.insertarPueblo(null,nombre, descripcion, nHabitantes);
+                                listener.insertarPueblo(null,nombre, descripcion, nHabitantes, idUsuario);
                             dialogo.dismiss();
                         }
                 );

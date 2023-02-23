@@ -24,7 +24,6 @@ public class LoginUsuario extends AppCompatActivity {
     private EditText usernameEditText;
     private EditText passwordEditText;
     private Button loginButton;
-    private ImageView comprobarButton;
 
     //private Realm realm;
 
@@ -33,50 +32,12 @@ public class LoginUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_usuario);
 
-        //CREO USUARIO1 (pepe, pepe)
-//        Usuario usuario1 = new Usuario();
-//        usuario1.setId(-1);
-//        usuario1.setUsername("pepe");
-//        usuario1.setPassword("pepe");
-//        realmHelper.addUser(usuario1);
-
-
-
-
         // Obtener las referencias a los elementos de la interfaz de usuario
         usernameEditText = findViewById(R.id.username_edit_text);
         passwordEditText = findViewById(R.id.password_edit_text);
         entrarSinReg = findViewById(R.id.buttonSinRegistro);
         botonDeRegistro = findViewById(R.id.botonDeRegistro);
         loginButton = findViewById(R.id.login_button);
-        comprobarButton = findViewById(R.id.buttonComprobar);
-
-          //CREAR USUARIOS TRAS REGISTRAR
-//        String nombreUser = getIntent().getExtras().getString("nombre");
-//        String passUser = getIntent().getExtras().getString("pass");
-//        if (nombreUser!=null && passUser!=null) {
-//            Usuario usuarioNuevo = new Usuario();
-//            usuarioNuevo.setId(01);
-//            usuarioNuevo.setUsername(nombreUser);
-//            usuarioNuevo.setPassword(passUser);
-//            realmHelper.addUser(usuarioNuevo);
-//        }
-
-        comprobarButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //CREAR USUARIOS TRAS REGISTRAR
-                String nombreUser = getIntent().getExtras().getString("nombre");
-                String passUser = getIntent().getExtras().getString("pass");
-
-                    Usuario usuarioNuevo = new Usuario();
-                    //usuarioNuevo.setId(02);
-                    usuarioNuevo.setUsername(nombreUser);
-                    usuarioNuevo.setPassword(passUser);
-                    realmHelper.addUser(usuarioNuevo);
-
-            }
-        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,14 +49,14 @@ public class LoginUsuario extends AppCompatActivity {
                 //Buscar en la base de datos el usuario con el nombre de usuario ingresado
                 Usuario user = realmHelper.getUser(username);
 
-                // Verificar si el usuario existe y si la contraseña es correcta
+                //Verificar si el usuario existe y si la contraseña es correcta
                 if (user.getUsername() != null && user.getPassword().equals(password)) {
-                    Intent intentEnter = new Intent(LoginUsuario.this, MainActivity.class);
-                    startActivity(intentEnter);
-                } else {
-                    // Si las credenciales no son válidas, mostrar un mensaje de error
-                    Toast.makeText(LoginUsuario.this, "Nombre de usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
-                }
+                    Intent intentPrincipal = new Intent(LoginUsuario.this, MainActivity.class);
+                    startActivity(intentPrincipal);
+                    } else
+                        Toast.makeText(LoginUsuario.this, "Nombre de usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                    //Si las credenciales no son válidas, mostrar un mensaje de error
+
             }
         });
 
@@ -115,6 +76,5 @@ public class LoginUsuario extends AppCompatActivity {
                 startActivity(a);
             }
         });
-
-     }
     }
+}

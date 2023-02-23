@@ -168,7 +168,8 @@ public class JuegoFragment extends Fragment implements OnPuebloInteractionListen
                 juego.getNombre(),
                 juego.getDescripcion(),
                 juego.getNumVentas(),
-                juego.getUrlFoto());
+                juego.getUrlFoto(),
+                juego.getIdUsuario());
         MainActivity acti = (MainActivity)contexto;
         dialogoEditar.show(acti.getSupportFragmentManager(), "Edición datos del Juego "+ juego.getNombre());
 
@@ -188,12 +189,12 @@ public class JuegoFragment extends Fragment implements OnPuebloInteractionListen
     }
 
     @Override
-    public void insertarPueblo(String url, String nombre, String descripcion, String nHabitantes) {
+    public void insertarPueblo(String url, String nombre, String descripcion, String nHabitantes, long idUsuario) {
         /*Contador.increId();
         listaPueblos.add(new Juego( Contador.dameId(),null,nombre, descripcion, nHabitantes));*/
         realm = Realm.getDefaultInstance();
         realm.executeTransactionAsync(realm -> {
-            Juego juego = new Juego(0, null, nombre, descripcion, nHabitantes);
+            Juego juego = new Juego(0, null, nombre, descripcion, nHabitantes, idUsuario);
             realm.copyToRealm(juego);
         }, new Realm.Transaction.OnSuccess() {
             @Override
@@ -211,7 +212,7 @@ public class JuegoFragment extends Fragment implements OnPuebloInteractionListen
     }
 
     @Override
-    public void editarPueblo(long id, String nombre, String descripcion, String nHabitantes) {
+    public void editarPueblo(long id, String nombre, String descripcion, String nHabitantes, long idUsuario) {
         /*int i=0;
         Juego aux=null;
         int tam = listaPueblos.size();
@@ -249,6 +250,7 @@ public class JuegoFragment extends Fragment implements OnPuebloInteractionListen
                     juego.setDescripcion(descripcion);
                     juego.setNumVentas(nHabitantes);
                     juego.setUrlFoto(null);
+                    juego.setIdUsuario(idUsuario);
                     realm.copyToRealmOrUpdate(juego);
                 }
             }, new Realm.Transaction.OnSuccess() {

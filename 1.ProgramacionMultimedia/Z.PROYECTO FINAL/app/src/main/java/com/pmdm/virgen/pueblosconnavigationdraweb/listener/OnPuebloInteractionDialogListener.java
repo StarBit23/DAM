@@ -4,10 +4,10 @@ public interface OnPuebloInteractionDialogListener {
     //Inserta un nuevo pueblo
 
 
-    public void insertarPueblo(String url, String nombre, String descripcion, String nHabitantes );
+    public void insertarPueblo(String url, String nombre, String descripcion, String nHabitantes, long idUsuario );
     //Edita un pueblo ya existente.
 
-    public void editarPueblo(long id, String nombre, String descripcion, String nHabitantes);
+    public void editarPueblo(long id, String nombre, String descripcion, String nHabitantes, long idUsuario);
 
     public void eliminarPueblo(long id);
 

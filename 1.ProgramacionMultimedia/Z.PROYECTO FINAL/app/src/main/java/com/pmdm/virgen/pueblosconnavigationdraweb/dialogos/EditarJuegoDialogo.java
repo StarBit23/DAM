@@ -39,6 +39,7 @@ public class EditarJuegoDialogo extends AppCompatDialogFragment {
     private static final String ARGUMENTO_DESCRIPCION_PUEBLO = Juego.ARGUMENTO_DESCRIPCION;
     private static final String ARGUMENTO_N_HABITANTES = Juego.ARGUMENTO_NUM_VENTAS;
     private static final String ARGUMENTO_URL_FOTO = Juego.ARGUMENTO_URL_FOTO;
+    private static final String ARGUMENTO_ID_USUARIO = Juego.ARGUMENTO_ID_USUARIO;
     private Context contexto;  //contexo del Activity.
 
     private EditText editNombre, editDescripcion, editNHabitantes;
@@ -57,7 +58,7 @@ public class EditarJuegoDialogo extends AppCompatDialogFragment {
      *
      */
     // TODO: Rename and change types and number of parameters
-    public static EditarJuegoDialogo newInstance(JuegoFragment p, long id, String nombre, String descripcion, String nHabitantes, String urlFoto ) {
+    public static EditarJuegoDialogo newInstance(JuegoFragment p, long id, String nombre, String descripcion, String nHabitantes, String urlFoto, long idUsuario ) {
         EditarJuegoDialogo dialogo = new EditarJuegoDialogo(p);
         Bundle args = new Bundle();
         // Pasamos los datos del pueblo, a los argumentos del Dialog para que sean recuperados.
@@ -66,6 +67,7 @@ public class EditarJuegoDialogo extends AppCompatDialogFragment {
         args.putString(ARGUMENTO_DESCRIPCION_PUEBLO, descripcion);
         args.putString(ARGUMENTO_N_HABITANTES, nHabitantes);
         //args.putString(ARGUMENTO_URL_FOTO, urlFoto);
+        args.putLong(ARGUMENTO_ID_USUARIO, idUsuario);
 
         dialogo.setArguments(args);
         return dialogo;
@@ -113,6 +115,7 @@ public class EditarJuegoDialogo extends AppCompatDialogFragment {
                             String nombre = editNombre.getText().toString();
                             String descripcion = editDescripcion.getText().toString();
                             String nHabitantes="";
+                            long idUsuario = -1;
                             boolean error = false;
                             try{
                                 nHabitantes = editNHabitantes.getText().toString();
@@ -124,7 +127,7 @@ public class EditarJuegoDialogo extends AppCompatDialogFragment {
                                 Toast.makeText(contexto, "Los campos no pueden estar vacíos", Toast.LENGTH_SHORT).show();
                             else{
                                 long id = EditarJuegoDialogo.this.getArguments().getLong(ARGUMENTO_ID_PUEBLO);
-                                listener.editarPueblo(id, nombre, descripcion, nHabitantes);
+                                listener.editarPueblo(id, nombre, descripcion, nHabitantes, idUsuario);
                                 EditarJuegoDialogo.this.dismiss();
                             }
 

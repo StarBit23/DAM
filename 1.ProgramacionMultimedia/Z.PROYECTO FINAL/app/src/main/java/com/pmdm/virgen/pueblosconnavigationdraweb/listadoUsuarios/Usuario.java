@@ -9,7 +9,7 @@ public class Usuario extends RealmObject {
     private String username;
     private String password;
     @PrimaryKey
-    private AtomicLong id;
+    private int id;
 
     public String getUsername() {
         return username;
@@ -27,10 +27,10 @@ public class Usuario extends RealmObject {
         this.password = password;
     }
 
-    public AtomicLong getId(){
+    public int getId(){
         return id;
     }
-    public void setId(AtomicLong id){
+    public void setId(int id){
         this.id = id;
     }
 }
