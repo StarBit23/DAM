@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if(!isset($params)){
 		$response = array(
 				'result' => 'error',
+				'insert_id' => '0',
 				'details' => 'Error en la solicitud de creación usuario'
 		);
 
@@ -33,7 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	$response = array(
 			'result' => 'ok',
-			'insert_id' => $insert_id
+			'insert_id' => $insert_id,
+			'details' => 'Usuario creado corectamente'
 	);
 
 	Response::result(201, $response);
@@ -41,7 +43,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 else{  //Intentamos registrarnos sin el post
     $response = array(
-        'result' => 'error'
+        'result' => 'error',
+		'insert_id' => $insert_id,
+		'details' => 'Error, no has usado post'
     );
 
     Response::result(404, $response);

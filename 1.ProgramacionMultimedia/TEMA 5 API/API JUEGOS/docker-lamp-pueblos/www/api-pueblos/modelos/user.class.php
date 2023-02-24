@@ -224,22 +224,22 @@ y la ejecutará.
 		
 		if($this->validateInsert($params)){
 			
-			if (isset($params['imagen'])){
-				/*echo "Tiene imagen";
-				exit;*/
-				$img_array = explode(';base64,', $params['imagen']);  //datos de la imagen
-				$extension = strtoupper(explode('/', $img_array[0])[1]); //formato de la imagen
-				$datos_imagen = $img_array[1]; //aqui me quedo con la imagen
-				$nombre_imagen = uniqid(); //creo un único id.
-				//del directorio actual de user.class, subo un nivel (1) y estando en el directorio api-pueblos, concateno public\img
-				$path = dirname(__DIR__, 1)."/public/img/".$nombre_imagen.".".$extension;
-				/*echo "La imagen es ".$nombre_imagen.".".$extension;
-				echo "El path es ".$path;
-				exit;*/
-				file_put_contents($path, base64_decode($datos_imagen));  //subimos la imagen al servidor.
-				$params['imagen'] = $nombre_imagen.'.'.$extension;  //pasamos como parametro en foto, con el nombre y extensión completo.
-				//exit;  //hay que quitarlo una vez verificado que se sube la imagen
-			}//fin isset
+			// if (isset($params['imagen'])){
+			// 	/*echo "Tiene imagen";
+			// 	exit;*/
+			// 	$img_array = explode(';base64,', $params['imagen']);  //datos de la imagen
+			// 	$extension = strtoupper(explode('/', $img_array[0])[1]); //formato de la imagen
+			// 	$datos_imagen = $img_array[1]; //aqui me quedo con la imagen
+			// 	$nombre_imagen = uniqid(); //creo un único id.
+			// 	//del directorio actual de user.class, subo un nivel (1) y estando en el directorio api-pueblos, concateno public\img
+			// 	$path = dirname(__DIR__, 1)."/public/img/".$nombre_imagen.".".$extension;
+			// 	/*echo "La imagen es ".$nombre_imagen.".".$extension;
+			// 	echo "El path es ".$path;
+			// 	exit;*/
+			// 	file_put_contents($path, base64_decode($datos_imagen));  //subimos la imagen al servidor.
+			// 	$params['imagen'] = $nombre_imagen.'.'.$extension;  //pasamos como parametro en foto, con el nombre y extensión completo.
+			// 	//exit;  //hay que quitarlo una vez verificado que se sube la imagen
+			// }//fin isset
 
 			//ahora debemos encriptar la password
 			$password_encriptada = hash('sha256' , $params['password']);

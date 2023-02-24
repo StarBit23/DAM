@@ -1,21 +1,24 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Usuario{
-    private int id;
+    @SerializedName("email")
+    @Expose
     private String email;
+    @SerializedName("password")
+    @Expose
     private String password;
+    @SerializedName("nombre")
+    @Expose
     private String nombre;
+    @SerializedName("disponible")
+    @Expose
+    private String disponible;
+    @SerializedName("imagen")
+    @Expose
     private String imagen;
-    private boolean disponible;
-    private String token;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getEmail() {
         return email;
@@ -41,6 +44,14 @@ public class Usuario{
         this.nombre = nombre;
     }
 
+    public String getDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(String disponible) {
+        this.disponible = disponible;
+    }
+
     public String getImagen() {
         return imagen;
     }
@@ -49,19 +60,15 @@ public class Usuario{
         this.imagen = imagen;
     }
 
-    public boolean isDisponible() {
-        return disponible;
+    public Usuario() {
     }
 
-    public void setDisponible(boolean disponible) {
+    public Usuario(String email, String password, String nombre, String imagen, String disponible) {
+        this.email = email;
+        this.password = password;
+        this.nombre = nombre;
+        this.imagen = imagen;
         this.disponible = disponible;
     }
 
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
 }
