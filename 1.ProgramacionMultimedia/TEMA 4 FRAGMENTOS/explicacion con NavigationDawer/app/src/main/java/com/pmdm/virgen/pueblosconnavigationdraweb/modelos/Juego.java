@@ -3,7 +3,7 @@ package com.pmdm.virgen.pueblosconnavigationdraweb.modelos;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.aplication.MiApp;
 
-import io.realm.RealmObject;
+import io.realm.*;
 import io.realm.annotations.PrimaryKey;
 
 public class Juego extends RealmObject {
@@ -23,8 +23,6 @@ public class Juego extends RealmObject {
     private String nombre;
     private String descripcion;
     private String numVentas;
-
-
 
 
     public Juego() {

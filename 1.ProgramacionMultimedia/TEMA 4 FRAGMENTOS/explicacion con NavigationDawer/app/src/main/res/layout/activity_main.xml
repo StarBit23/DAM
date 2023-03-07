@@ -28,7 +28,6 @@
     menu lateral.
     Utiliza un xml como menu, donde se definen los item. Este se llama menu/activity_main_drawer
     También se especifica la cabecera en un xml con el nombre nav_header_main.
-
     -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
