@@ -14,6 +14,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseAuth;
+import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseRegister;
+import com.pmdm.virgen.pueblosconnavigationdraweb.varios.ClaseGetToken;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -22,8 +26,9 @@ public class MainActivityLogin extends AppCompatActivity {
 private Button btnLogin, btnRegistro;
 private EditText userEdit, passwordEdit;
 private SharedPreferences shared;
+public String tokenActualUsuario;
 
-    ApiService apiService = retrofit.create(ApiService.class);
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -44,7 +49,13 @@ private SharedPreferences shared;
             startActivity(i);
         }
 
-        btnLogin.setOnClickListener(v -> iniciarLogin());
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //iniciarLogin();
+                conseguirTokenRetrofit();
+            }
+        });
 
         btnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +67,7 @@ private SharedPreferences shared;
     }
 
     private void crearUsuarioRetrofit(){
+        ApiService apiService = retrofit.create(ApiService.class);
         Usuario user = new Usuario( "lolo@gmail.com","lolo","lolo","","1");
         Call<ResponseRegister> call = apiService.createUser(user);
         call.enqueue(new Callback<ResponseRegister>() {
@@ -69,7 +81,6 @@ private SharedPreferences shared;
                     Toast.makeText(MainActivityLogin.this, "Error al crear el usuario", Toast.LENGTH_SHORT).show();
                 }
             }
-
             @Override
             public void onFailure(Call<ResponseRegister> call, Throwable t) {
                 // manejar el error
@@ -78,6 +89,37 @@ private SharedPreferences shared;
                 t.getCause();
             }
         });
+    }
+
+    public void conseguirTokenRetrofit(){
+        ApiService apiService = retrofit.create(ApiService.class);
+        ClaseGetToken newClaseGetToken = new ClaseGetToken("lolo@gmail.com","lolo");
+        Call<ResponseAuth> call = apiService.getToken(newClaseGetToken);
+        call.enqueue(new Callback<ResponseAuth>() {
+            @Override
+            public void onResponse(Call<ResponseAuth> call, Response<ResponseAuth> response) {
+                if (response.isSuccessful()) {
+                    // la solicitud fue exitosa
+                    tokenActualUsuario = response.body().getToken();
+                    Toast.makeText(MainActivityLogin.this, tokenActualUsuario, Toast.LENGTH_SHORT).show();
+                } else {
+                    // manejar el error
+                    Toast.makeText(MainActivityLogin.this, "Error al conseguir el token del usuario especificado, ponlo bien chacho", Toast.LENGTH_SHORT).show();
+                }
+            }
+            @Override
+            public void onFailure(Call<ResponseAuth> call, Throwable t) {
+                Toast.makeText(MainActivityLogin.this, "Imposible conectar a la API, ¿kapasao?", Toast.LENGTH_SHORT).show();
+                System.out.println(t.getLocalizedMessage());
+                t.getCause();
+            }
+        });
+    }
+
+    public void iniciarSesionConToken(){
+        ApiService apiService = retrofit.create(ApiService.class);
+
+
     }
 
     private void inicializarCampos() {
