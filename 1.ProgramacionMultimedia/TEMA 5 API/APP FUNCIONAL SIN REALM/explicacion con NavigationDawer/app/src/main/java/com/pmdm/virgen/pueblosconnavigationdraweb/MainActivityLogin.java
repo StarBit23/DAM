@@ -18,6 +18,9 @@ import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseAuth;
 import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseRegister;
 import com.pmdm.virgen.pueblosconnavigationdraweb.varios.ClaseGetToken;
 
+import java.io.IOException;
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -102,6 +105,11 @@ public String tokenActualUsuario;
                     // la solicitud fue exitosa
                     tokenActualUsuario = response.body().getToken();
                     Toast.makeText(MainActivityLogin.this, tokenActualUsuario, Toast.LENGTH_SHORT).show();
+                    try {
+                        iniciarSesionConToken();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 } else {
                     // manejar el error
                     Toast.makeText(MainActivityLogin.this, "Error al conseguir el token del usuario especificado, ponlo bien chacho", Toast.LENGTH_SHORT).show();
@@ -116,9 +124,17 @@ public String tokenActualUsuario;
         });
     }
 
-    public void iniciarSesionConToken(){
+    public void iniciarSesionConToken() throws IOException {
         ApiService apiService = retrofit.create(ApiService.class);
-
+        Call<List<Usuario>> call = apiService.getUsers(tokenActualUsuario);
+        Response<List<Usuario>> response = call.execute(); //error aqui
+        if (response.isSuccessful()) {
+            List<Usuario> users = response.body();
+            Toast.makeText(this, "Tu login es correcto ¡Bienvenido!", Toast.LENGTH_SHORT).show();
+            //procesar lista de usuarios
+        } else {
+            //manejar el error
+        }
 
     }
 
