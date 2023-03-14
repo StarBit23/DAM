@@ -1,19 +1,31 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb.adapter;
 
+import static com.pmdm.virgen.pueblosconnavigationdraweb.ApiService.retrofit;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.pmdm.virgen.pueblosconnavigationdraweb.ApiService;
 import com.pmdm.virgen.pueblosconnavigationdraweb.R;
+import com.pmdm.virgen.pueblosconnavigationdraweb.RegisterActivity;
+import com.pmdm.virgen.pueblosconnavigationdraweb.Usuario;
 import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionListener;
 import com.pmdm.virgen.pueblosconnavigationdraweb.modelos.Juego;
+import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseListadoJuegos;
+import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseRegister;
 
 
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRecyclerViewAdapter.ViewPueblo> {
 
@@ -66,6 +78,11 @@ public class MyPuebloRecyclerViewAdapter extends RecyclerView.Adapter<MyPuebloRe
 
 
         public ViewPueblo(View view) {
+            //METER LLAMADA A LA API DE LOS JUEGOS POR API-KEY (GET)
+
+
+
+            //DATOS ANTIGUOS
             super(view.getRootView()); //le pasamos la vista a la que tiene que asociar elementos.
             vista = view;
 

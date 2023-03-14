@@ -48,6 +48,7 @@ public String comprobarLoginDefinitivo;
         inicializarCampos();
         cargaPreferenciasCompartidas();
 
+        //preferencias compartidas=true? ==> acceder al activity sin login
         if (isLogueado()){
             Intent i = new Intent(this,MainActivity.class);
             startActivity(i);
@@ -56,7 +57,6 @@ public String comprobarLoginDefinitivo;
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //iniciarLogin();
                 conseguirTokenRetrofit();
             }
         });
@@ -64,40 +64,21 @@ public String comprobarLoginDefinitivo;
         btnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                crearUsuarioRetrofit();
+                startRegisterActivity();
+                //crearUsuarioRetrofit();
             }
         });
 
     }
 
-    private void crearUsuarioRetrofit(){
-        ApiService apiService = retrofit.create(ApiService.class);
-        Usuario user = new Usuario( "lolo@gmail.com","lolo","lolo","","1");
-        Call<ResponseRegister> call = apiService.createUser(user);
-        call.enqueue(new Callback<ResponseRegister>() {
-            @Override
-            public void onResponse(Call<ResponseRegister> call, Response<ResponseRegister> response) {
-                if (response.isSuccessful()) {
-                    // la solicitud fue exitosa
-                    Toast.makeText(MainActivityLogin.this, "Usuario creado correctamente", Toast.LENGTH_SHORT).show();
-                } else {
-                    // manejar el error
-                    Toast.makeText(MainActivityLogin.this, "Error al crear el usuario", Toast.LENGTH_SHORT).show();
-                }
-            }
-            @Override
-            public void onFailure(Call<ResponseRegister> call, Throwable t) {
-                // manejar el error
-                Toast.makeText(MainActivityLogin.this, "Imposible conectar a la API, ¿kapasao?", Toast.LENGTH_SHORT).show();
-                System.out.println(t.getLocalizedMessage());
-                t.getCause();
-            }
-        });
+    private void startRegisterActivity() {
+        Intent i = new Intent(this,RegisterActivity.class);
+        startActivity(i);
     }
 
     public void conseguirTokenRetrofit(){
         ApiService apiService = retrofit.create(ApiService.class);
-        ClaseGetToken newClaseGetToken = new ClaseGetToken("lolo@gmail.com","lolo");
+        ClaseGetToken newClaseGetToken = new ClaseGetToken(userEdit.getText().toString(),passwordEdit.getText().toString());
         Call<ResponseAuth> call = apiService.getToken(newClaseGetToken);
         call.enqueue(new Callback<ResponseAuth>() {
             @Override
@@ -113,7 +94,7 @@ public String comprobarLoginDefinitivo;
                         }
                 } else {
                     // manejar el error
-                    Toast.makeText(MainActivityLogin.this, "Error al conseguir el token del usuario especificado, ponlo bien chacho", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityLogin.this, "Correo y/o contraseña incorrectos, ponlo bien chacho", Toast.LENGTH_SHORT).show();
                 }
             }
             @Override
@@ -132,7 +113,7 @@ public String comprobarLoginDefinitivo;
     public void iniciarLogin(){
 
         SharedPreferences.Editor editor = shared.edit();
-        editor.putString("preferenciasToken",tokenActualUsuario);
+        editor.putString(getString(R.string.preferencias_token),tokenActualUsuario);
         editor.putBoolean("isLogin",true);
         editor.commit();
         Intent i = new Intent(this,MainActivity.class);
@@ -140,8 +121,7 @@ public String comprobarLoginDefinitivo;
     }
 
     private void cargaPreferenciasCompartidas() {
-        String fichPreferencias = "preferenciasAppPueblos";
-        shared = this.getSharedPreferences(fichPreferencias, Context.MODE_PRIVATE);
+        shared = getSharedPreferences(getString(R.string.preferencias_fichero_login), Context.MODE_PRIVATE);
     }
 
     private boolean isLogueado() {

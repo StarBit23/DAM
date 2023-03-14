@@ -3,6 +3,7 @@ package com.pmdm.virgen.pueblosconnavigationdraweb.ui.pueblos;
 import static com.pmdm.virgen.pueblosconnavigationdraweb.ApiService.retrofit;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,10 +26,15 @@ import com.pmdm.virgen.pueblosconnavigationdraweb.dialogos.NuevoPueblo;
 import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionDialogListener;
 import com.pmdm.virgen.pueblosconnavigationdraweb.listener.OnJuegoInteractionListener;
 import com.pmdm.virgen.pueblosconnavigationdraweb.modelos.Juego;
+import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseListadoJuegos;
 import com.pmdm.virgen.pueblosconnavigationdraweb.varios.Contador;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class JuegoFragment extends Fragment implements OnJuegoInteractionListener, OnJuegoInteractionDialogListener {
@@ -36,6 +42,9 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
     private List<Juego> listaJuegos;
     private Context contexto;
     private FloatingActionButton bFlotanteInsertar;
+
+    private SharedPreferences sharedPreferences;
+    private String token;
 
 
   //  private OnJuegoInteractionListener listener;
@@ -77,6 +86,11 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
 
 
     public void crearObjetosDinamicos(){
+
+        //DATOS APISERVICE CON GET(pueblo)
+
+
+        //DATOS DEFAULT (replace con los datos apiservice cuando funcione)
         listaJuegos = new ArrayList<Juego>();
 
         listaJuegos.add(new Juego(0,null, "Super Mario Bros","Plataforma: NES", "40,24 millones"));
@@ -92,6 +106,27 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
 
         for (int i=0; i<10; i++ )
             Contador.increId();
+    }
+
+    private void listarJuegosApi(){
+        SharedPreferences preferences = getContext().getSharedPreferences(getString(R.string.preferencias_fichero_login),Context.MODE_PRIVATE);
+        token = preferences.getString(getString(R.string.preferencias_token),null);
+        preferences.getClass();
+
+        ApiService apiService = retrofit.create(ApiService.class);
+        Call<ResponseListadoJuegos> call = apiService.getListJuego(token);
+        call.enqueue(new Callback<ResponseListadoJuegos>() {
+            @Override
+            public void onResponse(Call<ResponseListadoJuegos> call, Response<ResponseListadoJuegos> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseListadoJuegos> call, Throwable t) {
+
+            }
+        });
+
     }
 
 
@@ -234,4 +269,6 @@ public class JuegoFragment extends Fragment implements OnJuegoInteractionListene
             Toast.makeText (contexto, "Se ha producido algun error", Toast.LENGTH_SHORT).show();
 
     }
+
+
 }

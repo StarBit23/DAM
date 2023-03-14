@@ -1,6 +1,7 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb;
 
 import static com.pmdm.virgen.pueblosconnavigationdraweb.ApiService.apiService;
+import static com.pmdm.virgen.pueblosconnavigationdraweb.ApiService.retrofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,20 +38,14 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (txtUser!=null){
-                    String stringUser = txtUser.getText().toString();
-                    String stringPass = txtPass.getText().toString();
-                    String stringNombre = txtNombre.getText().toString();
-
                     Intent intentVolver = new Intent(RegisterActivity.this,MainActivityLogin.class);
 
-                    Usuario usuarioNuevo = new Usuario();
-                    usuarioNuevo.setEmail(stringUser);
-                    usuarioNuevo.setPassword(stringPass);
-                    usuarioNuevo.setNombre(stringNombre);
 
+
+                    crearUsuarioRetrofit();
                     startActivity(intentVolver);
                 }
-                crearUsuarioRetrofit();
+
             }
         });
 
@@ -64,8 +59,16 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void crearUsuarioRetrofit(){
-        Usuario user = new Usuario( "lolo@gmail.com","lolo","lolo","","1");
-        Call<ResponseRegister> call = apiService.createUser(user);
+        ApiService apiService = retrofit.create(ApiService.class);
+        //Recoger datos escritos en el register
+        String stringUser = txtUser.getText().toString();
+        String stringPass = txtPass.getText().toString();
+        String stringNombre = txtNombre.getText().toString();
+
+        Usuario usuarioNuevo = new Usuario( stringUser,stringPass,stringNombre,"","1");
+
+        //Realizar la creacion del usuario retrofit
+        Call<ResponseRegister> call = apiService.createUser(usuarioNuevo);
         call.enqueue(new Callback<ResponseRegister>() {
             @Override
             public void onResponse(Call<ResponseRegister> call, Response<ResponseRegister> response) {
@@ -77,7 +80,6 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "Error al crear el usuario", Toast.LENGTH_SHORT).show();
                 }
             }
-
             @Override
             public void onFailure(Call<ResponseRegister> call, Throwable t) {
                 // manejar el error
