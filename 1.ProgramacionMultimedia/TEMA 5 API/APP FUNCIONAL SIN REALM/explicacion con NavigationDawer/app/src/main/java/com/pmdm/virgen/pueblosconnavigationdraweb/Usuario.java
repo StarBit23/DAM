@@ -20,6 +20,8 @@ public class Usuario{
     @Expose
     private String imagen;
 
+    private String token;
+
     public String getEmail() {
         return email;
     }
@@ -58,6 +60,14 @@ public class Usuario{
 
     public void setImagen(String imagen) {
         this.imagen = imagen;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public Usuario() {

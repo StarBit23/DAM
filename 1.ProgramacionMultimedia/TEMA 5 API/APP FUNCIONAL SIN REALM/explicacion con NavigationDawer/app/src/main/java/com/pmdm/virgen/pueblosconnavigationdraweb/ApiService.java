@@ -1,6 +1,7 @@
 package com.pmdm.virgen.pueblosconnavigationdraweb;
 
 import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseAuth;
+import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponsePasandoToken;
 import com.pmdm.virgen.pueblosconnavigationdraweb.responses.ResponseRegister;
 import com.pmdm.virgen.pueblosconnavigationdraweb.varios.ClaseGetToken;
 
@@ -25,7 +26,7 @@ public interface ApiService {
     //callback crear user
 
     @GET("user")
-    Call<List<Usuario>> getUsers(@Query("api-key") String apikey);
+    Call<ResponsePasandoToken> getUsers(@Query("api-key") String apikey);
 
     Retrofit retrofit = new Retrofit.Builder()
             .baseUrl("http://10.0.2.2:80/api-pueblos/endp/")

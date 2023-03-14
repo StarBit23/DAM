@@ -30,6 +30,7 @@ private Button btnLogin, btnRegistro;
 private EditText userEdit, passwordEdit;
 private SharedPreferences shared;
 public String tokenActualUsuario;
+public String comprobarLoginDefinitivo;
 
 
 
@@ -103,13 +104,13 @@ public String tokenActualUsuario;
             public void onResponse(Call<ResponseAuth> call, Response<ResponseAuth> response) {
                 if (response.isSuccessful()) {
                     // la solicitud fue exitosa
-                    tokenActualUsuario = response.body().getToken();
-                    Toast.makeText(MainActivityLogin.this, tokenActualUsuario, Toast.LENGTH_SHORT).show();
-                    try {
-                        iniciarSesionConToken();
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
+                        tokenActualUsuario = response.body().getToken();
+                        comprobarLoginDefinitivo = response.body().getResult();
+                        //Toast.makeText(MainActivityLogin.this, comprobarLoginDefinitivo, Toast.LENGTH_SHORT).show();
+                        if (comprobarLoginDefinitivo.equals("ok")){
+                            Toast.makeText(MainActivityLogin.this, "Login correcto ¡Bienvenido!", Toast.LENGTH_SHORT).show();
+                            iniciarLogin();
+                        }
                 } else {
                     // manejar el error
                     Toast.makeText(MainActivityLogin.this, "Error al conseguir el token del usuario especificado, ponlo bien chacho", Toast.LENGTH_SHORT).show();
@@ -124,39 +125,18 @@ public String tokenActualUsuario;
         });
     }
 
-    public void iniciarSesionConToken() throws IOException {
-        ApiService apiService = retrofit.create(ApiService.class);
-        Call<List<Usuario>> call = apiService.getUsers(tokenActualUsuario);
-        Response<List<Usuario>> response = call.execute(); //error aqui
-        if (response.isSuccessful()) {
-            List<Usuario> users = response.body();
-            Toast.makeText(this, "Tu login es correcto ¡Bienvenido!", Toast.LENGTH_SHORT).show();
-            //procesar lista de usuarios
-        } else {
-            //manejar el error
-        }
-
-    }
-
     private void inicializarCampos() {
 
     }
 
     public void iniciarLogin(){
-        String email = userEdit.getText().toString();
-        String pass = passwordEdit.getText().toString();
-        userEdit.setText("");
-        passwordEdit.setText("");
 
-        if (email.equals("pepe") && pass.equals("pepe")){
-            SharedPreferences.Editor editor = shared.edit();
-            editor.putString("preferenciasEmail",email);
-            editor.putBoolean("isLogin",true);
-            editor.commit();
-            Intent i = new Intent(this,MainActivity.class);
-            startActivity(i);
-        }else
-            Toast.makeText(this, "Email y/o constraseña incorrectos", Toast.LENGTH_SHORT).show();
+        SharedPreferences.Editor editor = shared.edit();
+        editor.putString("preferenciasToken",tokenActualUsuario);
+        editor.putBoolean("isLogin",true);
+        editor.commit();
+        Intent i = new Intent(this,MainActivity.class);
+        startActivity(i);
     }
 
     private void cargaPreferenciasCompartidas() {
