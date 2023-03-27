@@ -37,9 +37,9 @@ public class programaHash {
         System.out.println("No has introducido nada, vuelve a intentarlo");
     }
 
-if (intControlador==1) {
     //crear hash md5
-    ProcessBuilder pb = new ProcessBuilder("CertUtil", "-hashfile", "./data/"+nombreUsuario+".dat", "MD5"); 
+if (intControlador==1) {
+    ProcessBuilder pb = new ProcessBuilder("certutil", "-hashfile", "./data/"+nombreUsuario+".dat", "MD5"); 
     pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
 
     try {

@@ -8,7 +8,7 @@ EXAMEN (examen_832023)
 · Recursos Humanos > Empleados > Crear (añadimos el usuario creado anteriormente, entonces haremos la ausencia)
 · Crear productos en almacen con categoria
 · Realizar compra de productos
-· FACTURA ==> Tras hacer el pedido inicial, vamos a Contabilidad > Proveedores > Facturas de proveedor > Marcamos la casilla y a la derecha nos aparece "Imprimir factura"
+· FACTURA compra ==> Tras hacer el pedido inicial, vamos a Contabilidad > Proveedores > Facturas de proveedor > Marcamos la casilla y a la derecha nos aparece "Imprimir factura"
 · Marcamos el stock minimo del producto y le asignamos un proveedor
 · Hacemos la venta normal del producto
 · Para abastecernos conforme la regla de stock mínimo vamos a Compras > Presupuestos > aqui deberá aparecernos, donde podremos pasarlo a "Pedido de compra"

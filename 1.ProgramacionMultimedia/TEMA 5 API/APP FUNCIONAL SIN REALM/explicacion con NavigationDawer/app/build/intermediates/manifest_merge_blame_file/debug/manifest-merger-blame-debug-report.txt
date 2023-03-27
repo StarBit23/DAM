@@ -1,0 +1,119 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pmdm.virgen.pueblosconnavigationdraweb"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="27"
+8-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:7:22-76
+13
+14    <application
+14-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:9:5-39:19
+15        android:allowBackup="true"
+15-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:10:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] C:\Users\manana\.gradle\caches\transforms-3\cd33f26b4f6a5be75c2c675ec5e179dc\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17        android:dataExtractionRules="@xml/data_extraction_rules"
+17-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:11:9-65
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:fullBackupContent="@xml/backup_rules"
+20-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:12:9-54
+21        android:icon="@mipmap/ic_launcher"
+21-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:14:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:15:9-54
+24        android:supportsRtl="true"
+24-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:16:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.PueblosConNavigationDraweb"
+26-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:17:9-64
+27        android:usesCleartextTraffic="true" >
+27-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:18:9-44
+28        <activity
+28-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:20:9-22:40
+29            android:name="com.pmdm.virgen.pueblosconnavigationdraweb.RegisterActivity"
+29-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:21:13-45
+30            android:exported="false" />
+30-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:22:13-37
+31        <activity
+31-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:23:9-27:92
+32            android:name="com.pmdm.virgen.pueblosconnavigationdraweb.MainActivity"
+32-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:24:13-41
+33            android:exported="true"
+33-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:25:13-36
+34            android:label="@string/app_name"
+34-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:26:13-45
+35            android:theme="@style/Theme.PueblosConNavigationDraweb.NoActionBar" />
+35-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:27:13-80
+36        <activity
+36-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:28:9-38:20
+37            android:name="com.pmdm.virgen.pueblosconnavigationdraweb.MainActivityLogin"
+37-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:29:13-46
+38            android:exported="true"
+38-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:30:13-36
+39            android:label="@string/app_name"
+39-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:31:13-45
+40            android:theme="@style/Theme.PueblosConNavigationDraweb.NoActionBar" >
+40-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:32:13-80
+41            <intent-filter>
+41-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:33:13-37:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:34:17-69
+42-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:34:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:36:17-77
+44-->D:\SEGUNDO\DAM\1.ProgramacionMultimedia\TEMA 5 API\APP FUNCIONAL SIN REALM\explicacion con NavigationDawer\app\src\main\AndroidManifest.xml:36:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\manana\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\manana\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+50            android:authorities="com.pmdm.virgen.pueblosconnavigationdraweb.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\manana\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\manana\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+52            <meta-data
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\manana\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\manana\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+54                android:value="androidx.startup" />
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\manana\.gradle\caches\transforms-3\112a099502228b2b317b1c79d5f085b0\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\manana\.gradle\caches\transforms-3\7cfe2704946b18bb678666b3953b74c4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\manana\.gradle\caches\transforms-3\7cfe2704946b18bb678666b3953b74c4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\manana\.gradle\caches\transforms-3\7cfe2704946b18bb678666b3953b74c4\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+58        </provider>
+59
+60        <uses-library
+60-->[androidx.window:window:1.0.0] C:\Users\manana\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+61            android:name="androidx.window.extensions"
+61-->[androidx.window:window:1.0.0] C:\Users\manana\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0] C:\Users\manana\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+63        <uses-library
+63-->[androidx.window:window:1.0.0] C:\Users\manana\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+64            android:name="androidx.window.sidecar"
+64-->[androidx.window:window:1.0.0] C:\Users\manana\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] C:\Users\manana\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+66    </application>
+67
+68</manifest>
