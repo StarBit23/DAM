@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "JavaPing",
+            "request": "launch",
+            "mainClass": "JavaPing",
+            "projectName": "SEMANA DEL 22_03_585d3322",
+            "args": ["8.8.8.8"]
+        },
+        {
+            "type": "java",
+            "name": "PruebaRuntime",
+            "request": "launch",
+            "mainClass": "PruebaRuntime",
+            "projectName": "SEMANA DEL 22_03_585d3322",
+        }
+    ]
+}
