@@ -5,10 +5,10 @@ Cadenas con comillas simples, dobles, templates string, cadenas multilínea.
 */
 
 const text = `
-A primera vista, las cadenas se tratan de forma similar a los números, pero cuando profundizas empiezas a ver diferencias notables. 
+   A primera vista, las cadenas se tratan de forma similar a los números, pero cuando profundizas empiezas a ver diferencias notables. 
 Comencemos ingresando algunas líneas de texto básicas en la consola para familiarizarnos. 
 Te proveeremos de una aquí abajo 
-(también puedes abrir la consola en una pestaña o ventana separada, o usar la consola de desarrollo del navegador si así lo prefieres).
+(también puedes abrir la consola en una pestaña o ventana separada, o usar la consola de desarrollo del navegador si así lo prefieres). 
 `;
 const from = "https://developer.mozilla.org";
 
@@ -42,10 +42,12 @@ for (let i = 0; i < splitText.length; i++){
 }
 
 //Convierte todo a minúsculas.
-console.log(text.toLowerCase+"\n")
+const textLower = text.toLowerCase();
+console.log(textLower+"\n")
 
 //Convierte todo a mayúsculas.
-console.log(text.toUpperCase+"\n")
+const textUpper = text.toUpperCase();
+console.log(textUpper+"\n")
 
 //Recorre con un bucle el texto caracter a caracter.
 for(let i = 0;i<text.length;i++){
@@ -62,39 +64,91 @@ for(let i = 0;i<text.length;i++){
 //     }
 // }
 //console.log(text.search("consola"));
-//Busca la subcadena consola en el texto.
-let textoBuscar = "consola";
-let indexBuscar = text.search(textoBuscar);
-for(indexBuscar;indexBuscar<201;indexBuscar++){
-    console.log(text.charAt(indexBuscar))
-}
 
-console.log("\n");
+//Busca la subcadena consola en el texto.
+const indexBuscar1 = text.indexOf("consola");
+console.log("Palabra \"consola\" encontrada en caracter "+indexBuscar1)
+
+const indexBuscar2 = text.indexOf("consola",indexBuscar1+1);
+console.log("Palabra \"consola\" encontrada en caracter "+indexBuscar2)
+
+const indexBuscar3 = text.indexOf("consola",indexBuscar2+1);
+console.log("Palabra \"consola\" encontrada en caracter "+indexBuscar3+"\n")
 
 //Extrae en una variable la subcadena desde la posición 3 hasta el final
-
+console.log(text.substring(3)+"\n");
 
 //Extrae en una variable la subcadena desde la posición 3 hasta la primera ocurrencia de la palabra texto.
-
+const plabraTexto = text.indexOf("texto");
+console.log(text.substring(3,plabraTexto)+"\n");
 
 //Reemplaza las y los por les
-
+const replaceResultado1 = text.replaceAll("los", "les");
+const replaceResultado2 = replaceResultado1.replaceAll("las", "les");
+console.log(replaceResultado2+"\n");
 
 //Elimina los espacios antes y después del texto.
-
+console.log(text.trim());
 
 //Crea una cadena que no tenga ningún espacio.
-
+const replaceEspacio = text.replaceAll(" ","");
+console.log(replaceEspacio+"\n");
 
 //Imprime la cadena texto invertida. "Hola mundo" -> "odnum..."
-
+const saludo = "Hola mundo";
+let indice=9;
+let listadoInverso = [];
+do{
+    listadoInverso.push(saludo[indice]); 
+    indice--;
+}while(indice>=0);
+console.log(listadoInverso.join().replaceAll(",","")+"\n");
 
 //Cuenta cuantas veces aparece la palabra "el" en el texto.
+let index=0;
+let posicionEl;
+let contador=0;
+if(posicionEl=text.indexOf("el")>0){
+    contador++;
+}
+console.log("He encontrado la palabra \"el\" un total de " + contador + " veces\n");
 
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 const telefono = 'El siguiente teléfono hace spam +34654789543. Mi código es +3116';
+
 //Usa una expresión regular para comprobar que la cadena tiene números.
+if (telefono.match(/[0-9]+/g)){
+    console.log("La cadena teléfono contiene números\n");
+}else {
+    console.log("La cadena teléfono NO contiene números\n");
+}
+
 //Usa una expresión regular para comprobar que la cadena termina en punto.
+if (telefono.match(/[.]$/g)) {
+    console.log("La cadena telédono acaba en .\n");
+} else {
+    console.log("La cadena teléfono NO acaba en .\n");
+}
+
 //Usa una expresión regular para comprobar que la cadena comienza por una mayúscula.
+if (telefono.match(/^[A-Z]/g)){
+    console.log("La cadena teléfono empieza por mayuscula\n");
+}else {
+    console.log("La cadena teléfono NO empieza por mayuscula\n");
+}
+
 //Usa una expresión regular para comprobar si la cadena contiene un teléfono con código internacional.
+if (telefono.match(/\+\d{2}/g)){
+    console.log("La cadena teléfono contiene un código internacional\n");
+}else {
+    console.log("La cadena teléfono NO contiene un código internacional\n");
+}
+
 //Reemplaza cualquier ocurrencia de un + seguido de números por la cadena SECRETO
+const telefonoSecreto = "+34 SECRETO";
+if (telefono.match(/\+\d{2}/g)){
+    console.log("La cadena teléfono contiene un secreto\n");
+}else {
+    console.log("La cadena teléfono NO contiene un código secreto\n");
+}

@@ -6,8 +6,11 @@ public class programaHash {
    public static void main(String[] args) throws InterruptedException {
     Scanner sc = new Scanner(System.in);
     
-    System.out.println("Introduce un nombre de usuario");
-    String nombreUsuario = sc.nextLine();
+    if (args.length < 1) {
+        System.out.println("Error, pasa el nomobre del fichero");
+        System.exit(-1);
+    }
+    String nombreUsuario = args[0];
 
     //crear fichero
     //ProcessBuilder pb = new ProcessBuilder("hashsum","./data/  usuario.dat");
