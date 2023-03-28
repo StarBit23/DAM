@@ -115,6 +115,7 @@ console.log("He encontrado la palabra \"el\" un total de " + contador + " veces\
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 const telefono = 'El siguiente teléfono hace spam +34654789543. Mi código es +3116.';
 
 //Usa una expresión regular para comprobar que la cadena tiene números.
@@ -122,33 +123,67 @@ if (telefono.match(/[0-9]+/g)){
     console.log("La cadena telefono contiene números\n");
 }else {
     console.log("La cadena telefono NO contiene números\n");
+=======
+const telefono = 'El siguiente teléfono hace spam +34654789543. Mi código es +3116';
+
+//Usa una expresión regular para comprobar que la cadena tiene números.
+if (telefono.match(/[0-9]+/g)){
+    console.log("La cadena teléfono contiene números\n");
+}else {
+    console.log("La cadena teléfono NO contiene números\n");
+>>>>>>> 5b182bd274d1346fb1b83f0dcdb986c3b39da285
 }
 
 //Usa una expresión regular para comprobar que la cadena termina en punto.
 if (telefono.match(/[.]$/g)) {
+<<<<<<< HEAD
     console.log("La cadena telefono acaba en .\n");
 } else {
     console.log("La cadena telefono NO acaba en .\n");
+=======
+    console.log("La cadena telédono acaba en .\n");
+} else {
+    console.log("La cadena teléfono NO acaba en .\n");
+>>>>>>> 5b182bd274d1346fb1b83f0dcdb986c3b39da285
 }
 
 //Usa una expresión regular para comprobar que la cadena comienza por una mayúscula.
 if (telefono.match(/^[A-Z]/g)){
+<<<<<<< HEAD
     console.log("La cadena telefono empieza por mayuscula\n");
 }else {
     console.log("La cadena telefono NO empieza por mayuscula\n");
+=======
+    console.log("La cadena teléfono empieza por mayuscula\n");
+}else {
+    console.log("La cadena teléfono NO empieza por mayuscula\n");
+>>>>>>> 5b182bd274d1346fb1b83f0dcdb986c3b39da285
 }
 
 //Usa una expresión regular para comprobar si la cadena contiene un teléfono con código internacional.
 if (telefono.match(/\+\d{2}/g)){
+<<<<<<< HEAD
     console.log("La cadena telefono contiene un código internacional\n");
 }else {
     console.log("La cadena telefono NO contiene un código internacional\n");
+=======
+    console.log("La cadena teléfono contiene un código internacional\n");
+}else {
+    console.log("La cadena teléfono NO contiene un código internacional\n");
+>>>>>>> 5b182bd274d1346fb1b83f0dcdb986c3b39da285
 }
 
 //Reemplaza cualquier ocurrencia de un + seguido de números por la cadena SECRETO
 const telefonoSecreto = "+34 SECRETO";
+<<<<<<< HEAD
 if (telefonoSecreto.match(/\+\d{2}\b.*SECRETO\b/g)){
     console.log("La cadena telefonoSecreto contiene un secreto\n");
 }else {
     console.log("La cadena telefonoSecreto NO contiene un código secreto\n");
+=======
+if (telefono.match(/\+\d{2}/g)){
+    console.log("La cadena teléfono contiene un secreto\n");
+}else {
+    console.log("La cadena teléfono NO contiene un código secreto\n");
+>>>>>>> 5b182bd274d1346fb1b83f0dcdb986c3b39da285
 }
