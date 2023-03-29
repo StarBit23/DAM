@@ -1,0 +1,7 @@
+TEMA 1: FICHEROS Y TECNOLOGIAS X
+1. Proyecto transformaciones XSLT
+
+2. Marshalling / unmarshalling
+
+3. Lector Noticias RSS (JS nativo/vanilla)
+

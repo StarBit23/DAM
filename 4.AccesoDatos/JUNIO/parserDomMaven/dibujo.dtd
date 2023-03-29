@@ -1,0 +1,7 @@
+<!ELEMENT dibujo (poligono*)>
+<!ELEMENT poligono (vertice, vertice, vertice+)>
+<!ELEMENT vertice (x, y)>
+<!ELEMENT x (#PCDATA) >
+<!ELEMENT y (#PCDATA) >
+<!ATTLIST poligono nombre CDATA #REQUIRED>
+<!ATTLIST vertice nombre CDATA #IMPLIED>

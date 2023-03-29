@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE dibujo SYSTEM "dibujo.dtd">
+<dibujo>
+	<poligono nombre="mi_poli">
+		<vertice nombre="mi_verti">
+			<x>0</x>
+			<y>0</y>
+		</vertice>
+		<vertice>
+			<x>0</x>
+			<y>2</y>
+		</vertice>
+		<vertice>
+			<x>2</x>
+			<y>0</y>
+		</vertice>
+	</poligono>
+</dibujo>
