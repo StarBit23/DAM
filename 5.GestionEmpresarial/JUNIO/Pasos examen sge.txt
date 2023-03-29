@@ -2,7 +2,7 @@
 EXAMEN (examen_832023)
 · Admin ==> TODOS los permisos
 · Cambiar nombre compañia
-· Instalar modulos
+· Instalar modulos (crm, facturacion, contabilidad, hr, gestionVentas, partesTiempo, almacen, compras, ventas, ausencias)
 · Crear proveedores y clientes
 · Crear nuevo usuario
 · Recursos Humanos > Empleados > Crear (añadimos el usuario creado anteriormente, entonces haremos la ausencia)
@@ -12,3 +12,10 @@ EXAMEN (examen_832023)
 · Marcamos el stock minimo del producto y le asignamos un proveedor
 · Hacemos la venta normal del producto
 · Para abastecernos conforme la regla de stock mínimo vamos a Compras > Presupuestos > aqui deberá aparecernos, donde podremos pasarlo a "Pedido de compra"
+////////////////
+·Modulo diseñador de informes
+·Openoffice > Herramientas > Administrador de extensiones > openerpreportdesigner.zip
+·Openerp Report Designer > Server parameters > parametros de nuestra base de datos
+·Repeat in builder > List of country (ejemplo)
+·Field builder > country(country) (ejemplo)
+·Ventas > configuracion > libreta direcciones > ubicacion > paises > marcar varios paises > a la derecha aparece "Informes > reportcountry"
