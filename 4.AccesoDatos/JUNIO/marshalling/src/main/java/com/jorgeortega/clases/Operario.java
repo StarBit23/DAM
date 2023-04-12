@@ -1,3 +1,5 @@
+package com.jorgeortega.clases;
+
 public class Operario {
     private int id;
     private String username;

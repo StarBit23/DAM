@@ -1,4 +1,4 @@
-package com.jorgeortega;
+package com.jorgeortega.clases;
 
 public class CP {
     public String cp;

@@ -1,4 +1,4 @@
-package com.jorgeortega;
+package com.jorgeortega.clases;
 
 public class Libro {
     public int id;
@@ -10,7 +10,7 @@ public class Libro {
     public int año;
     
 
-    public Libro(int id, String ISBN, String titulo, String autor, String edicion, String editorial, String año) {
+    public Libro(int id, int ISBN, String titulo, String autor, int edicion, String editorial, int año) {
         this.id = id;
         this.ISBN = ISBN;
         this.titulo = titulo;
@@ -29,11 +29,11 @@ public class Libro {
         this.id = id;
     }
 
-    public String getISBN() {
+    public int getISBN() {
         return this.ISBN;
     }
 
-    public void setISBN(String ISBN) {
+    public void setISBN(int ISBN) {
         this.ISBN = ISBN;
     }
 
@@ -53,11 +53,11 @@ public class Libro {
         this.autor = autor;
     }
 
-    public String getEdicion() {
+    public int getEdicion() {
         return this.edicion;
     }
 
-    public void setEdicion(String edicion) {
+    public void setEdicion(int edicion) {
         this.edicion = edicion;
     }
 
@@ -69,11 +69,11 @@ public class Libro {
         this.editorial = editorial;
     }
 
-    public String getAño() {
+    public int getAño() {
         return this.año;
     }
 
-    public void setAño(String año) {
+    public void setAño(int año) {
         this.año = año;
     }
 

@@ -1,3 +1,5 @@
+package com.jorgeortega.clases;
+
 import java.time.LocalDate;
 
 public class Prestamo {

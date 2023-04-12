@@ -1,3 +1,5 @@
+package com.jorgeortega.clases;
+
 public class Prestamos {
     private Prestamo prestamo;
 

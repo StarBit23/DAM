@@ -1,4 +1,4 @@
-package com.jorgeortega;
+package com.jorgeortega.clases;
 
 
 public class Lector {
@@ -10,7 +10,7 @@ public class Lector {
     private Direccion direcciones;
 
 
-    public Lector(int id, String username, String password, String email, String telefono, Direccion direcciones) {
+    public Lector(int id, String username, String password, String email, int telefono, Direccion direcciones) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -52,11 +52,11 @@ public class Lector {
         this.email = email;
     }
 
-    public String getTelefono() {
+    public int getTelefono() {
         return this.telefono;
     }
 
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
 
