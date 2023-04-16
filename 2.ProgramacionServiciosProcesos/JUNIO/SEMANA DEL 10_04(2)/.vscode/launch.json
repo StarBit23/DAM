@@ -12,11 +12,23 @@
         },
         {
             "type": "java",
+            "name": "FiltraLineasVersion2",
+            "request": "launch",
+            "mainClass": "FiltraLineasVersion2",
+            "projectName": "examenLectura_248a8fda",
+            "args": [
+                "ca"
+            ]
+        },
+        {
+            "type": "java",
             "name": "FiltraLineas",
             "request": "launch",
             "mainClass": "FiltraLineas",
             "projectName": "SEMANA DEL 10_04_60fa807f",
-            "args": ["ca"]
+            "args": [
+                "ca"
+            ]
         }
     ]
 }
