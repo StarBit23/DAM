@@ -15,5 +15,10 @@ public class App
         Direcciones direcciones = new Direcciones();
         direcciones.load("docs/direccion.txt",cps);
         System.out.println(direcciones.toString());
+
+        System.out.println( "======= LECTORES =======" );
+        Lectores lectores = new Lectores();
+        lectores.loadLectores(lectores.loadNombres("docs/nombres.txt"), lectores.loadApellidos("docs/apellidos.txt"),direcciones);
+        System.out.println(direcciones.toString());
     }
 }

@@ -26,6 +26,11 @@ public class Direcciones {
         return direcciones;
     }
 
+    public Direccion getRandomDireccion(){
+        Random rand = new Random();
+        return this.direcciones.get(rand.nextInt(this.direcciones.size()));
+    }
+
     public boolean load(String filename, CPs cps){
         Path path = Paths.get(filename);
         TipoVia tipoVia;
