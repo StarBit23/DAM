@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title><![CDATA[Últimas noticias | EL PAÍS]]></title>
+  <link><![CDATA[https://elpais.com/rss/tags/ultimas_noticias.xml]]></link>
+  <description><![CDATA[Últimas noticias | EL PAÍS]]></description>
+  <lastBuildDate>Wed, 19 Apr 2023 13:18:29 +0200</lastBuildDate>
+  <pubDate>Wed, 19 Apr 2023 13:18:29 +0200</pubDate>
+  <language>es</language>
+  <copyright><![CDATA[Copyright 2023, Ediciones EL PAÍS]]></copyright>
+  <ttl>5</ttl>
+  <image>
+      <url>https://ep00.epimg.net/iconos/v1.x/v1.0/logos/cabecera_portada.png</url>
+      <title>Logotipo de EL PAÍS</title>
+      <link>https://elpais.com/</link>
+  </image>
+  <item>
+    <title><![CDATA[El Supremo absuelve al médico que operó la rodilla equivocada de una paciente]]></title>
+    <link><![CDATA[https://elpais.com/economia/2023/04/19/mis_derechos/1681888233_253878.html#?ref=rss&format=simple&link=link]]></link>
+    <guid isPermaLink="true"><![CDATA[https://elpais.com/economia/2023/04/19/mis_derechos/1681888233_253878.html#?ref=rss&format=simple&link=guid]]></guid>
+    <dc:creator><![CDATA[Marcelino Abad Ramón]]></dc:creator>
+    <description><![CDATA[El alto tribunal pone fin el proceso iniciado en 2018 al considerar que las indicaciones de la enferma contribuyeron a la producción del resultado]]></description>
+    <pubDate><![CDATA[Wed, 19 Apr 2023 09:16:12 +0200]]></pubDate>
+    <category><![CDATA[Negligencias médicas]]></category>
+    <category><![CDATA[Abogados]]></category>
+    <category><![CDATA[Médicos]]></category>
+    <category><![CDATA[Personal sanitario]]></category>
+    <category><![CDATA[Delitos]]></category>
+    <category><![CDATA[Sanidad]]></category>
+    <category><![CDATA[Salud]]></category>
+    <category><![CDATA[Justicia]]></category>
+    <content:encoded><![CDATA[<p>La Sala de lo Penal del Tribunal Supremo ha puesto fin al proceso por imprudencia profesional de un médico que, siguiendo las indicaciones de una paciente, le operó la rodilla equivocada. En una sentencia conocida recientemente, los magistrados han absuelto al traumatólogo al considerar que la interferencia de la víctima degradó la intensidad de la culpa, pues con su conducta contribuyó a la producción del resultado. Además, subrayan que ni el consentimiento informado ni el volante de derivación de la enferma al hospital determinaban cuál de las dos rodillas debía ser intervenida. La resolución se puede consultar en <a href="https://diariolaley.laleynext.es/content/Documento.aspx?params=H4sIAAAAAAAEAMtMSbH1CjUwMDA3NzYxNTBTK0stKs7Mz7Mty0xPzStJBfEz0ypd8pNDKgtSbdMSc4pT1RKTivNzSktSQ4sybUOKSlMBh-QgmUUAAAA=WKE" target="_blank">este enlace</a>.</p><p><a href="https://elpais.com/economia/2023/04/19/mis_derechos/1681888233_253878.html#?ref=rss&format=simple&link=seguir">Seguir leyendo</a>.</p>]]></content:encoded>
+    <enclosure url="https://ep00.epimg.net/economia/imagenes/2023/04/19/mis_derechos/1681888233_253878_1681888339_miniatura_normal.jpg" length="19125" type="image/jpeg"  />
+    <enclosure url="https://ep00.epimg.net/economia/imagenes/2023/04/19/mis_derechos/1681888233_253878_1681888338_noticia_normal.jpg" length="13671" type="image/jpeg"  />
+    <comments><![CDATA[http://eskup.elpais.com/C1681888571-cc3cfba1f006a5e15917d383e1e5126e]]></comments>
+  </item>
+</channel>
+</rss>
