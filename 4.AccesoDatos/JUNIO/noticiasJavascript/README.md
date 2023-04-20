@@ -1,3 +1,35 @@
+# FeedYa
+
+Un lector de noticias ligero en HTML+JS
+
+Tecnologías usadas:
+
+* CSS: Bootstrap 5.2
+* JS: Javascript Vanilla
+* HTML: HTML5
+
+## Calentando el plato
+
+Creamos una web en HTML5 sencilla cin el asistente
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FeedYa</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+Añadimos CDN con bootstrap desde un buscador buscando "bootstrap cdn":
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +38,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Listado de noticias</title>
+    <title>FeedYa</title>
 </head>
 <body>
-    <nav class="navbar bg-primary">
+    
+</body>
+</html>
+```
+
+Siguiendo la documentación oficial de bootstrap (nav), hacemos el menú:
+```html
+<nav class="navbar bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">FeedNews</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,24 +57,19 @@
             </button>
          <div class="collapse navbar-collapse" id="navbarNavDropdown">
            <ul class="navbar-nav">
-            <li class="nav-item" id="menu_listadoRss">
-                <a class="nav-link" href="#">Listado canales</a>
-            </li>
-            <li class="nav-item" id="menu_listadoNoticias">
-                <a class="nav-link" href="#">Listado noticias</a>
-            </li>
-            <li class="nav-item" id="menu_addRss">
-                <a class="nav-link" href="#">Añadir canal</a>
-            </li>
-            <li class="nav-item" id="menu_acercaDe">
-                <a class="nav-link" href="#">Acerca de</a>
-            </li>
+            <li class="nav-item">Listado canales</li>
+            <li class="nav-item">Listado noticias</li>
+            <li class="nav-item">Añadir canal</li>
+            <li class="nav-item">Acerca de</li>
            </ul>
          </div>
         </div>
     </nav>
-    
-        <div id="listadoRss" class="panel">
+```
+
+Añadimos los divs para mostrar/ocultar cada menú:
+```html
+<div id="listadoRss" class="panel">
             <p>Lista de canales RSS</p>
         </div>
 
@@ -46,7 +79,7 @@
 
         <div id="addRss" class="panel1">
             <p>Añadir canal</p>
-            <form id="formMarcadores">
+            <form>
                 <div class="mb-3">
                   <label for="formNombreCanal" class="form-label">Nombre del canal</label>
                   <input type="text" class="form-control" id="formNombreCanal" 
@@ -66,8 +99,8 @@
                 <div class="mb-3">
                     <select id="formTipoCanal" class="formSelect">
                         <option value="rss">RSS</option>
-                        <option value="atom">ATOM</option>
-                        <option value="auto">AUTO</option>
+                        <option value="rss">ATOM</option>
+                        <option value="rss">AUTO</option>
                     </select>
                 </div>
 
@@ -79,7 +112,39 @@
         <div id="acercaDe" class="panel">
             <p>Acerca de</p>
         </div>
-    <script src="./js/marcadores.js"></script>
-    <script src="./js/index.js"></script>
-</body>
-</html>
+```
+
+Añadimos nuestro javascript al final de nuestro html para ocultar los divs y darle click a cada elemento del menú.
+Para conectar los menús con los paneles hemos llamado igual a los atributos **id** de los menús
+y de los paneles, pero a los menús de pusimos delante **menu_**. Buscamos los que empiezan por
+```[id=^"menu"_]```
+
+```html
+<script src="./js/index.js"></script>
+```
+
+```js
+function hideAll() {
+    document.querySelectorAll(".panel").forEach((elemento) => {
+        //elemento.style.visibility = "hidden";
+        elemento.style.display = "none";
+    });
+};
+
+onload = () => {
+
+    hideAll();
+
+    document.querySelectorAll('[id^="menu_"]').forEach((elemento) => {
+    let ident = elemento.getAttribute('id');
+    let panelName = ident.replace("menu_","");
+    console.log(elemento);
+    elemento.addEventListener("click", (event) => {
+        hideAll();
+        document.getElementById(panelName).style.visibility = 'block';
+    });
+    });
+}
+```
+
+

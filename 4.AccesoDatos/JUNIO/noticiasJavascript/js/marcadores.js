@@ -2,7 +2,7 @@
 marcadores = {};
 marcadores.lista = [];
 marcadores.load = () => {
-    let lista = localStorage.getItem("marcadores");
+    let lista = JSON.parse(localStorage.getItem("marcadores"));
     if (lista != null){
         marcadores.lista = lista;
     }
@@ -19,5 +19,5 @@ marcadores.load = () => {
 */
 marcadores.save = (marcador) => {
     marcadores.lista.push(marcador);
-    localStorage.setItem("marcadores",marcadores.lista)
-}
+    localStorage.setItem("marcadores", JSON.stringify(marcadores.lista));
+};
