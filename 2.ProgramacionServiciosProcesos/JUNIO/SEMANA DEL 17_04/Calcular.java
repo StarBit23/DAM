@@ -14,8 +14,9 @@ public class Calcular {
       boolean error = false;
       int solucion=0;
 
-      String expre = "(\\d+)(\\+|-|\\*|:)(\\d+)";
+      String expre = "(\\d+)(\\+|-|\\*|/)(\\d+)";
       Pattern pat = Pattern.compile(expre);
+      
       String input = operando1 + simbolo + operando2;
       Matcher mat = pat.matcher(input);
 
