@@ -1,90 +1,96 @@
-//FUNCION PARA OCULTAR TODOS LOS ELEMENTOS DE UNA CLASE
-function hideAll() {
+// Funcion para ocultar todos los paneles
+hideAll = () => {
     document.querySelectorAll(".panel").forEach((elemento) => {
-        //elemento.style.visibility = "hidden";
-        elemento.style.display = "none";
+        // elemento.style.visibility = 'hidden';
+        elemento.style.display = 'none'
     });
-};
+}
+
+
+// Cuando la página está totalmente cargada, procesamos arranque
 
 onload = () => {
 
     hideAll();
-
+    // Esto hace que cada clic en el menú muestre sólo su panel correspondiente
     document.querySelectorAll('[id^="menu_"]').forEach((elemento) => {
         let ident = elemento.getAttribute('id');
         let panelName = ident.replace("menu_", "");
-        console.log(elemento);
+        console.log(elemento)
         elemento.addEventListener("click", (event) => {
-            hideAll();
-            document.getElementById(panelName).style.visibility = 'block';
+            hideAll()
+            // Usamos none/block y no visible/hidden porque este último 
+            // deja espacios siempre aunque esté oculto.
+            // document.getElementById(panelName).style.visibility = 'visible'
+            document.getElementById(panelName).style.display = 'block'
         });
     });
 
+
     /*
-    Lógica para guardar canales en localStorage
-    */ 
+    Lógica para añadir un canal
+    */
     marcadores.load();
 
     document.getElementById("formButtonCanal").addEventListener("click", (event) => {
+
         let canal = {
             nombre: document.getElementById("formNombreCanal").value,
             url: document.getElementById("formUrlCanal").value,
             tipo: document.getElementById("formTipoCanal").value
         };
-            console.log(canal);
 
         marcadores.save(canal);
 
-        /*
-        Lógica para listar canales
-        */
-       document.getElementById("menu_ListadoRss").addEventListener("click" , (event) => {
-        let contenido = "<table class=table table>  \
-            <thead> \
-                <tr>    \
-                    <th>Nombre</th><th>URL</th><th>Tipo</th><th>Accion</th>    \
-                </tr>   \
-            </thead>    \
-            <tbody> \
-                <tr>"
+    });
 
-            marcadoress.lista.forEach((marcador) => {
-                contenido += '<tr>';
-                contenido += '<td>'+marcador.nombre+'</td>';
-                contenido += '<td>'+marcador.url+'</td>';
-                contenido += '<td>'+marcador.tipo+'</td>';
-                contenido += '<td>borrar</td>';
-                contenido += '</tr>';
-            });
+    /*
+    Lógica para listar canales
+    */
+    document.getElementById("menu_listadoRss").addEventListener("click", (event) => {
 
-            contenido+= "</tr> \
-            </tbody> \
-        </table>"
+        // En ES6 podemos asignar directamente código HTML 
+        // en una variable para hacerlo más fácil de mantener
+        // fíjate en el carácter acento agudo.
+        let contenido = `
+            <table class="table table-striped"> 
+                <thead class="table-dark">  
+                    <tr> 
+                        <th>Nombre</th><th>URL</th><th>tipo</th><th>acción</th> 
+                    </tr> 
+                </thead> 
+                <tbody>
+            `;
 
-        document.getElementById("listadoRss")
-       });
-       /*
-       Lógica para listar noticias
-       */
-      document.getElementById("menu_listadoNoticias").addEventListener("click", (event) => {
-        fetch('https://www.diariojaen.es/rss/jaen.xml')
-        .then( (response) => response.text)
-        .then( (texto) => new window.DOMParser().parseFromString(texto, "text/html"))
-        .then( (documento) => 
-            documento.getElementsByName("item").forEach(item) => {
-                noticias.push(
-                    {
-                        titular: item.getElementByTagName('title')[0].textContent(),
-                        fecha: pubDate.getElementByTagName('pubDate')[0].textContent(),
-                        url: item.getElementByTagName('source')[0].getAttribute('url')
-                    }
-                )
-            }
-        )
-        .catch(error) => {
-            console.log(error)
-        }
-      })
-      
+        marcadores.lista.forEach((marcador) => {
+            contenido +=
+                `<tr>
+                        <td> ${marcador.nombre} </td>
+                        <td> ${marcador.url} </td>
+                        <td> ${marcador.tipo}</td>
+                        <td> 
+                            <i class="fa-solid fa-trash"></i> 
+                            <i class="fa-solid fa-pen-to-square"></i> 
+                        </td>
+                    </tr>`
+        })
+
+        contenido += `
+                </tbody> 
+            </table> `
+
+        console.log(contenido)
+
+        document.getElementById("listadoRss").innerHTML = contenido;
     })
+
+    /*
+     Lógica para listar noticias
+     */
+    document.getElementById("menu_listadoNoticias").addEventListener("click", (event) => {
+        //marcadores.retrieveAtom('https://www.diariojaen.es/rss/jaen.xml','#listadoNoticias');
+        marcadores.retrieveFeed('https://www.ideal.es/rss/atom/portada/','#listadoNoticias');
+
+    });
+
 };

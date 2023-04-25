@@ -1,4 +1,17 @@
-.panel{
-    padding: 0.5;
-    color: red;
+.panel {
+    margin-top: 0.5em;
+    padding: 0.5 em;
 }
+
+.card {
+    width: 80%;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0.25em 0.25em lightgray;
+  }
+
+img {
+    max-width: 100%;    
+    object-fit: contain;
+  }
+

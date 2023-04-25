@@ -12,23 +12,23 @@
 </head>
 <body>
     <nav class="navbar bg-primary">
-        <div class="container-fluid">
+        <div class="container-fluid" id="collapseExample">
             <a class="navbar-brand" href="#">FeedNews</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
          <div class="collapse navbar-collapse" id="navbarNavDropdown">
            <ul class="navbar-nav">
-            <li class="nav-item" id="menu_listadoRss">
+            <li class="nav-item" id="menu_listadoRss" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-controls="collapseExample">
                 <a class="nav-link" href="#">Listado canales</a>
             </li>
-            <li class="nav-item" id="menu_listadoNoticias">
+            <li class="nav-item" id="menu_listadoNoticias" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-controls="collapseExample">
                 <a class="nav-link" href="#">Listado noticias</a>
             </li>
-            <li class="nav-item" id="menu_addRss">
+            <li class="nav-item" id="menu_addRss" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-controls="collapseExample">
                 <a class="nav-link" href="#">Añadir canal</a>
             </li>
-            <li class="nav-item" id="menu_acercaDe">
+            <li class="nav-item" id="menu_acercaDe" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-controls="collapseExample">
                 <a class="nav-link" href="#">Acerca de</a>
             </li>
            </ul>
@@ -44,7 +44,7 @@
             <p>Lista de noticias</p>
         </div>
 
-        <div id="addRss" class="panel1">
+        <div id="addRss" class="panel">
             <p>Añadir canal</p>
             <form id="formMarcadores">
                 <div class="mb-3">
