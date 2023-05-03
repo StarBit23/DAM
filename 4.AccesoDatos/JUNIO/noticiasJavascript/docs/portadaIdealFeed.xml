@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>RSS de noticias de portada</title>
+	<link rel="self" href="https://www.ideal.es/rss/atom/portada/" />
+	<link href="https://www.ideal.es/rss/atom/portada/" rel="alternate" type="application/rss+xml"
+		title="RSS de noticias de portada" />
+	<updated>2023-04-19T13:21:09+02:00</updated>
+	<id>https://www.ideal.es/rss/atom/portada/</id>
+	<author>
+		<name>portada </name>
+	</author>
+	<item>
+		<id>urn:uuid:e913ca66-de9f-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Meteorología ya avisa de cuándo puede llover en varias zonas de Andalucía ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/meteorologia-avisa-dia-puede-llover-zonas-andalucia-20230419125235-nt.html</link>
+		<updated>2023-04-19T13:18:39+02:00</updated>
+		<summary><![CDATA[ La Agencia Estatal de Meteorología (Aemet) avisa de un giro en el tiempo en ciertas provincias este sábado ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:1ec47654-de9d-11ed-a27c-586b55dca645</id>
+		<title><![CDATA[ Descubre la cascada más larga de Andalucía: un salto de agua con 130 metros ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/descubre-cascada-larga-andalucia-salto-agua-130-20230419123417-nt.html</link>
+		<updated>2023-04-19T13:16:02+02:00</updated>
+		<summary><![CDATA[ Osera es el segundo salto más alto de España, tras el de Nervión, y está rodeado de arboledas casi vírgenes y senderos de escaso tránsito ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:547caeaa-de94-11ed-aa3d-20f42123f5c3</id>
+		<title><![CDATA[ Los fichajes de invierno esperan su turno para reivindicarse ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granadacf/fichajes-invierno-esperan-turno-reivindicarse-20230419125203-nt.html</link>
+		<updated>2023-04-19T12:52:04+02:00</updated>
+		<summary><![CDATA[ Shon Weissman, Pol Lozano y Famara Diédhiou quieren ser importantes en el tramo final de la temporada tras quedarse sin minutos contra la UD Las Palmas ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:c4bbe3cc-de9c-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ 40.000 personas, a la carga del FicZone, que anuncia edición veraniega ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/40000-personas-carga-ficzone-anuncia-edicion-veraniega-20230419123444-nt.html</link>
+		<updated>2023-04-19T12:34:46+02:00</updated>
+		<summary><![CDATA[ La Feria de Muestras de Armilla acoge este fin de semana el gran evento de las culturas populares, que finalmente contará con la participación del actor de &#039;La casa del dragón&#039; Graham McTavish ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:8e355d5c-ddce-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Dos tiros por tocar a la puerta equivocada ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/internacional/eeuu/titoteado-tocar-timbre-equivocado-20230418120858-ntrc.html</link>
+		<updated>2023-04-19T12:34:02+02:00</updated>
+		<summary><![CDATA[ Un anciano dispara a quemarropa en EE UU a un adolescente que llamó a su casa por error cuando buscaba a sus hermanos ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:40e56f72-de98-11ed-a27c-586b55dca645</id>
+		<title><![CDATA[ Las 150 cervezas de España y el mundo que servirán en el festival de Granada ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/150-cervezas-espana-mundo-serviran-festival-granada-20230419115633-nt.html</link>
+		<updated>2023-04-19T12:32:09+02:00</updated>
+		<summary><![CDATA[ La localidad metropolitana de La Zubia acogerá de viernes a domingo el Granada Beer Festival ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:c1f338f0-ddfe-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ El cineasta granadino Miguel Hermoso presenta 'Noche cómplice', su primera novela ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/libros/cineasta-granadino-miguel-hermoso-presenta-noche-complice-20230419122749-nt.html</link>
+		<updated>2023-04-19T12:27:51+02:00</updated>
+		<summary><![CDATA[ El libro, ubicado en Granada, es un thriller sobre un periodista local que ve cómo su vida cambia inesperadamente ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:17ad1f52-de9c-11ed-a27c-586b55dca645</id>
+		<title><![CDATA[ Así es el mejor bocadillo de jamón del mundo: sus 3 ingredientes clave ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/sociedad/mejor-bocadillo-jamon-mundo-ingredientes-clave-20230419122322-nt.html</link>
+		<updated>2023-04-19T12:23:23+02:00</updated>
+		<summary><![CDATA[ Es el ganador del Campeonato del Mejor Bocadillo de Jamón Joselito 2023 ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:9db8cfe0-de17-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ El arco iris de la expresión en verso, en el martes del Festival de Poesía ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/arco-iris-expresion-verso-martes-festival-poesia-20230419121952-nt.html</link>
+		<updated>2023-04-19T12:19:53+02:00</updated>
+		<summary><![CDATA[ La mañana en Ciencias de la Educación mezcló la experiencia divina con la de la menstruación, y se cerró con un recital de las Mora a dos voces ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:d7117070-de9a-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Encuentra una granada al limpiar el trastero de su casa en Motril ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/costa/encuentra-granada-limpiar-trastero-casa-motril-20230419121433-nt.html</link>
+		<updated>2023-04-19T12:14:34+02:00</updated>
+		<summary><![CDATA[ El objeto fue localizado por una ciudadana cuando limpiaba la dependencia de una vivienda que acababa de adquirir en la Costa de Granada ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:a06f5f04-dde7-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ La tapa andaluza que ha cautivado al popular chef José Andrés ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/tapa-andaluza-cautivado-popular-chef-jose-andres-20230419101253-nt.html</link>
+		<updated>2023-04-19T12:03:05+02:00</updated>
+		<summary><![CDATA[ La tortillita de camarones es una delicia gaditana con 800 años de tradición que se ha ido extendiendo y convirtiendo en una estrella gastronómica que ha encandilado a los mejores chef del mundo ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:fe393472-de85-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Abatido en Burgos un policía nacional que había robado un arma y había huido ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/nacional/muere-tiroteado-policia-nacional-gasolinera-pueblo-burgos-20230419095521-ntrc.html</link>
+		<updated>2023-04-19T11:52:27+02:00</updated>
+		<summary><![CDATA[ El agente, de baja psicológica y que recientemente había sido detenido por narcotráfico, había sustraído la pistola en Coruña horas antes ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:a0738f44-de90-11ed-a27c-586b55dca645</id>
+		<title><![CDATA[ La nueva señal de tsunami vista en Andalucía que revoluciona TikTok ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/nueva-senal-tsunami-vista-andalucia-revoluciona-tiktok-20230419113152-nt.html</link>
+		<updated>2023-04-19T11:41:31+02:00</updated>
+		<summary><![CDATA[ Ha sido instalada en Huelva, generando debate en la ciudadanía ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:de818946-de11-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ «Se intentó llevar a mi hijo y cuando salí tras él, se dio a la fuga» ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/intentaron-llevar-hijo-sali-tras-hombre-dio-20230419001337-nt.html</link>
+		<updated>2023-04-19T11:38:38+02:00</updated>
+		<summary><![CDATA[ El padre de un menor ha denunciado en Policía Nacional el intento de rapto de su hijo la tarde del lunes en Parque Nueva Granada ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:6c8f012e-de84-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Sánchez anuncia la financiación de 43.000 nuevas viviendas para alquileres asequibles ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/nacional/sanchez-anuncia-financiacion-43000-nuevas-viviendas-alquileres-20230419094523-ntrc.html</link>
+		<updated>2023-04-19T11:38:29+02:00</updated>
+		<summary><![CDATA[ La medida se suma a la movilización de 50.000 viviendas de la Sareb que el Consejo de Ministros acordó destinar este martes a tal fin ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:542b0450-de95-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ La nueva fase de Santa Adela pone rumbo al inicio de las obras ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/nueva-fase-santa-adela-pone-rumbo-inicio-20230419113602-nt.html</link>
+		<updated>2023-04-19T11:36:03+02:00</updated>
+		<summary><![CDATA[ El Ayuntamiento ya tiene una propuesta de adjudicación del proyecto de obras, que permitirá la construcción de 122 nuevas viviendas en el barrio ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:820d6e5c-de91-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Ana Obregón relata su intento de suicidio en el libro de su hijo Aless ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/gente-estilo/ana-obregon-relata-intento-suicidio-libro-hijo-20230419113451-ntrc.html</link>
+		<updated>2023-04-19T11:35:02+02:00</updated>
+		<summary><![CDATA[ El joven empezó a escribir antes de morir &#039;El chico de las musarañas&#039; y, ahora, Ana Obregón lo ha finalizado ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:062d3c60-de94-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Un cambio urbanístico permitirá al Virgen de las Nieves ganar una planta ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/cambio-urbanistico-permitira-virgen-nieves-ganar-planta-20230419112655-nt.html</link>
+		<updated>2023-04-19T11:26:56+02:00</updated>
+		<summary><![CDATA[ La comisión de Urbanismo aprueba una modificación que establece la edificabilidad máxima en parcelas públicas ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:ead6afae-de8a-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Nuevas monedas de 10, 50 y 200 euros: hay una cuadrada y una de oro ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/sociedad/nuevas-monedas-200-euros-cuadrada-oro-20230419103109-nt.html</link>
+		<updated>2023-04-19T10:52:51+02:00</updated>
+		<summary><![CDATA[ Esta colección de monedas de euro sobre Sorolla tendrá disponibles más de 10.000 unidades ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:e6a89fee-dd1a-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ Un gran parque desde el Salón hasta Cenes de la Vega ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/gran-parque-salon-cenes-vega-20230419135651-nt.html</link>
+		<updated>2023-04-19T10:45:31+02:00</updated>
+		<summary><![CDATA[ Con motivo del proyecto de la Exposición Hispano-Africana de 1933, se planificaron grandes obras como la creación de la mayor zona verde que iba a tener la ciudad de la Alhambra ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:37ae5d8c-de03-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ Reorganización de los centros de salud en Granada: ¿cómo afecta a pacientes? ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/reorganizacion-centros-salud-granada-afecta-pacientes-20230419001050-nt.html</link>
+		<updated>2023-04-19T10:11:43+02:00</updated>
+		<summary><![CDATA[ Los cinco pasos recomendados por Salud para aquellos que tengan que ser atendidos en atención primaria ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3298ae12-de88-11ed-a27c-586b55dca645</id>
+		<title><![CDATA[ Las tres deducciones más comunes que pueden desgravarse los andaluces en la Renta ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/tres-deducciones-comunes-pueden-desgravarse-andaluces-renta-20230419100848-nt.html</link>
+		<updated>2023-04-19T10:11:19+02:00</updated>
+		<summary><![CDATA[ La campaña de la Renta, activa desde la semana pasada, se extenderá hasta el próximo 30 de junio de 2023 ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3d4ca27e-de87-11ed-a27c-586b55dca645</id>
+		<title><![CDATA[ Una experta explica si puedes desgravarte el seguro del hogar o el coche en la Renta ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/sociedad/experta-explica-puedes-desgravarte-seguro-hogar-coche-20230419101037-nt.html</link>
+		<updated>2023-04-19T10:10:38+02:00</updated>
+		<summary><![CDATA[ La Agencia Tributaria permite a los contribuyentes deducirse algunos gastos, aunque solo es posible hacerlo en situaciones muy concretas ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:a1463efe-de12-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ Vecinos del Albaicín se quejan de dos casas con diez okupas violentos ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/vecinos-albaicin-quejan-dos-casas-diez-okupas-20230419095111-nt.html</link>
+		<updated>2023-04-19T10:05:56+02:00</updated>
+		<summary><![CDATA[ Aseguran que han recibido amenazas ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:4d5919ec-ddf9-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ El SAS reorganiza los centros de salud para implantar los diez minutos por paciente ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/sas-reorganiza-centros-salud-implantar-diez-minutos-20230419001037-nt.html</link>
+		<updated>2023-04-19T09:57:15+02:00</updated>
+		<summary><![CDATA[ Potenciará las consulta de acogida y apostará por las citas de tarde siempre que haya voluntarios ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:c40af650-de80-11ed-9807-5fbf36d34546</id>
+		<title><![CDATA[ Escucha el podcast de Quico Chirino de esta semana: 'Ruido en la lista' ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/podcast/escucha-podcast-quico-chirino-semana-ruido-lista-20230419091847-aud.html</link>
+		<updated>2023-04-19T09:54:19+02:00</updated>
+		<summary><![CDATA[ Los suscriptores de IDEAL On+ pueden disfrutar este miércoles del análisis de la actualidad granadina en un formato audio ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:59c0d4b4-ddcb-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Caixabank informa de novedades importantes para clientes mayores de 65 años ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/sociedad/caixabank-lanza-nuevas-ayudas-personas-mayores-anos-20230418113712-nt.html</link>
+		<updated>2023-04-19T09:32:16+02:00</updated>
+		<summary><![CDATA[ La entidad refuerza su atención a personas mayores, amplía el horario de caja y potencia todos sus canales de servicio ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:12314104-de09-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ Alarma en San Miguel Alto ante otra sucesión de fuegos ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/alarma-san-miguel-alto-ante-sucesion-fuegos-granada-20230419185314-nt.html</link>
+		<updated>2023-04-19T09:31:36+02:00</updated>
+		<summary><![CDATA[ Ha habido tres fuegos en dos días en la misma zona, tal y como ocurrió entre enero y febrero ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3994fb8e-de3e-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Por qué los Simpson no envejecen ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/pantallas/series/simpson-envejecen-20230419014642-ntrc.html</link>
+		<updated>2023-04-19T08:45:50+02:00</updated>
+		<summary><![CDATA[ Hoy, día 19 de abril, se celebra el día en que comenzó a emitirse la serie de la familia amarilla. Los redactores de Pantallas eligen sus episodios favoritos ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:89848aa2-ddde-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ España pierde agua por un tubo ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/antropia/espana-pierde-agua-tubo-20230419161304-ntrc.html</link>
+		<updated>2023-04-19T08:26:41+02:00</updated>
+		<summary><![CDATA[ El Instituto Nacional de Estadística (INE) cuantifica esta merma en 652 hectómetros anuales, el equivalente a 192.000 piscinas olímpicas, pero «puede ser más porque es una estimación», asegura el sector ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:70cd6a84-de14-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ El Covirán cree en la gesta y ganar moral para el tramo decisivo ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/deportes/fundacioncbgranada/coviran-cree-gesta-ganar-moral-tramo-decisivo-20230419001750-nt.html</link>
+		<updated>2023-04-19T00:17:51+02:00</updated>
+		<summary><![CDATA[ Los granadinos saben que batir al Barça les daría un plus para la lucha por evitar el descenso con Betis, Manresa y Girona ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:58d48b9c-de19-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ La mayoría de las cofradías dicen sí a la magna procesión ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/semanasantagranada/mayoria-cofradias-dicen-magna-procesion-20230419001722-nt.html</link>
+		<updated>2023-04-19T00:17:22+02:00</updated>
+		<summary><![CDATA[ Las cofradías del Vía Crucis, Santo Sepulcro, Alhambra, Silencio y San Agustín no participarán en esta cita, en caso de que la autorice el Arzobispado ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3c7746ac-ddff-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ El taller perdido de los títeres de Granada revive durante 15 días ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/taller-perdido-titeres-granada-revive-dias-20230419001631-nt.html</link>
+		<updated>2023-04-19T00:16:32+02:00</updated>
+		<summary><![CDATA[ Hasta el día 28, el vestíbulo de la Escuela de Arte acoge en una exposición el recuerdo de una iniciativa única en la historia de España ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:76d8ae84-de05-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ La empresa granadina Letter Ingenieros mejorará la eficiencia energética del Congreso y del alumbrado de Barcelona ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/empresa-granadina-letter-ingenieros-mejorara-eficiencia-energetica-20230419001541-nt.html</link>
+		<updated>2023-04-19T00:15:41+02:00</updated>
+		<summary><![CDATA[ En diez años Letter Ingenieros despunta en el sector energético. Arrancó su andadura en Granada como consultoría de eficiencia energética y ha extendido sus servicios a todo el territorio nacional, Portugal y Dubai. ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:bf2e6e36-de18-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ Quince mujeres son doctoras honorarias, cuatro hasta 2015 y once en los últimos ocho años ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/miugr/quince-mujeres-doctoras-honorarias-cuatro-2015-once-20230419001525-nt.html</link>
+		<updated>2023-04-19T00:15:25+02:00</updated>
+		<summary><![CDATA[ Durante el mandato de la rectora Pilar Aranda la mitad de estos nombramientos se han impuesto a féminas ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:468d8a16-de18-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ La UGR retirará el 'honoris causa' a Boaventura de Sousa si se demuestra que cometió acoso sexual ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/miugr/ugr-retirara-honoris-causa-boaventura-sousa-demuestra-20230419001515-nt.html</link>
+		<updated>2023-04-19T00:15:16+02:00</updated>
+		<summary><![CDATA[ La Universidad de Coimbra suspende temporalmente de sus funciones al sociólogo mientras investiga varias acusaciones ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3703fb8c-de10-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ La tercera vía del granadinismo ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granadacf/rafael-lamelas-tercera-via-granadinismo-20230419001426-nt.html</link>
+		<updated>2023-04-19T00:14:27+02:00</updated>
+		<summary><![CDATA[ La masa social del equipo ha crecido gracias a los &#039;hijos&#039; de la etapa consolidada en fútbol profesional ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:f30874ec-ddf3-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ La Junta da dos días al Ayuntamiento para que le envíe el expediente de la agencia de IA ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/junta-dos-dias-ayuntamiento-envie-expediente-agencia-20230419001415-nt.html</link>
+		<updated>2023-04-19T00:14:16+02:00</updated>
+		<summary><![CDATA[ El personal del consistorio tiene los documentos desde hace una semana pero aún no los ha compartido con el resto de instituciones ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:b1ae3104-de0b-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ El milagro de la parroquia de Joaquina Eguaras de Granada ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/milagro-parroquia-joaquina-eguaras-granada-20230419001320-nt.html</link>
+		<updated>2023-04-19T00:13:22+02:00</updated>
+		<summary><![CDATA[ Los granadinos ven levantarse medio siglo después un templo católico en toda una manzana, que relevará al pequeño salón parroquial «en el que no cabe ya la gente» ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:15bff904-de32-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ La Junta aprobará un nuevo decreto de sequía ante una situación «dramática sin paliativos» ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/junta-aprobara-nuevo-decreto-sequia-ante-situacion-20230419234421-nt.html</link>
+		<updated>2023-04-18T23:44:22+02:00</updated>
+		<summary><![CDATA[ Juanma Moreno reclama una actuación conjunta con el Gobierno y que se aproveche la presidencia de la UE para impulsar una política del agua ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:53f941e6-dd31-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ El régimen del Real Madrid no tiene fin ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/deportes/futbol/liga-campeones/chelsea-real-madrid-cuartos-vuelta-20230418171239-ntrc.html</link>
+		<updated>2023-04-18T23:34:41+02:00</updated>
+		<summary><![CDATA[ Los blancos doblegan al Chelsea en Stamford Bridge con un doblete de Rodrygo y disputarán las semifinales de la Champions por undécima ocasión en las trece últimas temporadas ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:c1882902-dd13-11ed-8c28-80ba2d90b002</id>
+		<title><![CDATA[ El Nápoles amaga y el Milan golpea ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/deportes/futbol/liga-campeones/napoles-milan-champions-cuartos-vuelta-20230418150405-ntrc.html</link>
+		<updated>2023-04-18T23:21:08+02:00</updated>
+		<summary><![CDATA[ Como en la ida en San Siro, el conjunto &#039;rossonero&#039; impone su oficio y confirma su resurrección continental con el anhelado regreso a semifinales 16 años después ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:954290d2-de29-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Fox evita ir a juicio por difamación al llegar a un acuerdo con la empresa denunciante ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/internacional/eeuu/fox-evita-juicio-difamacion-llegar-acuerdo-empresa-20230418230239-ntrc.html</link>
+		<updated>2023-04-18T23:04:07+02:00</updated>
+		<summary><![CDATA[ La cadena de Rupert Murdoch pagará 787,5 millones de dólares a la compañía de software Dominion Voting Systems por atribuir un presunto fraude electoral a sus máquinas de votación ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:044a04de-ddc5-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Putin visita a tropas desplegadas en las regiones ocupadas para escenificar su pertenencia a Rusia ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/internacional/europa/putin-visita-sorpresa-jerson-lugansk-evaluar-situacion-20230418110252-ntrc.html</link>
+		<updated>2023-04-18T21:51:56+02:00</updated>
+		<summary><![CDATA[ El presidente realiza por sorpresa a Jersón y Lugansk su segundo viaje al frente desde que comenzó la guerra ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:748f2c66-ddf1-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Bisbal se vuelve viral al decir una frase más almeriense que las migas ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/almeria/almeria/frase-viral-david-bisbal-saludar-fans-20230418163109-nt.html</link>
+		<updated>2023-04-18T21:45:12+02:00</updated>
+		<summary><![CDATA[ El cantante almeriense utiliza una expresión que triunfa en redes sociales ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:a9a4b0d8-de0a-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ El Gobierno tunecino confirma su deriva autoritaria al descabezar a la oposición ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/internacional/africa/presidente-saied-descabeza-oposicion-tunecina-nueva-deriva-20230418194143-ntrc.html</link>
+		<updated>2023-04-18T21:29:54+02:00</updated>
+		<summary><![CDATA[ El presidente Kais Saied detiene al histórico dirigente de Ennahda y a otros tres líderes del partido islamista y cierra todas sus oficinas en el país magrebí ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3026c644-de12-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Al menos 21 muertos tras un incendio en un hospital de Pekín ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/internacional/asia/muertos-tras-incendio-hospital-pekin-20230418202723-ntrc.html</link>
+		<updated>2023-04-18T20:27:26+02:00</updated>
+		<summary><![CDATA[ Los pacientes han saltado por las ventanas con la ayuda de cuerdas improvisadas con sábanas para huir del fuego ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:edabc51a-de13-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Rusia intensifica sus relaciones con Iberoamérica para tratar de romper su aislamiento internacional ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/internacional/europa/rusia-intensifica-relaciones-iberoamerica-tratar-romper-aislamiento-20230418202707-ntrc.html</link>
+		<updated>2023-04-18T20:27:12+02:00</updated>
+		<summary><![CDATA[ Lavrov finaliza su visita a Brasil y aterriza en Venezuela, desde donde viajará después a Cuba y Nicaragua ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:099bf060-de05-11ed-81a3-e9fe704e758c</id>
+		<title><![CDATA[ El Racing, con siete bajas contra el Granada ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granadacf/racing-siete-bajas-granada-20230418200439-nt.html</link>
+		<updated>2023-04-18T20:04:39+02:00</updated>
+		<summary><![CDATA[ El conjunto cántabro tiene sancionados a Sainz-Maza y Parera y lesionados a Sangalli, Bobadilla, Mboula, Molina y Alves ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:a683289e-de0f-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Petrovic, el purasangre ideal para días de menos posesión ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granadacf/petrovic-purasangre-ideal-granada-20230418193713-nt.html</link>
+		<updated>2023-04-18T20:03:56+02:00</updated>
+		<summary><![CDATA[ El serbio, que no era titular desde finales de enero justo antes de su paternidad, ha vuelto con fuerza ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:507ad7ba-dddf-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ PSOE y Podemos solo logran pactar la comparecencia de Villarejo para 'Kitchen III' ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/nacional/psoe-podemos-solo-logran-pactar-comparecencia-villarejo-20230418142159-ntrc.html</link>
+		<updated>2023-04-18T19:33:13+02:00</updated>
+		<summary><![CDATA[ El grupo de trabajo concebido para investigar la corrupción del Ministerio del Interior durante el gobierno de Mariano Rajoy deriva en otra bronca del ejecutivo con sus socios ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:6f2d0c54-ddd1-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ El Govern exige al Madrid que retire el vídeo sobre el equipo del régimen y pida perdón ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/deportes/futbol/liga-primera/real-madrid-responde-laporta-equipo-regimen-20230418122336-ntrc.html</link>
+		<updated>2023-04-18T19:21:32+02:00</updated>
+		<summary><![CDATA[ El independentismo sale en tromba en defensa de Laporta y compara el caso del Barça con la cuestión catalana ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3dcc7a6c-ddc4-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ El Plan de Sánchez tropieza con que solo 9.000 viviendas de la Sareb son habitables ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/economia/vivienda/sareb-cuenta-solo-9000-viviendas-listas-entrar-20230418122449-ntrc.html</link>
+		<updated>2023-04-18T19:13:58+02:00</updated>
+		<summary><![CDATA[ El Consejo de Ministros aprueba el proyecto para movilizar 50.000 pisos, 15.000 por construir y buena parte de ellos fuera de los núcleos más caros ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:f9421fb8-de00-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ El Supremo ordena repetir el juicio a un etarra tras anular por segunda vez su absolución ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/nacional/supremo-ordena-repetir-juicio-etarra-tras-anular-20230418184258-ntrc.html</link>
+		<updated>2023-04-18T18:51:02+02:00</updated>
+		<summary><![CDATA[ Revoca por «arbitraria e ilógica» la decisión de la Audiencia Nacional sobre Asier Eceiza, acusado por los atentados contra hoteles de Alicante y Benidorm en verano de 2003 ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:047b8e40-ddd0-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Ayuso cerrará la lista del PP en Bilbao en un gesto de simbolismo político ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/nacional/ayuso-cerrara-forma-simbolica-lista-pp-bilbao-20230418120806-ntrc.html</link>
+		<updated>2023-04-18T18:47:58+02:00</updated>
+		<summary><![CDATA[ La presidenta madrileña, que ha mantenido severos roces con el lehendakari por la política fiscal, ha subrayado el papel de los populares vascos en la lucha contra ETA y convertido en ariete los pactos de Sánchez con Bildu ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:5eb71d7e-de03-11ed-81a3-e9fe704e758c</id>
+		<title><![CDATA[ Torrente vuelve a entrenar con el grupo ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granadacf/torrente-vuelve-entrenar-grupo-20230418181302-nt.html</link>
+		<updated>2023-04-18T18:13:03+02:00</updated>
+		<summary><![CDATA[ Las imágenes facilitadas por el club no mostraron a Cabaco, que aún se recupera en solitario de su lesión ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:f1d3036e-de00-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ Una comisión de trabajo pone a Granada rumbo a los Goya ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/comision-trabajo-pone-granada-rumbo-goya-20230418175809-nt.html</link>
+		<updated>2023-04-18T17:58:10+02:00</updated>
+		<summary><![CDATA[ Una treintena de representantes del sector audiovisual se reúnen a propuesta del Ayuntamiento para aprovechar el empuje de la gala para poner a la ciudad en el mapa del cine ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:7a3029f6-dde5-11ed-81a3-e9fe704e758c</id>
+		<title><![CDATA[ La familia de Agustinos se prepara para la carrera Padre Marcelino ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/deportes/carreras-populares-granada/familia-agustinos-prepara-carrera-padre-marcelino-20230418143526-nt.html</link>
+		<updated>2023-04-18T17:56:51+02:00</updated>
+		<summary><![CDATA[ La mayor prueba popular de la capital ya cuenta para este domingo con 2.600 inscritos, más que en el año anterior, y apunta a los tres mil ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:157b9f6c-ddc3-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Los nacionalistas críticos con la ley de vivienda denuncian la invasión de competencias autonómicas ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/nacional/nacionalistas-criticos-ley-vivienda-denuncian-invasion-competencias-20230418120024-ntrc.html</link>
+		<updated>2023-04-18T17:24:12+02:00</updated>
+		<summary><![CDATA[ ERC tacha de «inasumibles» las opciones que se barajan para poner las casas de la SAREB a disposición de los ciudadanos ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:01b00b4e-ddd7-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ El exjefe de la Policía Local de Guadix, nuevo candidato de VOX en las elecciones ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/guadix/exjefe-policia-local-guadix-nuevo-candidato-vox-20230418125357-nt.html</link>
+		<updated>2023-04-18T16:40:12+02:00</updated>
+		<summary><![CDATA[ Antonio Vera ha presentado este martes su candidatura a la alcaldía del municipio ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:7fa16d40-dd19-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ Compost humano: así quieren los rituales funerarios ser más verdes ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/antropia/compost-compost-convertiras-quieren-rituales-funerarios-verdes-20230418074429-ntrc.html</link>
+		<updated>2023-04-18T16:17:48+02:00</updated>
+		<summary><![CDATA[ El compostaje humano emerge en Estados Unidos. Aunque todavía es ilegal en Europa, esto no implica que no se puedan encontrar alternativas sostenibles y ecológicas para gestionar la muerte ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:7b422cc6-ddd2-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ La huelga de funcionarios judiciales irrumpe en Caleta ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/huelga-funcionarios-judiciales-irrumpe-caleta-juzgados-granada-20230418131833-nt.html</link>
+		<updated>2023-04-18T15:48:06+02:00</updated>
+		<summary><![CDATA[ Decenas de trabajadores recorren los pasillos del complejo judicial que aglutina la mayor parte de órganos unipersonales de Granada para animar a sumarse a sus compañeros ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:19224f7e-dde3-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Un policía fuera de servicio salva la vida a una mujer en un restaurante de Almuñécar ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/costa/policia-servicio-salva-vida-mujer-restaurante-almunecar-20230418141906-nt.html</link>
+		<updated>2023-04-18T14:19:07+02:00</updated>
+		<summary><![CDATA[ Uno de los clientes solicitó ayuda manifestando que su acompañante, una mujer de alrededor de 30 años, se había atragantado y se estaba ahogando ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:5e847100-ddde-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Cortes de tráfico en el acceso oeste a Motril por la construcción de la glorieta ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/costa/cortes-trafico-acceso-oeste-motril-construccion-glorieta-20230418134523-nt.html</link>
+		<updated>2023-04-18T13:45:24+02:00</updated>
+		<summary><![CDATA[ Desde este miércoles a las 9:30 horas y hasta el 31 de mayo, se cortará el tráfico al acceso/salida Oeste de Motril, entre la N-340 y la avenida de Salobreña ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:b3a0fea0-ddcb-11ed-81a3-e9fe704e758c</id>
+		<title><![CDATA[ El Granada vuelve a depender de sí mismo incluso para ser campeón ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granadacf/granadacf-cuentas-ascenso-clasificacion-20230418113326-nt.html</link>
+		<updated>2023-04-18T13:28:10+02:00</updated>
+		<summary><![CDATA[ La última victoria de los rojiblancos y las derrotas de Eibar y Levante colocan al alcance del equipo de Paco López la posibilidad de subir directo a Primera como primer clasificado de vencer a los armeros en Los Cármenes el domingo 30 ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:23869ec8-dddb-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ El mapa de solares en Granada que podrán albergar viviendas de alquiler ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/mapa-solares-granada-podran-albergar-viviendas-alquiler-20230418132217-nt.html</link>
+		<updated>2023-04-18T13:22:17+02:00</updated>
+		<summary><![CDATA[ Chana, Fargue y Norte son las zonas donde se concentran estos suelos para los pisos que contempla el Gobierno ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:b309804a-ddd8-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ Las 18 cámaras que sancionarán a vehículos que entren al Centro de Granada ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/camaras-sancionaran-vehiculos-entren-centro-granada-20230418130638-nt.html</link>
+		<updated>2023-04-18T13:06:39+02:00</updated>
+		<summary><![CDATA[ Los dispositivos vigilarán a los coches que accedan sin autorización en la zona de bajas emisiones ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:5e183e0c-ddb3-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ Crítica del episodio 4x04 de 'Succession': Ya tenemos sucesor ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/pantallas/series/critica-episodio-4x04-succession-sucesor-20230418120935-ntrc.html</link>
+		<updated>2023-04-18T12:30:18+02:00</updated>
+		<summary><![CDATA[ Las últimas voluntades de Logan Roy desvelan un nombre para ocupar su sillón, pero un garabato en el documento despierta las dudas. ¿Es un subrayado o un tachado? He ahí la cuestión ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:6502c48c-ddca-11ed-94c9-90352139c418</id>
+		<title><![CDATA[ Victoria Federica, imagen de una conocida marca de gafas ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/gente-estilo/victoria-federica-imagen-conocida-marca-gafas-20230418121813-ntrc.html</link>
+		<updated>2023-04-18T12:19:23+02:00</updated>
+		<summary><![CDATA[ La nieta del rey emérito ya ha rodado la campaña publicitaria que verá la luz muy pronto ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:005b6cf2-dd5f-11ed-8c28-80ba2d90b002</id>
+		<title><![CDATA[ Tres rostros del fantasma de la ópera ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/pantallas/cine/tres-rostros-fantasma-opera-20230417115335-ntrc.html</link>
+		<updated>2023-04-18T11:53:38+02:00</updated>
+		<summary><![CDATA[ Repasamos tres versiones disponibles en plataformas de la famosa novela de Gaston Leroux ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:ff06f89e-ddcc-11ed-b08c-e3026bf8fb2e</id>
+		<title><![CDATA[ El lugar de Granada que es el más bonito de España para la Inteligencia Artificial ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/lugar-granada-bonito-espana-inteligencia-artificial-20230418114140-nt.html</link>
+		<updated>2023-04-18T11:41:42+02:00</updated>
+		<summary><![CDATA[ Se cuela en un ranking como el mejor monumento de todo el país ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:920bc390-dd4b-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ «Nunca he pensado en términos de ventaja o riesgo al abrir camino» ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/nunca-pensado-terminos-ventaja-riesgo-abrir-camino-20230418002701-nt.html</link>
+		<updated>2023-04-18T10:15:40+02:00</updated>
+		<summary><![CDATA[ La autora de origen estadounidense ofreció un recital donde se fundieron recuerdos, sentimientos y denuncia social a partes iguales ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3d75706e-dd42-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ El hombre entre bambalinas que ha hecho funcionar el tren a Motril en Europa ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/costa/hombre-bambalinas-funcionar-tren-motril-europa-20230418002514-nt.html</link>
+		<updated>2023-04-18T08:36:03+02:00</updated>
+		<summary><![CDATA[ Julio Rodríguez es una de las caras no visibles de un plan que se puso en marcha hace dos años para que a la Costa no se le escapara esta oportunidad ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:4946275c-dd2a-11ed-8c28-80ba2d90b002</id>
+		<title><![CDATA[ Las cuatro vidas del histórico Hotel Colón ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/cuatro-vidas-historico-hotel-colon-20230418002415-nt.html</link>
+		<updated>2023-04-18T08:27:59+02:00</updated>
+		<summary><![CDATA[ Más de un siglo después de su construcción el edificio albergará por fin un alojamiento turístico ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:db34b5b2-dd51-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ Versos y recuerdos para inaugurar el Festival de Poesía en la Huerta de San Vicente ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/versos-recuerdos-inaugurar-festival-poesia-huerta-san-20230418002710-nt.html</link>
+		<updated>2023-04-18T00:27:11+02:00</updated>
+		<summary><![CDATA[ Por la mañana, el acto inaugural y Pablo Rivero llenaron Ciencias de la Educación, y por la tarde hubo Filandón a cargo de tres grandes narradores ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:e0feb152-dd18-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ El homenaje a los 'raros' de Pepa Salas ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/homenaje-raros-pepa-salas-20230418002637-nt.html</link>
+		<updated>2023-04-18T00:26:38+02:00</updated>
+		<summary><![CDATA[ La artista, licenciada en Bellas Artes por la Universidad de Granada, reivindica la diversidad como riqueza social en su exposición &#039;Rara avis in terris&#039; ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:8f95d23c-dd68-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ La bronca sobre Doñana se dispara y aleja la posibilidad de un acuerdo entre administraciones ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/bronca-sobre-donana-dispara-aleja-posibilidad-acuerdo-20230418234212-nt.html</link>
+		<updated>2023-04-17T23:42:12+02:00</updated>
+		<summary><![CDATA[ Juanma Moreno exige actuaciones del Gobierno frente a la sequía y pide obras «cerca o lejos» del Parque Nacional ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:14ff577c-dd2d-11ed-8c28-80ba2d90b002</id>
+		<title><![CDATA[ Las tarjetas de crédito y débito sufrirán un nuevo cambio tecnológico por seguridad ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/sociedad/cambio-tarjetas-credito-debito-avisan-bancos-20230417163711-nt.html</link>
+		<updated>2023-04-17T22:00:38+02:00</updated>
+		<summary><![CDATA[ Se trata de una modificación que comenzará a aplicarse desde el próximo año ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:7e860728-dd3b-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ De Ribadeo a Nerja, rutas imprescindibles para los amantes del ciclismo ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/contentfactory/post/2023/04/11/para-viajeros-unicos-de-ribadeo-a-nerja-una-ruta-imprescindible-para-los-amantes-del-ciclismo/</link>
+		<updated>2023-04-17T18:23:47+02:00</updated>
+		<summary><![CDATA[  ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:791cbc0a-dd27-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ Yulen Pereira le cuenta a su madre su ruptura con Anabel Pantoja ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/gente-estilo/yulen-pereira-cuenta-madre-ruptura-anabel-pantoja-20230417160738-ntrc.html</link>
+		<updated>2023-04-17T16:07:40+02:00</updated>
+		<summary><![CDATA[ «Me duele bastante tener que escuchar esto aquí», ha sido la reacción de Arelys Ramos ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:51efff4e-dcfe-11ed-8c28-80ba2d90b002</id>
+		<title><![CDATA[ Aviso de la Guardia Civil por una estafa que actúa en su nombre ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/sociedad/aviso-falsa-citacion-guardia-civil-estafa-piques-20230417110158-nt.html</link>
+		<updated>2023-04-17T14:08:48+02:00</updated>
+		<summary><![CDATA[ El mensaje viene acompañado de un PDF y esconde un timo ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:81bd87f0-dd12-11ed-8c28-80ba2d90b002</id>
+		<title><![CDATA[ Controles con lupa de la DGT esta semana en Andalucía: ¿qué mirarán? ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/controles-lupa-dgt-semana-andalucia-miraran-20230417132609-nt.html</link>
+		<updated>2023-04-17T13:26:10+02:00</updated>
+		<summary><![CDATA[ Tráfico establece una serie de controles para esta semana en la comunidad andaluza ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:68661938-dd04-11ed-8c28-80ba2d90b002</id>
+		<title><![CDATA[ Oferta de trabajo «sin experiencia» por 1.500 euros de Lidl en Andalucía ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/oferta-trabajo-experiencia-1500-euros-lidl-andalucia-20230417114512-nt.html</link>
+		<updated>2023-04-17T11:45:13+02:00</updated>
+		<summary><![CDATA[ La cadena de supermercados lanza un total de 90 vacantes ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:c7ba9fa2-dc01-11ed-b0ad-2280a374883d</id>
+		<title><![CDATA[ 'Endeavour': adiós al bromance ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/pantallas/series/rosa-palo-endeavour-adios-bromance-20230416101232-ntrc.html</link>
+		<updated>2023-04-17T10:12:35+02:00</updated>
+		<summary><![CDATA[ La precuela de &#039;Inspector Morse&#039; está completa en Filmin, se ha convertido en la serie más vista de la plataforma y consta de 9 temporadas de capítulos de hora y media de duración ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:6099fe34-dced-11ed-bad1-970c3200fe0f</id>
+		<title><![CDATA[ Muere de cáncer una concursante de 'Mujeres y Hombres y Viceversa' ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/tv/muere-cancer-concursante-mujeres-hombres-viceversa-20230417091649-ntrc.html</link>
+		<updated>2023-04-17T09:33:00+02:00</updated>
+		<summary><![CDATA[ Patricia Rite fue contando en redes sociales la evolución de su enfermedad con una entereza y positividad encomiables ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:569d7b2c-da95-11ed-8911-e0b1298710ca</id>
+		<title><![CDATA[ El ángel de la guarda de la Amazonía vuelve para frenar la deforestación ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/antropia/angel-guarda-amazonia-vuelve-frenar-deforestacion-20230417093944-ntrc.html</link>
+		<updated>2023-04-17T07:45:25+02:00</updated>
+		<summary><![CDATA[ Lula da Silva recupera a su antigua líder de medioambiente para dar un giro a la política verde de su gobierno ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:df27ec78-c3e5-11ed-b69e-22f46fb33341</id>
+		<title><![CDATA[ El único cuadro de Goya que hay en Granada ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/culturas/unico-cuadro-goya-granada-20230417000814-nt.html</link>
+		<updated>2023-04-17T00:08:15+02:00</updated>
+		<summary><![CDATA[ El maestro aragonés hizo un retrato del ministro Francisco Saavedra que guarda como un tesoro la Abadía del Sacromonte ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:104cfa8e-dc99-11ed-8342-76975d6749bc</id>
+		<title><![CDATA[ El transporte público arranca el año con récord histórico y 12,7 millones de viajeros en Andalucía ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/transporte-publico-arranca-ano-record-historico-127-20230417225627-nt.html</link>
+		<updated>2023-04-16T22:56:28+02:00</updated>
+		<summary><![CDATA[ El volumen de usuarios en Andalucía supera ya la cifra previa a la pandemia con un crecimiento sostenido impulsado por los descuentos ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:c7e145fc-dc4d-11ed-8b17-22b24f6b3fa8</id>
+		<title><![CDATA[ Jordi Cruz y Rebecca Lima esperan su primer hijo ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/gente-estilo/jordi-cruz-rebecca-lima-esperan-primer-hijo-20230416140100-ntrc.html</link>
+		<updated>2023-04-16T14:01:37+02:00</updated>
+		<summary><![CDATA[ El jurado de &#039;MasterChef&#039; ha recibido las felicitaciones de concursantes conocidos y anónimos del programa ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:61588458-dbcb-11ed-b2d4-8b0c92976d20</id>
+		<title><![CDATA[ Ocho preguntas (y sus respuestas) para entender el conflicto de Doñana ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/andalucia/ocho-preguntas-respuestas-entender-conflicto-donana-20230416222428-nt.html</link>
+		<updated>2023-04-15T22:24:28+02:00</updated>
+		<summary><![CDATA[ La aprobación inicial en el Parlamento de Andalucía de una proposición de ley para reordenar las zonas agrícolas en el entorno del Parque Nacional ha desatado una controversia política que esconde un problema complejo con intereses encontrados ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:08172f1c-db93-11ed-b2d4-8b0c92976d20</id>
+		<title><![CDATA[ Tomates de más calidad gracias a la Inteligencia Artificial ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/tomates-calidad-gracias-inteligencia-artificial-20230415154035-nt.html</link>
+		<updated>2023-04-15T15:40:35+02:00</updated>
+		<summary><![CDATA[ El proyecto Tomatia aplica novedosas tecnologías de la información para medir el rendimiento y la calidad del tomate de industria ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:e8e0ca94-da9e-11ed-924e-4e3cd91d88cc</id>
+		<title><![CDATA[ Cómo ganar dinero en TikTok, la aplicación de moda ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/vivir/tecnologia/ganar-dinero-tiktok-20230414122852-ntrc.html</link>
+		<updated>2023-04-15T00:09:55+02:00</updated>
+		<summary><![CDATA[ Su &#039;Fondo para Creadores&#039; reparte 1.000 millones de dólares entre los usuarios más influyentes ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:52033b8a-d8a4-11ed-979d-09b5668c106f</id>
+		<title><![CDATA[ Se revelan más detalles del esperado Concept Lancia ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/motor/novedades/revelan-detalles-esperado-concept-lancia-20230412220525-ntrc.html</link>
+		<updated>2023-04-12T04:02:00+02:00</updated>
+		<summary><![CDATA[ Se comparte una imagen en primicia que atañe al interior, el cual recrea los interiores y la atmósfera de las casas italianas mediante el uso de formas geométricas puras y radicales ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:eec2df98-d8a4-11ed-979d-09b5668c106f</id>
+		<title><![CDATA[ Tirar colillas desde el coche puede hacer que acabes en la cárcel ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/motor/reportajes/tirar-colillas-coche-puede-acabes-carcel-20230412220957-ntrc.html</link>
+		<updated>2023-04-11T22:10:46+02:00</updated>
+		<summary><![CDATA[ El 3% de los incendios tiene su origen a colillas abandonadas o arrojadas desde automóviles en marcha, según datos del Ministerio de Medio Ambiente ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:cdf44964-d8a4-11ed-979d-09b5668c106f</id>
+		<title><![CDATA[ Cuánto se declara a Hacienda por la ayuda del Moves al comprar coche ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/motor/economia/declara-hacienda-ayuda-moves-comprar-coche-20230412220858-ntrc.html</link>
+		<updated>2023-04-11T22:09:52+02:00</updated>
+		<summary><![CDATA[ Las administraciones consideran este tipo de ayudas a la financiación como «Ganancias Patrimoniales» ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:3c6453d6-d8a4-11ed-979d-09b5668c106f</id>
+		<title><![CDATA[ Aiways presenta en España su segundo SUV Coupé eléctrico ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/motor/novedades/aiways-presenta-espana-segundo-suv-coupe-electrico-20230412220454-ntrc.html</link>
+		<updated>2023-04-11T22:05:46+02:00</updated>
+		<summary><![CDATA[ Con 218 CV de potencia, 400 km de autonomía máxima y cargas de 90 kW, ya está a la venta desde 42.140 euros con el Plan Moves III ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:86ff3ef4-d2cf-11ed-9c62-9bb1c7ef965e</id>
+		<title><![CDATA[ Semáforos del futuro con cuatro colores: rojo, verde, ámbar... y blanco ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/vivir/tecnologia/semaforos-futuro-cuatro-colores-rojo-verde-ambar-20230404184045-ntrc.html</link>
+		<updated>2023-04-05T18:45:07+02:00</updated>
+		<summary><![CDATA[ Están vinculados a los coches sin conductor, que suponen un reto y una oportunidad ]]></summary>
+	</item>
+	<item>
+		<id>urn:uuid:76be43c8-b68c-11ed-9d95-2a269efe1c74</id>
+		<title><![CDATA[ Una multinacional coreana elige Granada para abrir un centro de tecnología médica ]]></title>
+		<link rel="alternate">
+			https://www.ideal.es/granada/multinacional-coreana-elige-granada-abrir-centro-tecnologia-20230228003111-nt.html</link>
+		<updated>2023-02-28T13:31:19+01:00</updated>
+		<summary><![CDATA[ Trabajará en el PTS con 25 ingenieros que diseñarán los sistemas de aparatos que luego se fabricarán en Corea ]]></summary>
+	</item>
+</feed>
