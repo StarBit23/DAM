@@ -1,5 +1,11 @@
 package com.jorgeortega.clases;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "cp")
+@XmlAccessorType (XmlAccessType.FIELD)
 public class CP {
     public String cp;
     public String localidad;
@@ -7,6 +13,10 @@ public class CP {
     public CP(String cp, String localidad) {
         this.cp = cp;
         this.localidad = localidad;
+    }
+
+    public CP() {
+        
     }
 
     public String getCp() {

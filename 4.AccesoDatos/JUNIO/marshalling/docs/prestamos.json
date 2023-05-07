@@ -1,0 +1,16 @@
+{
+   "prestamo" : {
+      "lector" : {
+         "id" : 0,
+         "telefono" : 0
+      },
+      "libro" : {
+         "id" : 0,
+         "edicion" : 0,
+         "año" : 0
+      },
+      "operario" : {
+         "id" : 0
+      }
+   }
+}

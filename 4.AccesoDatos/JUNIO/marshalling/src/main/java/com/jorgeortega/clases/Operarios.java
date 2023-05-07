@@ -12,32 +12,33 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlElement;
 
-
-@XmlRootElement(name = "lectores")
+@XmlRootElement(name = "operarios")
 @XmlAccessorType (XmlAccessType.FIELD)
-public class Lectores {
+public class Operarios {
+    Operario operarioSend = new Operario();
 
-    Lector lectorSend = new Lector();
-    @XmlElement(name="lector")
-    List <Lector> lectores = new ArrayList<Lector>();
+    
+
+    @XmlElement(name="operario")
+    List <Operario> operarios = new ArrayList<Operario>();
 
     List <String> apellidos = new ArrayList<String>();
     List <String> nombres = new ArrayList<String>();
 
-    public Lector returnLector(){
-        return lectorSend;
+    public Operario returnOperario(){
+        return operarioSend;
     }
 
-    public boolean add(Lector lector){
-        return this.lectores.add(lector);
+    public boolean add(Operario operario){
+        return this.operarios.add(operario);
     }
 
-    public List<Lector>findAll(){
-        return lectores;
+    public List<Operario>findAll(){
+        return operarios;
     }
 
-    public Lectores() {
-        this.lectores = new ArrayList<Lector>();
+    public Operarios() {
+        this.operarios = new ArrayList<Operario>();
     }
 
     public boolean loadNombres(String filename){
@@ -64,7 +65,7 @@ public class Lectores {
         return this.nombres.size() > 0 ? true : false;
     }
 
-    public boolean loadLectores(String nombresFilename, String apellidosFilename, Direcciones direcciones){
+    public boolean loadOperarios(String nombresFilename, String apellidosFilename){
         Random rand = new Random();
         boolean resultado = true;
         resultado = resultado && loadNombres(nombresFilename);
@@ -77,33 +78,31 @@ public class Lectores {
                 String apellido = this.apellidos.get(rand.nextInt(this.apellidos.size()));
                 String username = nombre.toLowerCase().substring(0, 1)+apellido.split(" ")[0].toLowerCase();
                 String email = username + "@gmail.com";
-                int telefono = rand.nextInt(200000000)+000000000;
-                Direccion direccion = direcciones.getRandomDireccion();
                 String password = "Secreto123";
 
-                this.lectores.add(new Lector(id, username, password, email, telefono, direccion, nombre, apellido));
-                
-                lectorSend = new Lector(id, username, password, email, telefono, direccion, nombre, apellido);
+                this.operarios.add(new Operario(id, username, password, email));
+
+                operarioSend = new Operario(id, username, password, email);
             }
         }
         
         return resultado;
     }
 
-    public Lectores(List<Lector> lectores) {
-        this.lectores = lectores;
+    public Operarios(List<Operario> operarios) {
+        this.operarios = operarios;
     }
 
-    public List<Lector> getLectores() {
-        return this.lectores;
+    public List<Operario> getOperarios() {
+        return this.operarios;
     }
 
-    public void setLectores(List<Lector> lectores) {
-        this.lectores = lectores;
+    public void setOperarios(List<Operario> operarios) {
+        this.operarios = operarios;
     }
 
-    public Lectores lectores(List<Lector> lectores) {
-        setLectores(lectores);
+    public Operarios operarios(List<Operario> operarios) {
+        setOperarios(operarios);
         return this;
     }
 
@@ -111,22 +110,22 @@ public class Lectores {
     public boolean equals(Object o) {
         if (o == this)
             return true;
-        if (!(o instanceof Lectores)) {
+        if (!(o instanceof Operarios)) {
             return false;
         }
-        Lectores lectores = (Lectores) o;
-        return Objects.equals(lectores, lectores.lectores);
+        Operarios operarios = (Operarios) o;
+        return Objects.equals(operarios, operarios.operarios);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(lectores);
+        return Objects.hashCode(operarios);
     }
 
     @Override
     public String toString() {
         return "{" +
-            " lectores='" + getLectores() + "'" +
+            " operarios='" + getOperarios() + "'" +
             "}";
     }
 

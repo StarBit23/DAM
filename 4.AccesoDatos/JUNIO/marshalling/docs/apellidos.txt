@@ -1,5 +1,9 @@
-García
+Garcia
 Fernandez
-Martínez
+Martinez
 Ortega
 Torres
+Hernandez
+Rodriguez
+Sanchez
+Gutierrez

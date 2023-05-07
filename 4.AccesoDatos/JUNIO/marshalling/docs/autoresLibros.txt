@@ -1,0 +1,10 @@
+Miguel de Cervantes,
+J. R. R. Tolkien,
+George Orwell,
+Aldous Huxley,
+Jane Austen,
+Fiódor Dostoyevski,
+Vladimir Nabokov,
+William Shakespeare,
+J. K. Rowling,
+F. Scott Fitzgerald

@@ -11,7 +11,15 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlElement;
+
+@XmlRootElement(name = "direcciones")
+@XmlAccessorType (XmlAccessType.FIELD)
 public class Direcciones {
+    @XmlElement(name="direccion")
     List<Direccion> direcciones;
 
     public Direcciones() {
@@ -48,7 +56,6 @@ public class Direcciones {
                 nombreVia = datos[1].trim();
 
                 Direccion direccion = new Direccion(
-                    contador,
                     tipoVia,
                     nombreVia,
                     random.nextInt(100),

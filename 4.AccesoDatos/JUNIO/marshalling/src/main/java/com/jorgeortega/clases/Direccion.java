@@ -2,6 +2,13 @@ package com.jorgeortega.clases;
 
 import java.util.Objects;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlElement;
+
+@XmlRootElement(name = "direccion")
+@XmlAccessorType (XmlAccessType.FIELD)
 public class Direccion {
     public int id;
     public TipoVia tipoVia;
@@ -15,22 +22,13 @@ public class Direccion {
     public Direccion() {
     }
 
-    public Direccion(int id, TipoVia tipoVia, String nombreVia, int numero, char portal, int planta, CP cp) {
-        this.id = id;
+    public Direccion(TipoVia tipoVia, String nombreVia, int numero, char portal, int planta, CP cp) {
         this.tipoVia = tipoVia;
         this.nombreVia = nombreVia;
         this.numero = numero;
         this.portal = portal;
         this.planta = planta;
         this.cp = cp;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public TipoVia getTipoVia() {
@@ -79,11 +77,6 @@ public class Direccion {
 
     public void setCp(CP cp) {
         this.cp = cp;
-    }
-
-    public Direccion id(int id) {
-        setId(id);
-        return this;
     }
 
     public Direccion tipoVia(TipoVia tipoVia) {
@@ -135,8 +128,7 @@ public class Direccion {
     @Override
     public String toString() {
         return "{" +
-            " id='" + getId() + "'" +
-            ", tipoVia='" + getTipoVia() + "'" +
+            "tipoVia='" + getTipoVia() + "'" +
             ", nombreVia='" + getNombreVia() + "'" +
             ", numero='" + getNumero() + "'" +
             ", portal='" + getPortal() + "'" +
