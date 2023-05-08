@@ -1,15 +1,20 @@
+let totalPaginas = 10;
+const librosPagina = 10;
+let page = 1;
 
-const getBooks = async (query,page) => {
-    const response = await fetch("http://openlibrary.org/search.json?q="+query+"&page="+page);
+const getBooks = async (query) => {
+    const response = await fetch("http://openlibrary.org/search.json?q="+query);
     const data = await response.json();
-    return data.docs;
+    controlPaginas(data)
+    const inicio = (page-1) * librosPagina;
+    const fin = inicio + 10 - 1;
+    return data.docs.slice(inicio, fin);
 }
 
-document.getElementById('formLibros').addEventListener('submit' , async (event) => {
+const mostrarLibros = document.getElementById('formLibros').addEventListener('submit' , async (event) => {
     event.preventDefault();
-    const search = document.getElementById('search').value;
-    const page = 1;
-    const books = await getBooks(search,page);
+    var search = document.getElementById('search').value;
+    var books = await getBooks(search);
 
     const cargarLibros = () => {
         const bookListElement = document.getElementById('bookList');
@@ -33,18 +38,32 @@ document.getElementById('formLibros').addEventListener('submit' , async (event) 
             div.appendChild(year);
             document.getElementById('bookList').appendChild(div);
         });
-    }
+    };
     cargarLibros();
 
-    //PAGINADO
-    var btnAtras = document.getElementById("siguiente");
-    btnAtras.addEventListener("click",async function(){
-        page++;
-        books = await getBooks(search,page);
-    });
-    var btnSiguiente = document.getElementById("siguiente");
-    btnSiguiente.addEventListener("click",async function(){
-        page++;
-        books = await getBooks(search,page);
-    });
 });
+
+//PAGINADO
+const controlPaginas = (data) => {
+    totalPaginas = Math.ceil(data.docs.length / librosPagina);
+    console.log(data.docs.length);
+    console.log(totalPaginas);
+}
+
+
+var btnAtras = document.getElementById("atras");
+btnAtras.addEventListener("click", () =>{
+    if (page > 1) {
+        page-=1;
+        mostrarLibros();
+    }
+    console.log(page)
+});
+var btnSiguiente = document.getElementById("siguiente");
+btnSiguiente.addEventListener("click", () =>{
+    if (page < totalPaginas) {
+        page+=1;
+        mostrarLibros();
+    }
+    console.log(page)
+})
