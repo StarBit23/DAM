@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\manana\Desktop\proxyXmlJson\venv"
+VIRTUAL_ENV="D:\DAM (NO BORRAR)\4.AccesoDatos\JUNIO\proxyXmlJson\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

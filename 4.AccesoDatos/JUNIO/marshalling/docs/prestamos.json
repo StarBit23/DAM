@@ -1,16 +1,40 @@
 {
    "prestamo" : {
       "lector" : {
-         "id" : 0,
-         "telefono" : 0
+         "id" : 1,
+         "username" : "ahernandez",
+         "password" : "Secreto123",
+         "email" : "ahernandez@gmail.com",
+         "telefono" : 83025359,
+         "direcciones" : {
+            "id" : 0,
+            "tipoVia" : "CAMINO",
+            "nombreVia" : "Chamarines",
+            "numero" : 33,
+            "portal" : "1",
+            "planta" : 3,
+            "cp" : {
+               "cp" : "10120",
+               "localidad" : "GRANADA"
+            }
+         },
+         "nombre" : "Ana",
+         "apellidos" : "Hernandez"
       },
       "libro" : {
-         "id" : 0,
-         "edicion" : 0,
-         "año" : 0
+         "id" : 1,
+         "ISBN" : "5386137174483",
+         "titulo" : "Cien annos de soledad,",
+         "autor" : "George Orwell,",
+         "edicion" : 3,
+         "editorial" : "El Pais,",
+         "año" : 2022
       },
       "operario" : {
-         "id" : 0
+         "id" : 1,
+         "username" : "asanchez",
+         "password" : "Secreto123",
+         "email" : "asanchez@gmail.com"
       }
    }
 }

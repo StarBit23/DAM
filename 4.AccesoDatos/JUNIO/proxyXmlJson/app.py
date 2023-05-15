@@ -10,7 +10,7 @@ cors = CORS(app, resources={"/proxy": {"origins":"*"}})
 @app.route("/")
 def hola_mundo():
     return "<p>Hola Mundo</p>", 200
-
+# 
 # En el POST le mandamos una variable
 # url = https://www.elperiodico.com/es/rss/rss_portada.xml
 @app.post("/proxy")
