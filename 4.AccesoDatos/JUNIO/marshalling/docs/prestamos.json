@@ -2,39 +2,39 @@
    "prestamo" : {
       "lector" : {
          "id" : 1,
-         "username" : "ahernandez",
+         "username" : "jfernandez",
          "password" : "Secreto123",
-         "email" : "ahernandez@gmail.com",
-         "telefono" : 83025359,
+         "email" : "jfernandez@gmail.com",
+         "telefono" : 128480133,
          "direcciones" : {
             "id" : 0,
-            "tipoVia" : "CAMINO",
-            "nombreVia" : "Chamarines",
-            "numero" : 33,
+            "tipoVia" : "AVENIDA",
+            "nombreVia" : "Andalucia",
+            "numero" : 88,
             "portal" : "1",
-            "planta" : 3,
+            "planta" : 6,
             "cp" : {
-               "cp" : "10120",
-               "localidad" : "GRANADA"
+               "cp" : "23052",
+               "localidad" : "JAÉN"
             }
          },
-         "nombre" : "Ana",
-         "apellidos" : "Hernandez"
+         "nombre" : "Jesus",
+         "apellidos" : "Fernandez"
       },
       "libro" : {
          "id" : 1,
-         "ISBN" : "5386137174483",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "George Orwell,",
-         "edicion" : 3,
-         "editorial" : "El Pais,",
+         "ISBN" : "8778123782831",
+         "titulo" : "Don Quijote de la Mancha",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 1,
+         "editorial" : "Ariel,",
          "año" : 2022
       },
       "operario" : {
          "id" : 1,
-         "username" : "asanchez",
+         "username" : "psanchez",
          "password" : "Secreto123",
-         "email" : "asanchez@gmail.com"
+         "email" : "psanchez@gmail.com"
       }
    }
 }

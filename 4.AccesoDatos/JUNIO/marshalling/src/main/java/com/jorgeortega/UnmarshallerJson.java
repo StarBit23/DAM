@@ -4,8 +4,8 @@ import java.io.File;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import org.eclipse.persistence.jaxb.MarshallerProperties;
+import javax.xml.bind.Unmarshaller;
+import org.eclipse.persistence.jaxb.UnmarshallerProperties;
 
 import com.jorgeortega.clases.CPs;
 import com.jorgeortega.clases.Direcciones;
@@ -17,15 +17,10 @@ import com.jorgeortega.clases.Operario;
 import com.jorgeortega.clases.Operarios;
 import com.jorgeortega.clases.Prestamo;
 
-/**
- * Ejemplo de generador de personas.
- *
- */
-public class MarshallerJson
+public class UnmarshallerJson 
 {
     public static void main( String[] args )
     {
-        
         CPs cps = new CPs();
         cps.load("docs/cp.txt");
 
@@ -53,23 +48,21 @@ public class MarshallerJson
 
         try {
             System.setProperty("javax.xml.bind.JAXBContextFactory","org.eclipse.persistence.jaxb.JAXBContextFactory");
-
-            jaxbContext = JAXBContext.newInstance(prestamo.getClass());
-
+            /* jaxbContext = JAXBContext.newInstance(lista.getClass());
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-           
-            //Para JSON
-            jaxbMarshaller.setProperty(MarshallerProperties.MEDIA_TYPE, "application/json");
-            jaxbMarshaller.setProperty(MarshallerProperties.JSON_INCLUDE_ROOT, true);
-
-            jaxbMarshaller.marshal(prestamo, new File("docs/prestamos.json"));
-            System.out.println(prestamo.toString());
-            /* jaxbContext = JAXBContext.newInstance(lista.getClass());
+            jaxbMarshaller.marshal(lista, new File("personas.xml"));*/
+            
+            jaxbContext = JAXBContext.newInstance(prestamo.getClass());
+            
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-            Object objeto = jaxbUnmarshaller.unmarshal(new File("personas.xml"));
-            lista = (Personas) objeto;
-            System.out.println(lista.toString());*/
+            // Para JSON
+            jaxbUnmarshaller.setProperty(UnmarshallerProperties.MEDIA_TYPE, "application/json");
+            jaxbUnmarshaller.setProperty(UnmarshallerProperties.JSON_INCLUDE_ROOT, true);
+            
+            Object objeto = jaxbUnmarshaller.unmarshal(new File("docs/prestamos.json"));
+            prestamo = (Prestamo) objeto;
+            System.out.println(prestamo.toString());
 
         } catch (JAXBException e) {
             e.printStackTrace();
