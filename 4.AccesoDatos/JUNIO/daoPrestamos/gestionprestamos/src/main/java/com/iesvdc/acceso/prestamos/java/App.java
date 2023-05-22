@@ -1,4 +1,4 @@
-package com.iesvdc.acceso.prestamos;
+package com.iesvdc.acceso.prestamos.java;
 
 /**
  * Hello world!
