@@ -1,95 +1,100 @@
+import java.util.Random;
+import java.util.concurrent.Semaphore;
+
 public class Semaforo {
     public static void main(String[] args) {
-        ControlSemaforo controlSemaforo = new ControlSemaforo();
-        
-        Coche coche1 = new Coche("Coche 1", controlSemaforo);
-        Coche coche2 = new Coche("Coche 2", controlSemaforo);
-        
-        Thread hiloCoche1 = new Thread(coche1);
-        Thread hiloCoche2 = new Thread(coche2);
-        
-        hiloCoche1.start();
-        hiloCoche2.start();
-        
-        Thread hiloRojo = new Thread(() -> {
-            try {
-                while (true) {
-                    controlSemaforo.cambiarSemaforo(false);
-                    Thread.sleep(5000); // Cambiar a rojo cada 5 segundos
-                }
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-        });
-        hiloRojo.start();
-        
-        Thread hiloVerde = new Thread(() -> {
-            try {
-                while (true) {
-                    controlSemaforo.cambiarSemaforo(true);
-                    Thread.sleep(3000); // Cambiar a verde cada 3 segundos
-                }
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-        });
-        hiloVerde.start();
+        Estanteria estanteria = new Estanteria();
+
+        BibliotecarioPrestamo bibliotecarioPrestamo = new BibliotecarioPrestamo(estanteria);
+        BibliotecarioRecepcion bibliotecarioRecepcion = new BibliotecarioRecepcion(estanteria);
+
+        Thread hiloPrestamo = new Thread(bibliotecarioPrestamo);
+        Thread hiloRecepcion = new Thread(bibliotecarioRecepcion);
+
+        hiloPrestamo.start();
+        hiloRecepcion.start();
     }
 }
 
-class ControlSemaforo {
-    private boolean verde;
-    
-    public ControlSemaforo() {
-        this.verde = false;
+class Estanteria {
+    private int libros;
+    private Semaphore mutex;
+
+    public Estanteria() {
+        this.libros = 0;
+        this.mutex = new Semaphore(1);
     }
-    
-    public synchronized void pasar() throws InterruptedException {
-        while (!verde) {
-            System.out.println("Bloqueo: Semáforo en rojo, esperando para pasar");
-            wait();
+
+    public void prestarLibros(String bibliotecario) throws InterruptedException {
+        Random random = new Random();
+        int numLibrosPrestar = random.nextInt(3) + 1; // Número aleatorio entre 1 y 3
+
+        mutex.acquire();
+
+        while (libros < numLibrosPrestar) {
+            System.out.println("Bloqueo: No hay suficientes libros en la estantería para prestar");
+            mutex.release();
+            Thread.sleep(2000); // Tiempo de espera antes de volver a intentar
+            mutex.acquire();
         }
+
+        libros -= numLibrosPrestar;
+        System.out.println(bibliotecario + " prestó " + numLibrosPrestar + " libros");
+
+        mutex.release();
     }
-    
-    public synchronized void cambiarSemaforo(boolean estado) {
-        if (verde != estado) {
-            verde = estado;
-            if (verde) {
-                System.out.println("Semáforo cambiado a VERDE");
-            } else {
-                System.out.println("Semáforo cambiado a ROJO");
-            }
-            notifyAll();
+
+    public void recibirLibros(String bibliotecario) throws InterruptedException {
+        Random random = new Random();
+        int numLibrosRecibir = random.nextInt(3) + 1; // Número aleatorio entre 1 y 3
+
+        mutex.acquire();
+
+        while (libros + numLibrosRecibir > 15) {
+            System.out.println("Bloqueo: La estantería está llena, no se pueden recibir más libros");
+            mutex.release();
+            Thread.sleep(2000); // Tiempo de espera antes de volver a intentar
+            mutex.acquire();
         }
+
+        libros += numLibrosRecibir;
+        System.out.println(bibliotecario + " recibió " + numLibrosRecibir + " libros");
+
+        mutex.release();
     }
 }
 
-class Coche implements Runnable {
-    private String nombre;
-    private ControlSemaforo controlSemaforo;
-    
-    public Coche(String nombre, ControlSemaforo controlSemaforo) {
-        this.nombre = nombre;
-        this.controlSemaforo = controlSemaforo;
+class BibliotecarioPrestamo implements Runnable {
+    private Estanteria estanteria;
+
+    public BibliotecarioPrestamo(Estanteria estanteria) {
+        this.estanteria = estanteria;
     }
-    
+
     public void run() {
         try {
             while (true) {
-                // Coche se acerca al cruce
-                System.out.println(nombre + " se acerca al cruce");
-                
-                // Esperar a que el semáforo esté en verde para pasar
-                controlSemaforo.pasar();
-                
-                // Pasar por el cruce
-                System.out.println(nombre + " pasa por el cruce");
-                Thread.sleep(2000); // Tiempo de paso
-                
-                // Coche se aleja del cruce
-                System.out.println(nombre + " se aleja del cruce");
-                
-                Thread.sleep(2000); // Tiempo de espera entre pasadas
+                estanteria.prestarLibros("Luis Manuel García");
+                Thread.sleep(2000); // Tiempo de espera para apreciar la operación
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+    }
+}
+
+class BibliotecarioRecepcion implements Runnable {
+    private Estanteria estanteria;
+
+    public BibliotecarioRecepcion(Estanteria estanteria) {
+        this.estanteria = estanteria;
+    }
+
+    public void run() {
+        try {
+            while (true) {
+                estanteria.recibirLibros("Pepe Perez");
+                Thread.sleep(2000); // Tiempo de espera para apreciar la operación
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();

@@ -82,7 +82,6 @@ const controlPaginas = (data) => {
     console.log(totalPaginas);
 }
 
-
 var btnAtras = document.getElementById("atras");
 btnAtras.addEventListener("click", () =>{
     if (page > 1) {

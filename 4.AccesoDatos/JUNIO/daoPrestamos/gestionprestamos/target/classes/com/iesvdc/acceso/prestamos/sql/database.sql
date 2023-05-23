@@ -38,7 +38,7 @@ CREATE TABLE 'libro' (
 ) ENGINE='InnoDB';
 
 -- operario
-CREATE TABLE 'libro' (
+CREATE TABLE 'operario' (
     `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `username` varchar(12) UNIQUE NOT NULL,   
     `password` varchar(20) NOT NULL,

@@ -5,13 +5,17 @@ const countPromiseBook = () => {
     .then((datos) => {
         let nbooks = 0;
         datos.docs.forEach(book => {
-            if (book.first_publish_year === 2022) {
-                nbooks++;
-            }
+            // if (book.first_publish_year === 2022) {
+            //     nbooks++;
+            // }
+            return book;
+            
         });
-        return nbooks;
+        //return nbooks;
     })
 };
+
+countPromiseBook().then((contador)=>{console.log(contador)});
 
 const countAsyncBooks = async () => {
     const response = await fetch("http://openlibrary.org/search.json?q=javascript");
