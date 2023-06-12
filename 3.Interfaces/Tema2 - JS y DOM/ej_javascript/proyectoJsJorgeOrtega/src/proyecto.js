@@ -33,14 +33,15 @@ document.getElementById("btnBuscar").addEventListener("click", () => {
 atras.addEventListener("click", () => {
     document.getElementById("cajaGifs").innerHTML = "";
     siguiente.disabled = false;
-    if (pagina === 1) {
-        atras.disabled = false;
-    }
     if (pagina > 1) {
         pagina = pagina - 1;
+        console.log(pagina);
         const busqueda = buscar.value;
         const url = `https://api.giphy.com/v1/stickers/search?api_key=aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0&q=${busqueda}&limit=100&page=${pagina}&offset=1&lang=es`
         leerDatos(url);
+    }
+    if (pagina === 1) {
+        atras.disabled = true;
     }
 
 })
@@ -52,8 +53,8 @@ siguiente.addEventListener("click", () => {
         siguiente.disabled = true;
     }
     if (pagina < numPag) {
-        console.log(pagina);
         pagina = pagina + 1;
+        console.log(pagina);
         const busqueda = buscar.value;
         const url = `https://api.giphy.com/v1/stickers/search?api_key=aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0&q=${busqueda}&limit=100&page=${pagina}&offset=1&lang=es`
         leerDatos(url);
@@ -71,11 +72,11 @@ async function leerDatos(url) {
     const arrayGif = await getGifs(url);
     const pagis = Math.ceil(Object.keys(arrayGif).length / 10);
     numPag = pagis;
-    console.log(numPag);
+    //console.log(numPag);
     const mostrados = arrayGif.slice((pagina-1)*gifsXpagina, (pagina)*gifsXpagina)
 
     mostrados.forEach(gif => {
-        console.log(gif)
+        //console.log(gif)
         const div = document.createElement("div");
         const portada = document.createElement("a")
         const url = gif.url;
