@@ -44,3 +44,10 @@ CREATE TABLE 'operario' (
     `password` varchar(20) NOT NULL,
     `email` varchar(30) NOT NULL
 ) ENGINE='InnoDB';
+    
+-- prestamo
+CREATE TABLE 'prestamo' (
+    Foreign Key (lector) REFERENCES lector(id),
+    Foreign Key (libro) REFERENCES libro(id),
+    Foreign Key (operario) REFERENCES operario(id)
+) ENGINE="InnoDB"

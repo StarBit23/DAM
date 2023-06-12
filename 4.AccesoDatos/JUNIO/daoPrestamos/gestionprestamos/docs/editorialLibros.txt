@@ -1,0 +1,5 @@
+Planeta,
+El Pais,
+Ariel,
+Destino,
+Planeta Comic
