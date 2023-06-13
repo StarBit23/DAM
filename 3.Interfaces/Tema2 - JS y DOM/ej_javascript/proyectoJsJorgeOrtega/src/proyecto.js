@@ -12,7 +12,7 @@ var input = document.getElementById("barraBuscar");
 input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
-        console.log("pulsado");
+        //console.log("pulsado");
         document.getElementById("cajaGifs").innerHTML = "";
         const busqueda = buscar.value;
         const url = `https://api.giphy.com/v1/stickers/search?api_key=aMrr0RDuTmYWBJIcohqJrtlRpqndJ7b0&q=${busqueda}&page=${pagina}&limit=100&offset=1&lang=es`

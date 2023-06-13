@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HotelList hoteles={hoteles}/>
+        <HotelList hoteles={hoteles} setHoteles={setHoteles}/>
         <h1> ------------------------------------------ </h1>
         <HotelForm onAddHotel={onAddHotel}/>
         <h1> ------------------------------------------ </h1>
