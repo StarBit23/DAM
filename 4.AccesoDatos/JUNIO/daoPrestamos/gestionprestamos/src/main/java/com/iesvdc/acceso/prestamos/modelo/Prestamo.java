@@ -1,93 +1,71 @@
 package com.iesvdc.acceso.prestamos.modelo;
 
-import java.util.Objects;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlElement;
 
 @XmlRootElement(name = "prestamo")
-@XmlAccessorType (XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.PROPERTY)
 public class Prestamo {
-    public Lector lector;
-    public Libro libro;
-    public Operario operario;
-
+    private int id;
+    private Lector lector;
+    private Libro libro;
+    private Operario operario;
 
     public Prestamo() {
     }
 
-    public Prestamo(Lector lector, Libro libro, Operario operario) {
+    public Prestamo(int id, Lector lector, Libro libro, Operario operario) {
+        this.id = id;
         this.lector = lector;
         this.libro = libro;
         this.operario = operario;
     }
 
-    public Prestamo(Lectores lectores, Libros libros, Operarios operarios) {
+    @XmlElement(name = "id")
+    public int getId() {
+        return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @XmlElement(name = "lector")
     public Lector getLector() {
-        return this.lector;
+        return lector;
     }
 
     public void setLector(Lector lector) {
         this.lector = lector;
     }
 
+    @XmlElement(name = "libro")
     public Libro getLibro() {
-        return this.libro;
+        return libro;
     }
 
     public void setLibro(Libro libro) {
         this.libro = libro;
     }
 
+    @XmlElement(name = "operario")
     public Operario getOperario() {
-        return this.operario;
+        return operario;
     }
 
     public void setOperario(Operario operario) {
         this.operario = operario;
     }
 
-    public Prestamo lector(Lector lector) {
-        setLector(lector);
-        return this;
-    }
-
-    public Prestamo libro(Libro libro) {
-        setLibro(libro);
-        return this;
-    }
-
-    public Prestamo operario(Operario operario) {
-        setOperario(operario);
-        return this;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == this)
-            return true;
-        if (!(o instanceof Prestamo)) {
-            return false;
-        }
-        Prestamo prestamo = (Prestamo) o;
-        return Objects.equals(lector, prestamo.lector) && Objects.equals(libro, prestamo.libro) && Objects.equals(operario, prestamo.operario);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(lector, libro, operario);
-    }
-
     @Override
     public String toString() {
-        return "{" +
-            " lector='" + getLector() + "'" +
-            ", libro='" + getLibro() + "'" +
-            ", operario='" + getOperario() + "'" +
-            "}";
+        return "Prestamo{" +
+                "id=" + id +
+                ", lector=" + lector +
+                ", libro=" + libro +
+                ", operario=" + operario +
+                '}';
     }
-    
 }

@@ -17,10 +17,6 @@ public class Lector {
     private String nombre;
     private String apellidos;
 
-
-    public Lector() {
-    }
-
     public Lector(int id, String username, String password, String email, int telefono, Direccion direcciones, String nombre, String apellidos) {
         this.id = id;
         this.username = username;
@@ -30,6 +26,9 @@ public class Lector {
         this.direcciones = direcciones;
         this.nombre = nombre;
         this.apellidos = apellidos;
+    }
+
+    public Lector() {
     }
 
     public int getId() {

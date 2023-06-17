@@ -15,7 +15,7 @@ public interface PrestamoDao {
 
     public Prestamo findByNombre(String nombre);
 
-    public Prestamo findByEstancia(Libro l);
+    public Prestamo findByLibro(Libro l);
 
     public Prestamo findByOperario(Operario o);
 

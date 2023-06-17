@@ -1,5 +1,3 @@
-/*
- */
 package com.iesvdc.acceso.prestamos.conexion;
 
 import java.io.FileInputStream;
@@ -25,12 +23,6 @@ public class Conexion {
     /**
      * 
      */
-
-    public static void main(String[] args) {
-        Conexion con = new Conexion();
-        
-    }
-
     public Conexion() {
         // Vía JDBC
         if (conn == null) {
@@ -39,7 +31,7 @@ public class Conexion {
                 prop = new Properties();
                 prop.load(fis);
                 this.conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:33306/prestamos",
+                        "jdbc:mysql://localhost:33306/db-prestamos",
                         prop);
             } catch (SQLException | ClassCastException | IOException e) {
                 Logger.getLogger(Conexion.class.getName()).severe(e.getLocalizedMessage());
@@ -64,7 +56,7 @@ public class Conexion {
     public boolean createDatabase() {
         boolean solucion = true;
         try {
-            String sql = "CREATE DATABASE `prestamos`";
+            String sql = "CREATE DATABASE `inventario`";
             PreparedStatement ps = this.conn.prepareStatement(sql);
             ps.executeUpdate();
         } catch (Exception e) {
@@ -76,7 +68,7 @@ public class Conexion {
     public boolean dropDatabase() {
         boolean solucion = true;
         try {
-            String sql = "DROP DATABASE `prestamos`";
+            String sql = "DROP DATABASE `inventario`";
             PreparedStatement ps = this.conn.prepareStatement(sql);
             ps.executeUpdate();
         } catch (Exception e) {

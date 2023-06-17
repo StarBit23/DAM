@@ -1,0 +1,196 @@
+[ {
+   "prestamo" : {
+      "lector" : {
+         "id" : 1,
+         "username" : "igutierrez",
+         "password" : "Secreto123",
+         "email" : "igutierrez@gmail.com",
+         "telefono" : 49744493,
+         "direcciones" : {
+            "id" : 0,
+            "tipoVia" : "PASEO",
+            "nombreVia" : "Estación",
+            "numero" : 18,
+            "portal" : "1",
+            "planta" : 2,
+            "cp" : {
+               "cp" : "23052",
+               "localidad" : "JAÉN"
+            }
+         },
+         "nombre" : "Ines",
+         "apellidos" : "Gutierrez"
+      },
+      "libro" : {
+         "id" : 1,
+         "ISBN" : "1656544472212",
+         "titulo" : "1984,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
+         "editorial" : "El Pais,",
+         "año" : 2022
+      },
+      "operario" : {
+         "id" : 1,
+         "username" : "mfernandez",
+         "password" : "Secreto123",
+         "email" : "mfernandez@gmail.com"
+      }
+   }
+}, {
+   "prestamo" : {
+      "lector" : {
+         "id" : 1,
+         "username" : "igutierrez",
+         "password" : "Secreto123",
+         "email" : "igutierrez@gmail.com",
+         "telefono" : 49744493,
+         "direcciones" : {
+            "id" : 0,
+            "tipoVia" : "PASEO",
+            "nombreVia" : "Estación",
+            "numero" : 18,
+            "portal" : "1",
+            "planta" : 2,
+            "cp" : {
+               "cp" : "23052",
+               "localidad" : "JAÉN"
+            }
+         },
+         "nombre" : "Ines",
+         "apellidos" : "Gutierrez"
+      },
+      "libro" : {
+         "id" : 1,
+         "ISBN" : "1656544472212",
+         "titulo" : "1984,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
+         "editorial" : "El Pais,",
+         "año" : 2022
+      },
+      "operario" : {
+         "id" : 1,
+         "username" : "mfernandez",
+         "password" : "Secreto123",
+         "email" : "mfernandez@gmail.com"
+      }
+   }
+}, {
+   "prestamo" : {
+      "lector" : {
+         "id" : 1,
+         "username" : "igutierrez",
+         "password" : "Secreto123",
+         "email" : "igutierrez@gmail.com",
+         "telefono" : 49744493,
+         "direcciones" : {
+            "id" : 0,
+            "tipoVia" : "PASEO",
+            "nombreVia" : "Estación",
+            "numero" : 18,
+            "portal" : "1",
+            "planta" : 2,
+            "cp" : {
+               "cp" : "23052",
+               "localidad" : "JAÉN"
+            }
+         },
+         "nombre" : "Ines",
+         "apellidos" : "Gutierrez"
+      },
+      "libro" : {
+         "id" : 1,
+         "ISBN" : "1656544472212",
+         "titulo" : "1984,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
+         "editorial" : "El Pais,",
+         "año" : 2022
+      },
+      "operario" : {
+         "id" : 1,
+         "username" : "mfernandez",
+         "password" : "Secreto123",
+         "email" : "mfernandez@gmail.com"
+      }
+   }
+}, {
+   "prestamo" : {
+      "lector" : {
+         "id" : 1,
+         "username" : "igutierrez",
+         "password" : "Secreto123",
+         "email" : "igutierrez@gmail.com",
+         "telefono" : 49744493,
+         "direcciones" : {
+            "id" : 0,
+            "tipoVia" : "PASEO",
+            "nombreVia" : "Estación",
+            "numero" : 18,
+            "portal" : "1",
+            "planta" : 2,
+            "cp" : {
+               "cp" : "23052",
+               "localidad" : "JAÉN"
+            }
+         },
+         "nombre" : "Ines",
+         "apellidos" : "Gutierrez"
+      },
+      "libro" : {
+         "id" : 1,
+         "ISBN" : "1656544472212",
+         "titulo" : "1984,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
+         "editorial" : "El Pais,",
+         "año" : 2022
+      },
+      "operario" : {
+         "id" : 1,
+         "username" : "mfernandez",
+         "password" : "Secreto123",
+         "email" : "mfernandez@gmail.com"
+      }
+   }
+}, {
+   "prestamo" : {
+      "lector" : {
+         "id" : 1,
+         "username" : "igutierrez",
+         "password" : "Secreto123",
+         "email" : "igutierrez@gmail.com",
+         "telefono" : 49744493,
+         "direcciones" : {
+            "id" : 0,
+            "tipoVia" : "PASEO",
+            "nombreVia" : "Estación",
+            "numero" : 18,
+            "portal" : "1",
+            "planta" : 2,
+            "cp" : {
+               "cp" : "23052",
+               "localidad" : "JAÉN"
+            }
+         },
+         "nombre" : "Ines",
+         "apellidos" : "Gutierrez"
+      },
+      "libro" : {
+         "id" : 1,
+         "ISBN" : "1656544472212",
+         "titulo" : "1984,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
+         "editorial" : "El Pais,",
+         "año" : 2022
+      },
+      "operario" : {
+         "id" : 1,
+         "username" : "mfernandez",
+         "password" : "Secreto123",
+         "email" : "mfernandez@gmail.com"
+      }
+   }
+} ]

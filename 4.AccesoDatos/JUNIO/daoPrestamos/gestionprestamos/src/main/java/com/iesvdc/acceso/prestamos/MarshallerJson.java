@@ -49,7 +49,7 @@ public class MarshallerJson {
             Lector lector = lectores.returnLector();
             Libro libro = libros.returnLibro();
             Operario operario = operarios.returnOperario();
-            Prestamo prestamo = new Prestamo(lector, libro, operario);
+            Prestamo prestamo = new Prestamo(i, lector, libro, operario);
             prestamos.add(prestamo);
         }
 

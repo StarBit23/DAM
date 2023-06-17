@@ -18,15 +18,49 @@ import com.iesvdc.acceso.prestamos.modelo.Prestamo;
 public class PrestamoDaoImp implements PrestamoDao {
 
     @Override
-    public boolean create(Prestamo i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'create'");
+     public boolean create(Prestamo prestamo) {
+        Conexion conexion = new Conexion();
+        boolean resultado = false;
+        String sql = "INSERT INTO prestamo (lector_id, libro_id, operario_id) VALUES (?, ?, ?)";
+        Connection con = conexion.getConnection();
+        PreparedStatement ps;
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, prestamo.getLector().getId());
+            ps.setInt(2, prestamo.getLibro().getId());
+            ps.setInt(3, prestamo.getOperario().getId());
+            if (ps.executeUpdate() > 0) {
+                resultado = true;
+            }
+        } catch (SQLException e) {
+            conexion.destroy();
+            e.printStackTrace();
+        }
+        return resultado;
     }
 
     @Override
     public Prestamo findById(int id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findById'");
+        Conexion conexion = new Conexion();
+        Prestamo resultado = null;
+        String sql = "SELECT * from `prestamo` WHERE `id`= ?;";
+        Connection con = conexion.getConnection();
+        PreparedStatement ps;
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                Lector lector = new LectorDaoImp().findById(rs.getInt("lector_id"));
+                Libro libro = new LibroDaoImp().findById(rs.getInt("libro_id"));
+                Operario operario = new OperarioDaoImp().findById(rs.getInt("operario_id"));
+                resultado = new Prestamo(id, lector, libro, operario);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        conexion.destroy();
+        return resultado;
     }
 
     @Override
@@ -36,7 +70,7 @@ public class PrestamoDaoImp implements PrestamoDao {
     }
 
     @Override
-    public Prestamo findByEstancia(Libro l) {
+    public Prestamo findByLibro(Libro l) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findByEstancia'");
     }

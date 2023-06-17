@@ -4,6 +4,7 @@ import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import Page from './pages/Page';
 import Contador from './pages/Contador';
+import ListaHoteles from './pages/ListaHoteles'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,6 +24,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import AñadirHotel from './pages/AñadirHotel';
 
 setupIonicReact();
 
@@ -38,6 +40,12 @@ const App: React.FC = () => {
             </Route>
             <Route path="/contador" exact={true}>
               <Contador/>
+            </Route>
+            <Route path="/page/addHotel" exact={true}>
+              <AñadirHotel/>
+            </Route>
+            <Route path="/page/listaHoteles" exact={true}>
+              <ListaHoteles/>
             </Route>
             <Route path="/folder/:name" exact={true}>
               <Page />

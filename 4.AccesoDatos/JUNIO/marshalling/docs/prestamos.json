@@ -1,196 +1,40 @@
-[ {
+ {
    "prestamo" : {
       "lector" : {
          "id" : 1,
-         "username" : "irodriguez",
+         "username" : "igutierrez",
          "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
+         "email" : "igutierrez@gmail.com",
+         "telefono" : 49744493,
          "direcciones" : {
             "id" : 0,
-            "tipoVia" : "CAMINO",
-            "nombreVia" : "Chamarines",
-            "numero" : 53,
+            "tipoVia" : "PASEO",
+            "nombreVia" : "Estación",
+            "numero" : 18,
             "portal" : "1",
-            "planta" : 3,
+            "planta" : 2,
             "cp" : {
-               "cp" : "51770",
-               "localidad" : "SEVILLA"
+               "cp" : "23052",
+               "localidad" : "JAÉN"
             }
          },
          "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
+         "apellidos" : "Gutierrez"
       },
       "libro" : {
          "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
-         "editorial" : "Planeta,",
+         "ISBN" : "1656544472212",
+         "titulo" : "1984,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
+         "editorial" : "El Pais,",
          "año" : 2022
       },
       "operario" : {
          "id" : 1,
-         "username" : "pgarcia",
+         "username" : "mfernandez",
          "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
+         "email" : "mfernandez@gmail.com"
       }
    }
-}, {
-   "prestamo" : {
-      "lector" : {
-         "id" : 1,
-         "username" : "irodriguez",
-         "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
-         "direcciones" : {
-            "id" : 0,
-            "tipoVia" : "CAMINO",
-            "nombreVia" : "Chamarines",
-            "numero" : 53,
-            "portal" : "1",
-            "planta" : 3,
-            "cp" : {
-               "cp" : "51770",
-               "localidad" : "SEVILLA"
-            }
-         },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
-      },
-      "libro" : {
-         "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
-         "editorial" : "Planeta,",
-         "año" : 2022
-      },
-      "operario" : {
-         "id" : 1,
-         "username" : "pgarcia",
-         "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
-      }
-   }
-}, {
-   "prestamo" : {
-      "lector" : {
-         "id" : 1,
-         "username" : "irodriguez",
-         "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
-         "direcciones" : {
-            "id" : 0,
-            "tipoVia" : "CAMINO",
-            "nombreVia" : "Chamarines",
-            "numero" : 53,
-            "portal" : "1",
-            "planta" : 3,
-            "cp" : {
-               "cp" : "51770",
-               "localidad" : "SEVILLA"
-            }
-         },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
-      },
-      "libro" : {
-         "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
-         "editorial" : "Planeta,",
-         "año" : 2022
-      },
-      "operario" : {
-         "id" : 1,
-         "username" : "pgarcia",
-         "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
-      }
-   }
-}, {
-   "prestamo" : {
-      "lector" : {
-         "id" : 1,
-         "username" : "irodriguez",
-         "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
-         "direcciones" : {
-            "id" : 0,
-            "tipoVia" : "CAMINO",
-            "nombreVia" : "Chamarines",
-            "numero" : 53,
-            "portal" : "1",
-            "planta" : 3,
-            "cp" : {
-               "cp" : "51770",
-               "localidad" : "SEVILLA"
-            }
-         },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
-      },
-      "libro" : {
-         "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
-         "editorial" : "Planeta,",
-         "año" : 2022
-      },
-      "operario" : {
-         "id" : 1,
-         "username" : "pgarcia",
-         "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
-      }
-   }
-}, {
-   "prestamo" : {
-      "lector" : {
-         "id" : 1,
-         "username" : "irodriguez",
-         "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
-         "direcciones" : {
-            "id" : 0,
-            "tipoVia" : "CAMINO",
-            "nombreVia" : "Chamarines",
-            "numero" : 53,
-            "portal" : "1",
-            "planta" : 3,
-            "cp" : {
-               "cp" : "51770",
-               "localidad" : "SEVILLA"
-            }
-         },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
-      },
-      "libro" : {
-         "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
-         "editorial" : "Planeta,",
-         "año" : 2022
-      },
-      "operario" : {
-         "id" : 1,
-         "username" : "pgarcia",
-         "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
-      }
-   }
-} ]
+}

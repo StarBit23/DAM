@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { addCircleSharp, archiveOutline, archiveSharp, bookmarkOutline, calculatorOutline, heartOutline, heartSharp, homeOutline, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -23,20 +23,26 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
+    title: 'Página Principal',
+    url: '/folder/Inbox',
+    iosIcon: homeOutline,
+    mdIcon: homeOutline
+  },
+  {
     title: 'Contador',
     url: '/contador',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    iosIcon: calculatorOutline,
+    mdIcon: calculatorOutline
   },
   {
-    title: 'Inbox',
-    url: '/page/Inbox',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    title: 'Añadir hotel',
+    url: '/page/addHotel',
+    iosIcon: addCircleSharp,
+    mdIcon: addCircleSharp
   },
   {
-    title: 'Outbox',
-    url: '/page/Outbox',
+    title: 'Lista de hoteles',
+    url: '/page/listaHoteles',
     iosIcon: paperPlaneOutline,
     mdIcon: paperPlaneSharp
   },

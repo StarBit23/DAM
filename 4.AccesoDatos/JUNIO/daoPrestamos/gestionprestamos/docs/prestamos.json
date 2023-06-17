@@ -1,196 +1,201 @@
 [ {
    "prestamo" : {
+      "id" : 0,
       "lector" : {
          "id" : 1,
-         "username" : "irodriguez",
+         "username" : "jfernandez",
          "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
+         "email" : "jfernandez@gmail.com",
+         "telefono" : 109494362,
          "direcciones" : {
             "id" : 0,
             "tipoVia" : "CAMINO",
             "nombreVia" : "Chamarines",
-            "numero" : 53,
+            "numero" : 90,
             "portal" : "1",
-            "planta" : 3,
+            "planta" : 1,
             "cp" : {
                "cp" : "51770",
                "localidad" : "SEVILLA"
             }
          },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
+         "nombre" : "Jesus",
+         "apellidos" : "Fernandez"
       },
       "libro" : {
          "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
+         "ISBN" : "6813618122934",
+         "titulo" : "Orgullo y prejuicio,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
          "editorial" : "Planeta,",
          "año" : 2022
       },
       "operario" : {
          "id" : 1,
-         "username" : "pgarcia",
+         "username" : "pgutierrez",
          "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
+         "email" : "pgutierrez@gmail.com"
       }
    }
 }, {
    "prestamo" : {
+      "id" : 1,
       "lector" : {
          "id" : 1,
-         "username" : "irodriguez",
+         "username" : "jfernandez",
          "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
+         "email" : "jfernandez@gmail.com",
+         "telefono" : 109494362,
          "direcciones" : {
             "id" : 0,
             "tipoVia" : "CAMINO",
             "nombreVia" : "Chamarines",
-            "numero" : 53,
+            "numero" : 90,
             "portal" : "1",
-            "planta" : 3,
+            "planta" : 1,
             "cp" : {
                "cp" : "51770",
                "localidad" : "SEVILLA"
             }
          },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
+         "nombre" : "Jesus",
+         "apellidos" : "Fernandez"
       },
       "libro" : {
          "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
+         "ISBN" : "6813618122934",
+         "titulo" : "Orgullo y prejuicio,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
          "editorial" : "Planeta,",
          "año" : 2022
       },
       "operario" : {
          "id" : 1,
-         "username" : "pgarcia",
+         "username" : "pgutierrez",
          "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
+         "email" : "pgutierrez@gmail.com"
       }
    }
 }, {
    "prestamo" : {
+      "id" : 2,
       "lector" : {
          "id" : 1,
-         "username" : "irodriguez",
+         "username" : "jfernandez",
          "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
+         "email" : "jfernandez@gmail.com",
+         "telefono" : 109494362,
          "direcciones" : {
             "id" : 0,
             "tipoVia" : "CAMINO",
             "nombreVia" : "Chamarines",
-            "numero" : 53,
+            "numero" : 90,
             "portal" : "1",
-            "planta" : 3,
+            "planta" : 1,
             "cp" : {
                "cp" : "51770",
                "localidad" : "SEVILLA"
             }
          },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
+         "nombre" : "Jesus",
+         "apellidos" : "Fernandez"
       },
       "libro" : {
          "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
+         "ISBN" : "6813618122934",
+         "titulo" : "Orgullo y prejuicio,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
          "editorial" : "Planeta,",
          "año" : 2022
       },
       "operario" : {
          "id" : 1,
-         "username" : "pgarcia",
+         "username" : "pgutierrez",
          "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
+         "email" : "pgutierrez@gmail.com"
       }
    }
 }, {
    "prestamo" : {
+      "id" : 3,
       "lector" : {
          "id" : 1,
-         "username" : "irodriguez",
+         "username" : "jfernandez",
          "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
+         "email" : "jfernandez@gmail.com",
+         "telefono" : 109494362,
          "direcciones" : {
             "id" : 0,
             "tipoVia" : "CAMINO",
             "nombreVia" : "Chamarines",
-            "numero" : 53,
+            "numero" : 90,
             "portal" : "1",
-            "planta" : 3,
+            "planta" : 1,
             "cp" : {
                "cp" : "51770",
                "localidad" : "SEVILLA"
             }
          },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
+         "nombre" : "Jesus",
+         "apellidos" : "Fernandez"
       },
       "libro" : {
          "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
+         "ISBN" : "6813618122934",
+         "titulo" : "Orgullo y prejuicio,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
          "editorial" : "Planeta,",
          "año" : 2022
       },
       "operario" : {
          "id" : 1,
-         "username" : "pgarcia",
+         "username" : "pgutierrez",
          "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
+         "email" : "pgutierrez@gmail.com"
       }
    }
 }, {
    "prestamo" : {
+      "id" : 4,
       "lector" : {
          "id" : 1,
-         "username" : "irodriguez",
+         "username" : "jfernandez",
          "password" : "Secreto123",
-         "email" : "irodriguez@gmail.com",
-         "telefono" : 23801634,
+         "email" : "jfernandez@gmail.com",
+         "telefono" : 109494362,
          "direcciones" : {
             "id" : 0,
             "tipoVia" : "CAMINO",
             "nombreVia" : "Chamarines",
-            "numero" : 53,
+            "numero" : 90,
             "portal" : "1",
-            "planta" : 3,
+            "planta" : 1,
             "cp" : {
                "cp" : "51770",
                "localidad" : "SEVILLA"
             }
          },
-         "nombre" : "Ines",
-         "apellidos" : "Rodriguez"
+         "nombre" : "Jesus",
+         "apellidos" : "Fernandez"
       },
       "libro" : {
          "id" : 1,
-         "ISBN" : "8448341643191",
-         "titulo" : "Cien annos de soledad,",
-         "autor" : "Jane Austen,",
-         "edicion" : 1,
+         "ISBN" : "6813618122934",
+         "titulo" : "Orgullo y prejuicio,",
+         "autor" : "F. Scott Fitzgerald",
+         "edicion" : 3,
          "editorial" : "Planeta,",
          "año" : 2022
       },
       "operario" : {
          "id" : 1,
-         "username" : "pgarcia",
+         "username" : "pgutierrez",
          "password" : "Secreto123",
-         "email" : "pgarcia@gmail.com"
+         "email" : "pgutierrez@gmail.com"
       }
    }
 } ]

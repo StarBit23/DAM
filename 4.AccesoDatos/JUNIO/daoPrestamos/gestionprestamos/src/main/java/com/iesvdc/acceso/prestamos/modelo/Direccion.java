@@ -70,8 +70,8 @@ public class Direccion {
         this.planta = planta;
     }
 
-    public CP getCp() {
-        return this.cp;
+    public String getCp() {
+        return cp.getCp();
     }
 
     public void setCp(CP cp) {

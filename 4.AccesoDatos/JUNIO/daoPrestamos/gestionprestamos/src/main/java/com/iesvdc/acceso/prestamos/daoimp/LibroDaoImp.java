@@ -16,17 +16,19 @@ public class LibroDaoImp implements LibroDao {
     public boolean create(Libro e) {
         Conexion conexion = new Conexion();
         boolean resultado = false;
-        String sql = "INSERT INTO `libro` (`isbn`, `titulo`, `autor`, `edicion`, `editorial`, `año`)" +
-                " VALUES (?, ?, ?, ?, ?, ?);";
+        String sql = "INSERT INTO `libro` (`id`,`isbn`, `titulo`, `autor`, `edicion`, `editorial`, `año`)" +
+                " VALUES (?, ?, ?, ?, ?, ?, ?);";
         Connection con = conexion.getConnection();
         PreparedStatement ps;
         try {
             ps = con.prepareStatement(sql);
-            ps.setString(1, e.getISBN());
-            ps.setString(2, e.getTitulo());
-            ps.setString(3, e.getAutor());
-            ps.setInt(4, e.getEdicion());
-            ps.setInt(5, e.getAño());
+            ps.setInt(1, e.getId());
+            ps.setString(2, e.getISBN());
+            ps.setString(3, e.getTitulo());
+            ps.setString(4, e.getAutor());
+            ps.setInt(5, e.getEdicion());
+            ps.setString(6, e.getEditorial());
+            ps.setInt(7, e.getAño());
             // ps.executeUpdate() devuelve un número entero que representa
             // el número de filas afectadas (con cambios).
             if (ps.executeUpdate() > 0) {
