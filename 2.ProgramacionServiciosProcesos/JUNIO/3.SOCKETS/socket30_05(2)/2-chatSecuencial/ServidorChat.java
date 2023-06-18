@@ -1,4 +1,4 @@
-package chatSecuencial;
+
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ServidorChat {
     private static final int MAXBYTES = 1000;
-    private static int PORT = 3000;
+    private static int PORT = 8500;
     private static int bucleActivo=1;
     private static String nombreServidor;
     private static String mensajeServidor;

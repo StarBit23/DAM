@@ -3,10 +3,6 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-
-
-
-
 /*
 *Hilo que intercambia información con su cliente
 */
@@ -85,6 +81,8 @@ public class ServerThread extends Thread{
                     String lineaEnviar1 = recurso.getLista();
                     pw.println(lineaEnviar1);
                 }
+
+                //HASHMD5
 
 
                 pw.flush();                 
