@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head th:fragment="headerfiles">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Gestión de Inventarios">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.css">
+  <link rel="stylesheet" href="/webjars/webjars/font-awesome/6.4.0/css/all.css">
+</head>
+
+<body>
+  <div th:fragment="navigation">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Inventario</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Incidencias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/incidencias">Gestión Incidencias</a></li>
+                <li><a class="dropdown-item" href="/incidencias/create">Alta incidencia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Estancias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/estancias">Listado estancias</a></li>
+                <li><a class="dropdown-item" href="/estancias/create">Alta estancias</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Inventario
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/inventarios">Gestión inventario</a></li>
+                <li><a class="dropdown-item" href="/inventarios/create">Alta inventario</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Usuarios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/users">Listado usuarios</a></li>
+                <li><a class="dropdown-item" href="/users/create">Alta usuarios</a></li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="/acerca">Sobre la App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ayuda">Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div th:fragment="footer" class="footer">
+    <p>Copyleft by IES VDC</p>
+    <script src="/webjars/jquery/3.6.4/jquery.js"></script>
+    <script src="/webjars/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="/webjars/bootstrap/5.2.3/js/bootstrap.js"></script>
+  </div>
+</body>
+
+</html>
