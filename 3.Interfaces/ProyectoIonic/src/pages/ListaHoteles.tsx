@@ -84,6 +84,7 @@ const ListaHoteles: React.FC = () => {
       </IonHeader>
      <IonContent fullscreen>
 
+      {/* formulario editar */}
      <IonModal isOpen={editarHotelVisible} onDidDismiss={() => setEditarHotelVisible(false)}>
   <IonHeader>
     <IonToolbar>
@@ -126,7 +127,7 @@ const ListaHoteles: React.FC = () => {
   </IonContent>
 </IonModal>
 
-
+      {/* listado hoteles */}
       <IonList>
       {/* The reorder gesture is disabled by default, enable it to drag and drop items */}
       <IonGrid>
