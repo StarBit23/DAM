@@ -1,0 +1,58 @@
+{
+  "listaHoteles": [
+    {
+      "id": 1,
+      "nombre": "Only YOU Hotel",
+      "localidad": "Málaga",
+      "precio": "202"
+    },
+    {
+      "id": 2,
+      "nombre": "Hotel Condestable",
+      "localidad": "Jaén",
+      "precio": "150"
+    },
+    {
+      "id": 3,
+      "nombre": "Hotel Nuevo Madrid",
+      "localidad": "Madrid",
+      "precio": "280"
+    },
+    {
+      "id": 4,
+      "nombre": "Only YOU Hotel",
+      "localidad": "Málaga",
+      "precio": "202"
+    },
+    {
+      "id": 5,
+      "nombre": "Hotel Atenas",
+      "localidad": "Granada",
+      "precio": "170"
+    },
+    {
+      "id": 6,
+      "nombre": "Hotel Infanta Cristina",
+      "localidad": "Jaén",
+      "precio": "202"
+    },
+    {
+      "nombre": "Hotel Pepe",
+      "localidad": "Jaén",
+      "precio": "200",
+      "id": 9
+    },
+    {
+      "nombre": "Lolo Hotel",
+      "localidad": "Marruecos",
+      "precio": "300",
+      "id": 10
+    },
+    {
+      "nombre": "prueba",
+      "localidad": "prueba",
+      "precio": "100",
+      "id": 11
+    }
+  ]
+}
