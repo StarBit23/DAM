@@ -1,0 +1,90 @@
+{
+  "listaHoteles": [
+    {
+      "id": 1,
+      "name": "Only YOU Hotel",
+      "estrellas": "★★★★★",
+      "ciudad": "Málaga",
+      "precio": "202",
+      "img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_470,q_auto,w_805//partnerimages/12/56/1256506366.jpeg",
+      "comentarios": [
+        {
+          "usuario": "Pepito",
+          "comentario": "Un gran hotel"
+        },
+        {
+          "usuario": "ultimo",
+          "comentario": "ultimo comentario"
+        },
+        {
+          "usuario": "ultimo2",
+          "comentario": "ultimo comentario2"
+        },
+        {
+          "usuario": "lolo",
+          "comentario": "mu chulo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hotel Ohtels",
+      "estrellas": "★★★★",
+      "ciudad": "Gibraltar",
+      "precio": "79",
+      "img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_470,q_auto,w_805//partnerimages/33/03/330311958.jpeg",
+      "comentarios": [
+        {
+          "usuario": "Pepito",
+          "comentario": "Un gran hotel"
+        },
+        {
+          "usuario": "pepe",
+          "comentario": "no me gusta"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Playaballena Aquapark y Spa Hotel",
+      "estrellas": "★★★★",
+      "ciudad": "Rota",
+      "precio": "83",
+      "img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_470,q_auto,w_805//uploadimages/24/23/24231942.jpeg",
+      "comentarios": [
+        {
+          "usuario": "Pepito",
+          "comentario": "Un gran hotel"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Rincón de Pepe",
+      "estrellas": "★★★★",
+      "ciudad": "Murcia",
+      "precio": "85",
+      "img": "https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_470,q_auto,w_805//uploadimages/42/16/42168000.jpeg",
+      "comentarios": [
+        {
+          "usuario": "Pepito",
+          "comentario": "Un gran hotel"
+        }
+      ]
+    },
+    {
+      "name": "Hotel Lujo",
+      "estrellas": "★★★★★",
+      "ciudad": "Jaén",
+      "precio": "150",
+      "img": "https://media.revistagq.com/photos/5ca5f072501e5472ac7c591d/master/pass/hotel_lujo_2934.jpg",
+      "comentarios": [
+        {
+          "usuario": "Pepito",
+          "comentario": "Un gran hotel"
+        }
+      ],
+      "id": 6
+    }
+  ]
+}
