@@ -1,7 +1,0 @@
-{
-  "name": "ionicPrueba",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
